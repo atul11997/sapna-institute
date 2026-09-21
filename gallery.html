@@ -1,16 +1,19 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sapna Consulting Point - Gallery</title>
     <link rel="icon" href="images/logo.png" type="image/png">
-    
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -51,12 +54,12 @@
             color: var(--text-gray);
             border-bottom: 1px solid var(--border-color);
         }
-        
+
         .top-bar-left {
             display: flex;
             gap: 20px;
         }
-        
+
         .top-bar i {
             margin-right: 5px;
             color: var(--text-gray);
@@ -92,6 +95,7 @@
             margin: 0;
             letter-spacing: 0.5px;
         }
+
         .logo-text p {
             font-size: 12px;
             color: #d1d5db;
@@ -105,7 +109,8 @@
         }
 
         .nav-links a {
-            color: #facc15; /* Yellow for inactive */
+            color: #facc15;
+            /* Yellow for inactive */
             text-decoration: none;
             font-size: 16px;
             font-weight: 500;
@@ -211,7 +216,8 @@
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
         }
 
-        .filter-btn.active, .filter-btn:hover {
+        .filter-btn.active,
+        .filter-btn:hover {
             background: linear-gradient(90deg, #fcd31c 0%, #b2740a 100%);
             border-color: #b2740a;
             color: #000000;
@@ -233,7 +239,7 @@
             overflow: hidden;
             aspect-ratio: 4/3;
             cursor: pointer;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
 
         .gallery-item img {
@@ -287,7 +293,7 @@
             grid-template-columns: 1.5fr 1fr 1fr;
             gap: 40px;
             margin-bottom: 40px;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             padding-bottom: 40px;
         }
 
@@ -387,8 +393,14 @@
 
         /* Responsive */
         @media (max-width: 1024px) {
-            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
-            .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 30px; }
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
         }
 
         .footer-grid {
@@ -525,13 +537,41 @@
         }
 
         @media (max-width: 768px) {
-            .top-bar { display: none !important; }
-            .navbar { padding: 12px 15px !important; position: relative; }
-            .logo-img { width: 38px !important; height: 38px !important; }
-            .logo-section { gap: 10px !important; }
-            .logo-text h1 { font-size: 16px !important; line-height: 1.2; }
-            .logo-text p { font-size: 11px !important; }
-            .hamburger-toggle { display: flex; align-items: center; justify-content: center; padding: 6px 12px; font-size: 18px; }
+            .top-bar {
+                display: none !important;
+            }
+
+            .navbar {
+                padding: 12px 15px !important;
+                position: relative;
+            }
+
+            .logo-img {
+                width: 38px !important;
+                height: 38px !important;
+            }
+
+            .logo-section {
+                gap: 10px !important;
+            }
+
+            .logo-text h1 {
+                font-size: 16px !important;
+                line-height: 1.2;
+            }
+
+            .logo-text p {
+                font-size: 11px !important;
+            }
+
+            .hamburger-toggle {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 6px 12px;
+                font-size: 18px;
+            }
+
             .nav-links {
                 display: none;
                 flex-direction: column;
@@ -546,25 +586,97 @@
                 gap: 12px;
                 border-top: 1px solid rgba(255, 255, 255, 0.1);
             }
-            .nav-links.active { display: flex !important; }
-            .nav-links a { padding: 10px 0; font-size: 15px; width: 100%; }
-            .nav-links .btn-enquire { margin-left: 0; text-align: center; display: block; width: 100%; margin-top: 8px; }
-            .gallery-grid { grid-template-columns: 1fr !important; }
-            .footer-grid { grid-template-columns: 1fr !important; gap: 30px !important; text-align: left !important; }
-            .footer-grid > div { padding-left: 0 !important; text-align: left !important; }
-            .gallery-hero { height: auto !important; min-height: 240px; padding: 40px 15px !important; }
-            .gallery-hero h1 { font-size: 26px !important; }
-            .filter-btn { width: 130px !important; padding: 10px 0 !important; font-size: 14px !important; }
-            .enquire-modal-overlay { padding: 15px !important; }
-            .enquire-modal-card { width: 92% !important; max-width: 360px !important; padding: 25px 20px !important; box-sizing: border-box !important; margin: 0 auto !important; }
-            .enquire-modal-card h2 { font-size: 22px !important; }
-            .enquire-modal-subtitle { font-size: 13px !important; margin-bottom: 18px !important; }
-            .modal-form-group { margin-bottom: 12px !important; }
-            .modal-form-group input, .modal-form-group textarea { padding: 12px 14px !important; font-size: 14px !important; box-sizing: border-box !important; }
-            .btn-modal-submit { padding: 13px !important; font-size: 15px !important; box-sizing: border-box !important; }
+
+            .nav-links.active {
+                display: flex !important;
+            }
+
+            .nav-links a {
+                padding: 10px 0;
+                font-size: 15px;
+                width: 100%;
+            }
+
+            .nav-links .btn-enquire {
+                margin-left: 0;
+                text-align: center;
+                display: block;
+                width: 100%;
+                margin-top: 8px;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr !important;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr !important;
+                gap: 30px !important;
+                text-align: left !important;
+            }
+
+            .footer-grid>div {
+                padding-left: 0 !important;
+                text-align: left !important;
+            }
+
+            .gallery-hero {
+                height: auto !important;
+                min-height: 240px;
+                padding: 40px 15px !important;
+            }
+
+            .gallery-hero h1 {
+                font-size: 26px !important;
+            }
+
+            .filter-btn {
+                width: 130px !important;
+                padding: 10px 0 !important;
+                font-size: 14px !important;
+            }
+
+            .enquire-modal-overlay {
+                padding: 15px !important;
+            }
+
+            .enquire-modal-card {
+                width: 92% !important;
+                max-width: 360px !important;
+                padding: 25px 20px !important;
+                box-sizing: border-box !important;
+                margin: 0 auto !important;
+            }
+
+            .enquire-modal-card h2 {
+                font-size: 22px !important;
+            }
+
+            .enquire-modal-subtitle {
+                font-size: 13px !important;
+                margin-bottom: 18px !important;
+            }
+
+            .modal-form-group {
+                margin-bottom: 12px !important;
+            }
+
+            .modal-form-group input,
+            .modal-form-group textarea {
+                padding: 12px 14px !important;
+                font-size: 14px !important;
+                box-sizing: border-box !important;
+            }
+
+            .btn-modal-submit {
+                padding: 13px !important;
+                font-size: 15px !important;
+                box-sizing: border-box !important;
+            }
         }
     </style>
 </head>
+
 <body>
 
     <!-- Top Contact Bar -->
@@ -581,7 +693,8 @@
     <!-- Main Navbar -->
     <nav class="navbar">
         <div class="logo-section">
-            <img src="images/logo.png" alt="SAPNA Logo" class="logo-img" onerror="this.src='https://via.placeholder.com/50'">
+            <img src="images/logo.png" alt="SAPNA Logo" class="logo-img"
+                onerror="this.src='https://via.placeholder.com/50'">
             <div class="logo-text">
                 <h1>Sapna Consulting Point</h1>
                 <p>Since 1985</p>
@@ -609,13 +722,14 @@
 
     <!-- Gallery Grid Section -->
     <section class="section-padding">
-        
+
         <div class="filters">
             <button class="filter-btn active" data-filter="all">All</button>
             <button class="filter-btn" data-filter="classroom">Classroom</button>
             <button class="filter-btn" data-filter="events">Events</button>
             <button class="filter-btn" data-filter="achievements">Achievements</button>
             <button class="filter-btn" data-filter="campus">Campus</button>
+            <button class="filter-btn" data-filter="coach-counselling">Counselling</button>
         </div>
 
         <div class="gallery-grid" id="galleryGrid">
@@ -629,40 +743,66 @@
         <div class="footer-grid">
             <!-- Footer Logo & About -->
             <div>
-                <img src="images/logo.png" alt="SAPNA Logo" style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 20px;">
+                <img src="images/logo.png" alt="SAPNA Logo"
+                    style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 20px;">
                 <p style="color: #d1d5db; font-size: 15px; line-height: 1.8; margin-bottom: 25px; font-weight: 500;">
-                    Since 1985, SAPNA Consultancy has been empowering individuals, families, students, and professionals through expert guidance, personal development programs, and practical solutions for achieving success in life and career.
+                    Since 1985, SAPNA Consultancy has been empowering individuals, families, students, and professionals
+                    through expert guidance, personal development programs, and practical solutions for achieving
+                    success in life and career.
                 </p>
                 <div style="display: flex; gap: 15px;">
-                    <a href="#" style="width: 35px; height: 35px; border-radius: 50%; border: 1px solid rgba(202, 138, 4, 0.4); background-color: rgba(202, 138, 4, 0.1); display: flex; align-items: center; justify-content: center; color: #facc15; text-decoration: none; transition: all 0.3s;"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" style="width: 35px; height: 35px; border-radius: 50%; border: 1px solid rgba(202, 138, 4, 0.4); background-color: rgba(202, 138, 4, 0.1); display: flex; align-items: center; justify-content: center; color: #facc15; text-decoration: none; transition: all 0.3s;"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" style="width: 35px; height: 35px; border-radius: 50%; border: 1px solid rgba(202, 138, 4, 0.4); background-color: rgba(202, 138, 4, 0.1); display: flex; align-items: center; justify-content: center; color: #facc15; text-decoration: none; transition: all 0.3s;"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="#" style="width: 35px; height: 35px; border-radius: 50%; border: 1px solid rgba(202, 138, 4, 0.4); background-color: rgba(202, 138, 4, 0.1); display: flex; align-items: center; justify-content: center; color: #facc15; text-decoration: none; transition: all 0.3s;"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"
+                        style="width: 35px; height: 35px; border-radius: 50%; border: 1px solid rgba(202, 138, 4, 0.4); background-color: rgba(202, 138, 4, 0.1); display: flex; align-items: center; justify-content: center; color: #facc15; text-decoration: none; transition: all 0.3s;"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"
+                        style="width: 35px; height: 35px; border-radius: 50%; border: 1px solid rgba(202, 138, 4, 0.4); background-color: rgba(202, 138, 4, 0.1); display: flex; align-items: center; justify-content: center; color: #facc15; text-decoration: none; transition: all 0.3s;"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="#"
+                        style="width: 35px; height: 35px; border-radius: 50%; border: 1px solid rgba(202, 138, 4, 0.4); background-color: rgba(202, 138, 4, 0.1); display: flex; align-items: center; justify-content: center; color: #facc15; text-decoration: none; transition: all 0.3s;"><i
+                            class="fa-brands fa-youtube"></i></a>
+                    <a href="#"
+                        style="width: 35px; height: 35px; border-radius: 50%; border: 1px solid rgba(202, 138, 4, 0.4); background-color: rgba(202, 138, 4, 0.1); display: flex; align-items: center; justify-content: center; color: #facc15; text-decoration: none; transition: all 0.3s;"><i
+                            class="fa-brands fa-twitter"></i></a>
                 </div>
             </div>
-            
+
             <!-- Quick Links -->
             <div style="text-align: center;">
-                <h3 style="color: #facc15; font-size: 24px; font-weight: 700; font-family: 'Inter', sans-serif; margin-bottom: 25px;">Quick Links</h3>
+                <h3
+                    style="color: #facc15; font-size: 24px; font-weight: 700; font-family: 'Inter', sans-serif; margin-bottom: 25px;">
+                    Quick Links</h3>
                 <ul style="list-style: none; padding: 0;">
-                    <li style="margin-bottom: 15px;"><a href="index.html" style="color: #d1d5db; text-decoration: none; font-size: 15px; font-weight: 500; transition: color 0.3s;">Home</a></li>
-                    <li style="margin-bottom: 15px;"><a href="about.html" style="color: #d1d5db; text-decoration: none; font-size: 15px; font-weight: 500; transition: color 0.3s;">About Us</a></li>
-                    <li style="margin-bottom: 15px;"><a href="gallery.html" style="color: #d1d5db; text-decoration: none; font-size: 15px; font-weight: 500; transition: color 0.3s;">Gallery</a></li>
-                    <li style="margin-bottom: 15px;"><a href="contact.html" style="color: #d1d5db; text-decoration: none; font-size: 15px; font-weight: 500; transition: color 0.3s;">Contact</a></li>
+                    <li style="margin-bottom: 15px;"><a href="index.html"
+                            style="color: #d1d5db; text-decoration: none; font-size: 15px; font-weight: 500; transition: color 0.3s;">Home</a>
+                    </li>
+                    <li style="margin-bottom: 15px;"><a href="about.html"
+                            style="color: #d1d5db; text-decoration: none; font-size: 15px; font-weight: 500; transition: color 0.3s;">About
+                            Us</a></li>
+                    <li style="margin-bottom: 15px;"><a href="gallery.html"
+                            style="color: #d1d5db; text-decoration: none; font-size: 15px; font-weight: 500; transition: color 0.3s;">Gallery</a>
+                    </li>
+                    <li style="margin-bottom: 15px;"><a href="contact.html"
+                            style="color: #d1d5db; text-decoration: none; font-size: 15px; font-weight: 500; transition: color 0.3s;">Contact</a>
+                    </li>
                 </ul>
             </div>
-            
+
             <!-- Contact Us -->
             <div>
-                <h3 style="color: #facc15; font-size: 24px; font-weight: 700; font-family: 'Inter', sans-serif; margin-bottom: 25px;">Contact Us</h3>
-                <p style="color: #d1d5db; font-size: 15px; margin-bottom: 20px; line-height: 1.6; font-weight: 500;">Hig-9b, Leela Tower, Sonagiri,<br>Piplani Petrol Pump, Bhel, Sonagiri,<br>Bhopal, Madhya Pradesh 462021</p>
+                <h3
+                    style="color: #facc15; font-size: 24px; font-weight: 700; font-family: 'Inter', sans-serif; margin-bottom: 25px;">
+                    Contact Us</h3>
+                <p style="color: #d1d5db; font-size: 15px; margin-bottom: 20px; line-height: 1.6; font-weight: 500;">
+                    Hig-9b, Leela Tower, Sonagiri,<br>Piplani Petrol Pump, Bhel, Sonagiri,<br>Bhopal, Madhya Pradesh
+                    462021</p>
                 <p style="color: #d1d5db; font-size: 15px; margin-bottom: 20px; font-weight: 500;">+91 9302613229</p>
                 <p style="color: #d1d5db; font-size: 15px; font-weight: 500;">praveenkumar091963@gmail.com</p>
             </div>
         </div>
-        
+
         <div style="text-align: center; color: #9ca3af; font-size: 14px;">
-            <p style="margin: 0;">&copy; 2026 Sapna Consulting Point. All rights reserved. | Managed by <span style="color: #ca8a04; font-weight: 600;">Act T Connect</span></p>
+            <p style="margin: 0;">&copy; 2026 Sapna Consulting Point. All rights reserved. | Managed by <span
+                    style="color: #ca8a04; font-weight: 600;">Act T Connect</span></p>
         </div>
     </footer>
 
@@ -701,7 +841,9 @@
             { id: 6, category: 'events', title: 'Cultural Fest', img: 'https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
             { id: 7, category: 'campus', title: 'Main Campus', img: 'https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
             { id: 8, category: 'achievements', title: 'Awards Ceremony', img: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-            { id: 9, category: 'classroom', title: 'Mock Test Sessions', img: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' }
+            { id: 9, category: 'classroom', title: 'Mock Test Sessions', img: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
+            { id: 8, category: 'coach-counselling', title: 'Depressed Coach', img: 'https://images.unsplash.com/photo-1714976694127-0baa5e116b11?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+            { id: 9, category: 'coach-counselling', title: 'Coach Talking', img: 'https://images.unsplash.com/photo-1714976694810-85add1a29c96?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }
         ];
 
         const grid = document.getElementById('galleryGrid');
@@ -710,7 +852,7 @@
         function renderGallery(filter) {
             grid.innerHTML = '';
             const filteredData = filter === 'all' ? galleryData : galleryData.filter(item => item.category === filter);
-            
+
             filteredData.forEach(item => {
                 const html = `
                     <div class="gallery-item" data-category="${item.category}">
@@ -808,4 +950,5 @@
         }
     </script>
 </body>
+
 </html>
