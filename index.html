@@ -240,9 +240,15 @@
             font-weight: 700 !important;
             display: inline-block !important;
             text-decoration: none;
-            margin-bottom: 20px !important;
             border: 1px solid rgba(202, 138, 4, 0.2) !important;
             letter-spacing: 0.5px !important;
+        }
+
+        .help-card .help-content .badge-yellow {
+            margin-top: auto;
+            /* button hamesha bottom par align hoga */
+            align-self: flex-start;
+            /* button ki width uske content jitni rahegi, stretch nahi hogi */
         }
 
         .badge-yellow-text {
@@ -723,7 +729,7 @@
         .who-we-help-section {
             position: relative;
             padding: 100px 0 110px;
-            background: #fffdf5;
+            background: white;
             overflow: hidden;
         }
 
@@ -1212,90 +1218,6 @@
         }
 
 
-        /* CTA content */
-
-        .cta-content {
-            position: relative;
-
-            z-index: 2;
-        }
-
-
-        .cta-content h3 {
-            margin: 0 0 7px;
-
-            color: #ffffff;
-
-            font-size: 24px;
-
-            font-weight: 700;
-        }
-
-
-        .cta-content p {
-            margin: 0;
-
-            color: #cccccc;
-
-            font-size: 15px;
-        }
-
-
-        /* CTA Button */
-
-        .cta-button {
-            position: relative;
-
-            z-index: 2;
-
-            display: inline-flex;
-
-            align-items: center;
-
-            gap: 12px;
-
-            padding: 13px 20px;
-
-            background: linear-gradient(90deg,
-                    #fcd31c 0%,
-                    #b2740a 100%);
-
-            color: #111111;
-
-            border-radius: 50px;
-
-            text-decoration: none;
-
-            font-size: 14px;
-
-            font-weight: 700;
-
-            white-space: nowrap;
-
-            transition: all 0.3s ease;
-        }
-
-
-        .cta-button i {
-            transition: transform 0.3s ease;
-        }
-
-
-        .cta-button:hover {
-            color: #111111;
-
-            transform: translateY(-2px);
-
-            box-shadow:
-                0 8px 25px rgba(252, 211, 28, 0.25);
-        }
-
-
-        .cta-button:hover i {
-            transform: translateX(4px);
-        }
-
-
         /* =========================================================
    TABLET
 ========================================================= */
@@ -1451,7 +1373,7 @@
         .gallery-section {
             padding: 60px 20px;
             text-align: center;
-            background: #f9f9f9;
+            background: white;
         }
 
         .gallery-title {
