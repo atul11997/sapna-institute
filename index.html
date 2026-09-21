@@ -239,6 +239,7 @@
             font-size: 15px !important;
             font-weight: 700 !important;
             display: inline-block !important;
+            text-decoration: none;
             margin-bottom: 20px !important;
             border: 1px solid rgba(202, 138, 4, 0.2) !important;
             letter-spacing: 0.5px !important;
@@ -668,6 +669,783 @@
                 box-sizing: border-box !important;
             }
         }
+
+        .who-we-help-section {
+            background: #fffdf5;
+        }
+
+        .section-badge {
+            background: rgba(252, 211, 28, 0.15);
+            color: #111111;
+        }
+
+        .who-help-heading h2 {
+            color: #111111;
+        }
+
+        .who-help-heading h2 span {
+            background: linear-gradient(90deg, #fcd31c 0%, #b2740a 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .help-card {
+            background: #ffffff;
+            border: 1px solid rgba(252, 211, 28, 0.25);
+        }
+
+        .help-content h3 {
+            color: #111111;
+        }
+
+        .help-content p {
+            color: #555555;
+        }
+
+        .help-icon,
+        .help-arrow {
+            background: linear-gradient(90deg,
+                    #fcd31c 0%,
+                    #b2740a 100%);
+            color: #111111;
+        }
+
+        .help-arrow:hover {
+            box-shadow: 0 8px 20px rgba(178, 116, 10, 0.30);
+        }
+
+
+        /* =========================================================
+   WHO WE HELP SECTION
+   Theme: Black + Yellow Gold Gradient
+========================================================= */
+
+        .who-we-help-section {
+            position: relative;
+            padding: 100px 0 110px;
+            background: #fffdf5;
+            overflow: hidden;
+        }
+
+
+        /* Decorative background */
+
+        .who-we-help-section::before {
+            content: "";
+            position: absolute;
+            width: 420px;
+            height: 420px;
+
+            top: -220px;
+            left: -180px;
+
+            background: rgba(252, 211, 28, 0.10);
+
+            border-radius: 50%;
+
+            filter: blur(10px);
+        }
+
+        .who-we-help-section::after {
+            content: "";
+            position: absolute;
+
+            width: 500px;
+            height: 500px;
+
+            right: -250px;
+            bottom: -300px;
+
+            background: rgba(178, 116, 10, 0.08);
+
+            border-radius: 50%;
+
+            filter: blur(15px);
+        }
+
+
+        .who-we-help-section .container {
+            position: relative;
+            z-index: 2;
+
+            max-width: 1400px;
+
+            margin: 0 auto;
+
+            padding: 0 30px;
+        }
+
+
+        /* =========================================================
+   SECTION HEADING
+========================================================= */
+
+        .who-help-heading {
+            max-width: 850px;
+
+            margin: 0 auto 60px;
+
+            text-align: center;
+        }
+
+
+        /* Badge */
+
+        .section-badge {
+            display: inline-flex;
+
+            align-items: center;
+            gap: 10px;
+
+            padding: 8px 18px 8px 8px;
+
+            background: #111111;
+
+            color: #ffffff;
+
+            border-radius: 50px;
+
+            font-size: 14px;
+
+            font-weight: 600;
+
+            letter-spacing: 0.3px;
+
+            margin-bottom: 22px;
+        }
+
+
+        .badge-icon {
+            width: 34px;
+            height: 34px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: linear-gradient(90deg,
+                    #fcd31c 0%,
+                    #b2740a 100%);
+
+            color: #111111;
+
+            font-size: 15px;
+        }
+
+
+        /* Main Heading */
+
+        .who-help-heading h2 {
+            margin: 0 0 18px;
+
+            color: #111111;
+
+            font-size: 48px;
+
+            line-height: 1.2;
+
+            font-weight: 800;
+
+            letter-spacing: -1px;
+        }
+
+
+        /* Gradient Text */
+
+        .gradient-text {
+            background: linear-gradient(90deg,
+                    #fcd31c 0%,
+                    #b2740a 100%);
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            background-clip: text;
+        }
+
+
+        /* Description */
+
+        .who-help-heading p {
+            max-width: 760px;
+
+            margin: 0 auto;
+
+            color: #5b5b5b;
+
+            font-size: 17px;
+
+            line-height: 1.75;
+        }
+
+
+        /* =========================================================
+   CARDS GRID
+========================================================= */
+
+        .who-help-grid {
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+
+            gap: 26px;
+        }
+
+
+        /* =========================================================
+   CARD
+========================================================= */
+
+        .help-card {
+            position: relative;
+
+            background: #ffffff;
+
+            border-radius: 20px;
+
+            overflow: hidden;
+
+            border: 1px solid #eeeeee;
+
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+
+            transition:
+                transform 0.35s ease,
+                box-shadow 0.35s ease,
+                border-color 0.35s ease;
+        }
+
+
+        /* Card hover */
+
+        .help-card:hover {
+            transform: translateY(-10px);
+
+            border-color: #d49a12;
+
+            box-shadow:
+                0 20px 45px rgba(0, 0, 0, 0.12),
+                0 8px 25px rgba(178, 116, 10, 0.12);
+        }
+
+
+        /* =========================================================
+   CARD IMAGE
+========================================================= */
+
+        .help-image {
+            position: relative;
+
+            width: 100%;
+
+            height: 235px;
+
+            overflow: hidden;
+        }
+
+
+        .help-image::after {
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            background: linear-gradient(180deg,
+                    transparent 55%,
+                    rgba(0, 0, 0, 0.20) 100%);
+
+            pointer-events: none;
+        }
+
+
+        .help-image img {
+            width: 100%;
+            height: 100%;
+
+            display: block;
+
+            object-fit: cover;
+
+            transition: transform 0.5s ease;
+        }
+
+
+        .help-card:hover .help-image img {
+            transform: scale(1.06);
+        }
+
+
+        /* =========================================================
+   ROUND ICON
+========================================================= */
+
+        .help-icon {
+            position: absolute;
+
+            left: 25px;
+            bottom: 10px;
+
+            width: 64px;
+            height: 64px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: linear-gradient(90deg,
+                    #fcd31c 0%,
+                    #b2740a 100%);
+
+            color: #111111;
+
+            border: 6px solid #ffffff;
+
+            font-size: 21px;
+
+            box-shadow:
+                0 7px 20px rgba(0, 0, 0, 0.18);
+
+            z-index: 5;
+
+            transition: transform 0.3s ease;
+        }
+
+
+        .help-card:hover .help-icon {
+            transform: rotate(-5deg) scale(1.08);
+        }
+
+
+        /* =========================================================
+   CARD CONTENT
+========================================================= */
+
+        .help-content {
+            position: relative;
+
+            padding: 48px 27px 28px;
+        }
+
+
+        /* Number */
+
+        .card-number {
+            display: block;
+
+            margin-bottom: 5px;
+
+            font-size: 13px;
+
+            font-weight: 800;
+
+            letter-spacing: 1px;
+
+            background: linear-gradient(90deg,
+                    #fcd31c 0%,
+                    #b2740a 100%);
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            background-clip: text;
+        }
+
+
+        /* Card heading */
+
+        .help-content h3 {
+            margin: 0 0 13px;
+
+            color: #111111;
+
+            font-size: 23px;
+
+            line-height: 1.3;
+
+            font-weight: 750;
+        }
+
+
+        /* Card paragraph */
+
+        .help-content p {
+            min-height: 105px;
+
+            margin: 0 0 24px;
+
+            color: #606060;
+
+            font-size: 15px;
+
+            line-height: 1.7;
+        }
+
+
+        /* =========================================================
+   EXPLORE BUTTON
+========================================================= */
+
+        .help-arrow {
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            padding: 10px 17px;
+
+            border-radius: 50px;
+
+            background: #111111;
+
+            color: #ffffff;
+
+            text-decoration: none;
+
+            font-size: 13px;
+
+            font-weight: 600;
+
+            transition: all 0.3s ease;
+        }
+
+
+        .help-arrow i {
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            width: 28px;
+            height: 28px;
+
+            border-radius: 50%;
+
+            background: linear-gradient(90deg,
+                    #fcd31c 0%,
+                    #b2740a 100%);
+
+            color: #111111;
+
+            font-size: 11px;
+
+            transition: transform 0.3s ease;
+        }
+
+
+        .help-arrow:hover {
+            color: #111111;
+
+            background: linear-gradient(90deg,
+                    #fcd31c 0%,
+                    #b2740a 100%);
+
+            transform: translateY(-2px);
+
+            box-shadow:
+                0 8px 20px rgba(178, 116, 10, 0.25);
+        }
+
+
+        .help-arrow:hover i {
+            transform: translateX(3px);
+
+            background: #111111;
+
+            color: #ffffff;
+        }
+
+
+        /* =========================================================
+   BOTTOM CTA
+========================================================= */
+
+        .who-help-cta {
+            position: relative;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 30px;
+
+            margin-top: 55px;
+
+            padding: 30px 35px;
+
+            background: #111111;
+
+            border-radius: 20px;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 15px 35px rgba(0, 0, 0, 0.12);
+        }
+
+
+        /* Yellow glow */
+
+        .who-help-cta::before {
+            content: "";
+
+            position: absolute;
+
+            width: 250px;
+            height: 250px;
+
+            right: -80px;
+            top: -130px;
+
+            background: rgba(252, 211, 28, 0.16);
+
+            border-radius: 50%;
+        }
+
+
+        /* CTA content */
+
+        .cta-content {
+            position: relative;
+
+            z-index: 2;
+        }
+
+
+        .cta-content h3 {
+            margin: 0 0 7px;
+
+            color: #ffffff;
+
+            font-size: 24px;
+
+            font-weight: 700;
+        }
+
+
+        .cta-content p {
+            margin: 0;
+
+            color: #cccccc;
+
+            font-size: 15px;
+        }
+
+
+        /* CTA Button */
+
+        .cta-button {
+            position: relative;
+
+            z-index: 2;
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 12px;
+
+            padding: 13px 20px;
+
+            background: linear-gradient(90deg,
+                    #fcd31c 0%,
+                    #b2740a 100%);
+
+            color: #111111;
+
+            border-radius: 50px;
+
+            text-decoration: none;
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+            white-space: nowrap;
+
+            transition: all 0.3s ease;
+        }
+
+
+        .cta-button i {
+            transition: transform 0.3s ease;
+        }
+
+
+        .cta-button:hover {
+            color: #111111;
+
+            transform: translateY(-2px);
+
+            box-shadow:
+                0 8px 25px rgba(252, 211, 28, 0.25);
+        }
+
+
+        .cta-button:hover i {
+            transform: translateX(4px);
+        }
+
+
+        /* =========================================================
+   TABLET
+========================================================= */
+
+        @media (max-width: 1150px) {
+
+            .who-help-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .who-help-heading h2 {
+                font-size: 42px;
+            }
+
+        }
+
+
+        /* =========================================================
+   SMALL TABLET
+========================================================= */
+
+        @media (max-width: 768px) {
+
+            .who-we-help-section {
+                padding: 75px 0 85px;
+            }
+
+            .who-we-help-section .container {
+                padding: 0 20px;
+            }
+
+            .who-help-heading {
+                margin-bottom: 45px;
+            }
+
+            .who-help-heading h2 {
+                font-size: 35px;
+            }
+
+            .who-help-heading p {
+                font-size: 16px;
+            }
+
+            .help-image {
+                height: 220px;
+            }
+
+            .who-help-cta {
+                flex-direction: column;
+
+                align-items: flex-start;
+
+                padding: 28px;
+            }
+
+        }
+
+
+        /* =========================================================
+   MOBILE
+========================================================= */
+
+        @media (max-width: 576px) {
+
+            .who-we-help-section {
+                padding: 60px 0 70px;
+            }
+
+            .who-we-help-section .container {
+                padding: 0 16px;
+            }
+
+
+            /* Heading */
+
+            .section-badge {
+                font-size: 13px;
+
+                padding: 7px 15px 7px 7px;
+            }
+
+            .badge-icon {
+                width: 31px;
+                height: 31px;
+
+                font-size: 13px;
+            }
+
+            .who-help-heading h2 {
+                font-size: 30px;
+
+                letter-spacing: -0.5px;
+            }
+
+            .who-help-heading p {
+                font-size: 15px;
+            }
+
+
+            /* Cards */
+
+            .who-help-grid {
+                grid-template-columns: 1fr;
+
+                gap: 22px;
+            }
+
+            .help-image {
+                height: 225px;
+            }
+
+            .help-content {
+                padding: 45px 23px 25px;
+            }
+
+            .help-content h3 {
+                font-size: 22px;
+            }
+
+            .help-content p {
+                min-height: auto;
+
+                font-size: 15px;
+            }
+
+
+            /* CTA */
+
+            .who-help-cta {
+                margin-top: 35px;
+
+                padding: 25px 22px;
+            }
+
+            .cta-content h3 {
+                font-size: 21px;
+            }
+
+            .cta-content p {
+                font-size: 14px;
+                line-height: 1.6;
+            }
+
+            .cta-button {
+                width: 100%;
+
+                justify-content: center;
+            }
+
+        }
     </style>
 </head>
 
@@ -781,6 +1559,173 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="who-we-help-section">
+
+        <div class="container">
+
+            <!-- Section Heading -->
+            <div class="who-help-heading">
+
+                <div class="badge-yellow">
+                    Who We Help
+                </div>
+
+                <h2>
+                    Support for Every Stage
+                    of Your Journey
+                </h2>
+
+            </div>
+
+
+            <!-- Who We Help Cards -->
+            <div class="who-help-grid">
+
+
+                <!-- Students -->
+                <article class="help-card">
+
+                    <div class="help-image">
+
+                        <img src="images/students.jpg" alt="Guidance and counselling for students">
+
+                        <div class="help-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="help-content">
+
+                        <span class="card-number">01</span>
+
+                        <h3>Students</h3>
+
+                        <p>
+                            Get guidance for career decisions, studies,
+                            confidence and personal growth to build a
+                            brighter future.
+                        </p>
+
+                        <a href="#" class="badge-yellow">
+                            <span>Explore</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Parents & Families -->
+                <article class="help-card">
+
+                    <div class="help-image">
+
+                        <img src="images/parents.jpg" alt="Counselling and guidance for parents and families">
+
+                        <div class="help-icon">
+                            <i class="fa-solid fa-people-roof"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="help-content">
+
+                        <span class="card-number">02</span>
+
+                        <h3>Parents & Families</h3>
+
+                        <p>
+                            Improve communication, strengthen relationships
+                            and find supportive solutions to family
+                            challenges.
+                        </p>
+
+                        <a href="#" class="badge-yellow">
+                            <span>Explore</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Working Professionals -->
+                <article class="help-card">
+
+                    <div class="help-image">
+
+                        <img src="images/working_professional.jpg" alt="Guidance for working professionals">
+
+                        <div class="help-icon">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="help-content">
+
+                        <span class="card-number">03</span>
+
+                        <h3>Working Professionals</h3>
+
+                        <p>
+                            Manage stress, improve work-life balance and
+                            gain clarity to move forward with confidence.
+                        </p>
+
+                        <a href="#" class="badge-yellow">
+                            <span>Explore</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Entrepreneurs -->
+                <article class="help-card">
+
+                    <div class="help-image">
+
+                        <img src="images/Entrepreneur.jpg" alt="Business guidance for entrepreneurs">
+
+                        <div class="help-icon">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="help-content">
+
+                        <span class="card-number">04</span>
+
+                        <h3>Entrepreneurs</h3>
+
+                        <p>
+                            Get practical guidance for business decisions,
+                            strategic planning and turning your vision
+                            into action.
+                        </p>
+
+                        <a href="#" class="badge-yellow">
+                            <span>Explore</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
     </section>
 
     <!-- Why Join Section -->
