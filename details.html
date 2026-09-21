@@ -2,179 +2,226 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sapna Consulting Point - Career Counselling & Guidance Since 1985</title>
-    <meta name="description"
-        content="Sapna Consulting Point offers quality English courses including Student Counseling, Mental Health Assessment, Parent Counseling, and Depression Counseling.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" href="images\logo.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css\style.css">
-    <style>
-html, body { overflow-x: hidden !important; }
-/* ===== SECTION ===== */
-.review-area{padding:20px 0;}
-.review-container{width:92%;max-width:1300px;margin:auto;}
-.review-header{text-align:center;margin-bottom:30px;}
-.review-title{font-size:32px;color:#0f172a;}
-.hamburger-toggle {
-    display: none;
-    background: none;
-    border: 2px solid rgba(250, 204, 21, 0.5);
-    color: #facc15;
-    font-size: 22px;
-    padding: 8px 14px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sapna Consulting Point - Career Counselling & Guidance Since 1985</title>
+  <meta name="description"
+    content="Sapna Consulting Point offers quality English courses including Student Counseling, Mental Health Assessment, Parent Counseling, and Depression Counseling.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="images\logo.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css\style.css">
+  <style>
+    html,
+    body {
+      overflow-x: hidden !important;
+    }
 
-.hamburger-toggle:hover {
-    background: rgba(250, 204, 21, 0.1);
-}
+    /* ===== SECTION ===== */
+    .review-area {
+      padding: 20px 0;
+    }
 
-}
+    .review-container {
+      width: 92%;
+      max-width: 1300px;
+      margin: auto;
+    }
 
-/* Enquire Modal Popup */
-.enquire-modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(4px);
-    z-index: 9999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    padding: 20px;
-}
+    .review-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
 
-.enquire-modal-overlay.active {
-    opacity: 1;
-    visibility: visible;
-}
+    .review-title {
+      font-size: 32px;
+      color: #0f172a;
+    }
 
-.enquire-modal-card {
-    background: #ffffff;
-    width: 100%;
-    max-width: 460px;
-    border-radius: 20px;
-    padding: 35px 35px 30px;
-    position: relative;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-    transform: scale(0.9);
-    transition: transform 0.3s ease;
-}
+    .hamburger-toggle {
+      display: none;
+      background: none;
+      border: 2px solid rgba(250, 204, 21, 0.5);
+      color: #facc15;
+      font-size: 22px;
+      padding: 8px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
 
-.enquire-modal-overlay.active .enquire-modal-card {
-    transform: scale(1);
-}
+    .hamburger-toggle:hover {
+      background: rgba(250, 204, 21, 0.1);
+    }
 
-.enquire-modal-close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: none;
-    border: none;
-    font-size: 24px;
-    font-weight: 700;
-    color: #94a3b8;
-    cursor: pointer;
-    line-height: 1;
-    transition: color 0.2s;
-}
+    }
 
-.enquire-modal-close:hover {
-    color: #0f172a;
-}
+    /* Enquire Modal Popup */
+    .enquire-modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(4px);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      padding: 20px;
+    }
 
-.enquire-modal-card h2 {
-    font-size: 28px;
-    font-weight: 800;
-    color: #111c34;
-    margin-bottom: 6px;
-}
+    .enquire-modal-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
 
-.enquire-modal-subtitle {
-    font-size: 15px;
-    color: #828b9a;
-    margin-bottom: 25px;
-    font-family: 'Inter', sans-serif;
-}
+    .enquire-modal-card {
+      background: #ffffff;
+      width: 100%;
+      max-width: 460px;
+      border-radius: 20px;
+      padding: 35px 35px 30px;
+      position: relative;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+      transform: scale(0.9);
+      transition: transform 0.3s ease;
+    }
 
-.modal-form-group {
-    margin-bottom: 16px;
-}
+    .enquire-modal-overlay.active .enquire-modal-card {
+      transform: scale(1);
+    }
 
-.modal-form-group input,
-.modal-form-group textarea {
-    width: 100%;
-    padding: 14px 18px;
-    background-color: #f8fafc;
-    border: 1px solid #e2e8f0;
-    border-radius: 12px;
-    font-size: 14px;
-    font-family: 'Inter', sans-serif;
-    color: #1e293b;
-    outline: none;
-    transition: all 0.3s ease;
-}
+    .enquire-modal-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: none;
+      border: none;
+      font-size: 24px;
+      font-weight: 700;
+      color: #94a3b8;
+      cursor: pointer;
+      line-height: 1;
+      transition: color 0.2s;
+    }
 
-.modal-form-group input::placeholder,
-.modal-form-group textarea::placeholder {
-    color: #94a3b8;
-}
+    .enquire-modal-close:hover {
+      color: #0f172a;
+    }
 
-.modal-form-group input:focus,
-.modal-form-group textarea:focus {
-    background-color: #ffffff;
-    border-color: #ca8a04;
-    box-shadow: 0 0 0 3px rgba(202, 138, 4, 0.1);
-}
+    .enquire-modal-card h2 {
+      font-size: 28px;
+      font-weight: 800;
+      color: #111c34;
+      margin-bottom: 6px;
+    }
 
-.modal-form-group textarea {
-    resize: none;
-}
+    .enquire-modal-subtitle {
+      font-size: 15px;
+      color: #828b9a;
+      margin-bottom: 25px;
+      font-family: 'Inter', sans-serif;
+    }
 
-.btn-modal-submit {
-    width: 100%;
-    background: linear-gradient(90deg, #fcd31c 0%, #b2740a 100%);
-    color: #000000;
-    padding: 15px;
-    border-radius: 30px;
-    font-weight: 700;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    margin-top: 10px;
-    box-shadow: 0 4px 15px rgba(202, 138, 4, 0.3);
-    transition: all 0.3s ease;
-}
+    .modal-form-group {
+      margin-bottom: 16px;
+    }
 
-.btn-modal-submit:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(202, 138, 4, 0.4);
-}
+    .modal-form-group input,
+    .modal-form-group textarea {
+      width: 100%;
+      padding: 14px 18px;
+      background-color: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      font-size: 14px;
+      font-family: 'Inter', sans-serif;
+      color: #1e293b;
+      outline: none;
+      transition: all 0.3s ease;
+    }
 
-@media (max-width: 768px) {
-    .top-bar, .top-header { display: none !important; }
-    .navbar { padding: 12px 15px !important; position: relative; }
-    .logo-img { width: 38px !important; height: 38px !important; }
-    .logo-text h1 { font-size: 16px !important; line-height: 1.2; }
-    .logo-text p { font-size: 11px !important; }
-    .hamburger-toggle { display: flex; align-items: center; justify-content: center; padding: 6px 12px; font-size: 18px; }
-    .nav-links {
+    .modal-form-group input::placeholder,
+    .modal-form-group textarea::placeholder {
+      color: #94a3b8;
+    }
+
+    .modal-form-group input:focus,
+    .modal-form-group textarea:focus {
+      background-color: #ffffff;
+      border-color: #ca8a04;
+      box-shadow: 0 0 0 3px rgba(202, 138, 4, 0.1);
+    }
+
+    .modal-form-group textarea {
+      resize: none;
+    }
+
+    .btn-modal-submit {
+      width: 100%;
+      background: linear-gradient(90deg, #fcd31c 0%, #b2740a 100%);
+      color: #000000;
+      padding: 15px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+      box-shadow: 0 4px 15px rgba(202, 138, 4, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .btn-modal-submit:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(202, 138, 4, 0.4);
+    }
+
+    @media (max-width: 768px) {
+
+      .top-bar,
+      .top-header {
+        display: none !important;
+      }
+
+      .navbar {
+        padding: 12px 15px !important;
+        position: relative;
+      }
+
+      .logo-img {
+        width: 38px !important;
+        height: 38px !important;
+      }
+
+      .logo-text h1 {
+        font-size: 16px !important;
+        line-height: 1.2;
+      }
+
+      .logo-text p {
+        font-size: 11px !important;
+      }
+
+      .hamburger-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 6px 12px;
+        font-size: 18px;
+      }
+
+      .nav-links {
         display: none;
         flex-direction: column;
         position: absolute;
@@ -187,859 +234,994 @@ html, body { overflow-x: hidden !important; }
         z-index: 999;
         gap: 12px;
         border-top: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .nav-links.active {
+        display: flex !important;
+      }
+
+      .nav-links a {
+        padding: 10px 0;
+        font-size: 15px;
+        width: 100%;
+      }
+
+      .nav-links .btn-enquire {
+        margin-left: 0;
+        text-align: center;
+        display: block;
+        width: 100%;
+        margin-top: 8px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr !important;
+        gap: 30px !important;
+        text-align: left !important;
+      }
+
+      .footer-grid>div {
+        padding-left: 0 !important;
+        text-align: left !important;
+      }
+
+      .course-hero {
+        padding: 40px 15px !important;
+      }
+
+      .course-hero-title {
+        font-size: 26px !important;
+      }
+
+      .enquire-modal-overlay {
+        padding: 15px !important;
+      }
+
+      .enquire-modal-card {
+        width: 92% !important;
+        max-width: 360px !important;
+        padding: 25px 20px !important;
+        box-sizing: border-box !important;
+        margin: 0 auto !important;
+      }
+
+      .enquire-modal-card h2 {
+        font-size: 22px !important;
+      }
+
+      .enquire-modal-subtitle {
+        font-size: 13px !important;
+        margin-bottom: 18px !important;
+      }
+
+      .modal-form-group {
+        margin-bottom: 12px !important;
+      }
+
+      .modal-form-group input,
+      .modal-form-group textarea {
+        padding: 12px 14px !important;
+        font-size: 14px !important;
+        box-sizing: border-box !important;
+      }
+
+      .btn-modal-submit {
+        padding: 13px !important;
+        font-size: 15px !important;
+        box-sizing: border-box !important;
+      }
     }
-    .nav-links.active { display: flex !important; }
-    .nav-links a { padding: 10px 0; font-size: 15px; width: 100%; }
-    .nav-links .btn-enquire { margin-left: 0; text-align: center; display: block; width: 100%; margin-top: 8px; }
-    .footer-grid { grid-template-columns: 1fr !important; gap: 30px !important; text-align: left !important; }
-    .footer-grid > div { padding-left: 0 !important; text-align: left !important; }
-    .course-hero { padding: 40px 15px !important; }
-    .course-hero-title { font-size: 26px !important; }
-    .enquire-modal-overlay { padding: 15px !important; }
-    .enquire-modal-card { width: 92% !important; max-width: 360px !important; padding: 25px 20px !important; box-sizing: border-box !important; margin: 0 auto !important; }
-    .enquire-modal-card h2 { font-size: 22px !important; }
-    .enquire-modal-subtitle { font-size: 13px !important; margin-bottom: 18px !important; }
-    .modal-form-group { margin-bottom: 12px !important; }
-    .modal-form-group input, .modal-form-group textarea { padding: 12px 14px !important; font-size: 14px !important; box-sizing: border-box !important; }
-    .btn-modal-submit { padding: 13px !important; font-size: 15px !important; box-sizing: border-box !important; }
-}
-
-/* ===== Slider Wrap ===== */
-.review-slider-wrap{
-  position:relative;
-  overflow:hidden;           /* ðŸ‘ˆ gap hide */
-}
-
-/* ===== Track ===== */
-.review-track{
-  display:flex;
-  transition:transform 0.6s ease;
-}
-
-/* ===== Card ===== */
-.review-item{
-  flex:0 0 33.3333%;         /* ðŸ‘ˆ ek row me 3 cards */
-  padding:12px;
-  padding-bottom:50px;
-}
-.review-card{
-  height:100%;
-  background:#fff;
-padding: 14px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.08);
-}
-
-.review-quote{
-  width:36px;height:36px;border-radius:50%;
-  background:#d4af37;color:#000;
-  display:flex;align-items:center;justify-content:center;
-  font-weight:700;margin-bottom:10px;
-}
-
-.review-text{color:#334155;line-height:1.6;font-size:15px;}
-
-.review-user{display:flex;align-items:center;gap:10px;margin-top:16px;}
-.review-avatar{
-  width:42px;height:42px;border-radius:50%;
-  background:#0f172a;color:#fff;
-  display:flex;align-items:center;justify-content:center;font-weight:600;
-}
-
-/* ===== Buttons ===== */
-.review-btn{
-  position:absolute;top:50%;transform:translateY(-50%);
-  width:44px;height:44px;border-radius:50%;
-  border:none;cursor:pointer;font-size:22px;font-weight:700;
-  background:#d4af37;color:#000;z-index:10;
-  box-shadow:0 6px 15px rgba(0,0,0,0.2);
-}
-.review-prev{left:-8px;
-display: none;}
-.review-next{right:-8px; display: none;}
-
-/* ===== Responsive ===== */
-@media (max-width: 900px){
-  .review-item{flex:0 0 50%;}   /* tablet: 2 cards */
-}
-@media (max-width: 520px){
-  .review-item{flex:0 0 100%;}  /* mobile: 1 card */
-}
-
-
-/*  */
-/* ===== COURSE HERO BANNER ===== */
-.course-hero{
-  position: relative;
-  padding: 20px 0 100px;
-  background: #060C1E;
-  color: #fff;
-  overflow: hidden;
-}
-
-/* Background glow pattern */
-.course-hero-bg{
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(circle at 20% 20%, rgba(212,175,55,0.18), transparent 40%),
-    radial-gradient(circle at 80% 30%, rgba(56,189,248,0.18), transparent 40%),
-    radial-gradient(circle at 50% 80%, rgba(99,102,241,0.18), transparent 40%);
-  z-index: 1;
-}
-
-.course-hero .container{
-  position: relative;
-  z-index: 2;
-}
-
-.course-hero-content{
-  text-align: center;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-/* Badge */
-.course-badge{
-  display: inline-block;
-  background: rgba(212,175,55,0.18);
-  color: #facc15;
-  padding: 8px 18px;
-  border-radius: 50px;
-  font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 16px;
-}
-
-/* Title */
-.course-hero-title{
-  font-size: 48px;
-  font-weight: 800;
-  line-height: 1.2;
-  margin-bottom: 14px;
-}
-
-.course-hero-title span{
-  color: #d4af37;
-}
-
-/* Description */
-.course-hero-desc{
-  max-width: 650px;
-  margin: 0 auto 30px;
-  font-size: 16px;
-  line-height: 1.7;
-  color: #cbd5f5;
-}
-
-/* Buttons */
-.course-hero-actions{
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.course-btn{
-  display: inline-block;
-  padding: 14px 28px;
-  border-radius: 12px;
-  font-weight: 700;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.course-btn.primary{
-  background: linear-gradient(135deg, #d4af37, #f1c40f);
-  color: #0f172a;
-}
-
-.course-btn.primary:hover{
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(212,175,55,0.4);
-}
-
-.course-btn.outline{
-  border: 2px solid #d4af37;
-  color: #facc15;
-  background: transparent;
-}
-
-.course-btn.outline:hover{
-  background: rgba(212,175,55,0.15);
-}
-
-/* ===== Responsive ===== */
-@media(max-width: 900px){
-  .course-hero{
-    padding: 70px 0 80px;
-  }
-
-  .course-hero-title{
-    font-size: 38px;
-  }
-}
-
-@media(max-width: 600px){
-  .course-hero{
-    padding: 20px 0 90px; /* extra bottom space so content never cuts */
-  }
-
-  .course-hero-title{
-    font-size: 28px;
-  }
-
-  .course-hero-desc{
-    font-size: 14px;
-  }
-
-  .course-badge{
-    font-size: 13px;
-    padding: 6px 14px;
-  }
-}
-/*  */
-/* ===== COMMON ===== */
-.container{
-  width:90%;
-  max-width:1200px;
-  margin:auto;
-}
-
-.cd-badge{
-  display:inline-block;
-  background: rgba(212,175,55,0.2);
-  color:#facc15;
-  padding:8px 18px;
-  border-radius:50px;
-  font-size:13px;
-  font-weight:600;
-  margin-bottom:12px;
-}
-
-.cd-badge.dark{
-  background:#e0f2fe;
-  color:#0284c7;
-}
-
-/* ===== SECTION 1 : OVERVIEW ===== */
-.cd-sec-one{
-  padding:20px 0;
-  background: linear-gradient(135deg, #0f172a, #020617);
-  color:#fff;
-}
-
-.cd-one-head{
-  text-align:center;
-  max-width:700px;
-  margin:0 auto 50px;
-}
-
-.cd-one-title{
-  font-size:40px;
-  font-weight:800;
-  margin-bottom:10px;
-}
-
-.cd-one-title span{
-  color:#d4af37;
-}
-
-.cd-one-sub{
-  color:#cbd5f5;
-  line-height:1.7;
-}
-
-.cd-one-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:24px;
-}
-
-.cd-one-card{
-  background: rgba(255,255,255,0.08);
-  border:1px solid rgba(255,255,255,0.15);
-  border-radius:20px;
-  padding:28px 22px;
-  text-align:center;
-  transition:0.4s;
-}
-
-.cd-one-card:hover{
-  transform:translateY(-8px);
-  box-shadow:0 20px 40px rgba(0,0,0,0.3);
-  border-color: rgba(212,175,55,0.6);
-}
-
-.cd-one-icon{
-  font-size:36px;
-  margin-bottom:12px;
-}
-
-.cd-one-card h3{
-  font-size:18px;
-  margin-bottom:8px;
-}
-
-.cd-one-card p{
-  font-size:14px;
-  color:#e5e7eb;
-  line-height:1.6;
-}
-
-/* ===== SECTION 2 : CURRICULUM ===== */
-.cd-sec-two{
-  padding:20px 0;
-  background:#f8fafc;
-  color:#0f172a;
-}
-
-.cd-two-head{
-  text-align:center;
-  max-width:700px;
-  margin:0 auto 50px;
-}
-
-.cd-two-title{
-  font-size:38px;
-  font-weight:800;
-  margin-bottom:10px;
-}
-
-.cd-two-title span{
-  color:#d4af37;
-}
-
-.cd-two-sub{
-  color:#475569;
-}
-
-.cd-two-grid{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:30px;
-  margin-bottom:60px;
-}
-
-.cd-step{
-  background:#fff;
-  border-radius:20px;
-  padding:28px 24px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.08);
-  position:relative;
-  transition:0.3s;
-}
-
-.cd-step:hover{
-  transform:translateY(-6px);
-  box-shadow:0 20px 40px rgba(0,0,0,0.12);
-}
-
-.cd-step-num{
-  position:absolute;
-  top:-16px;
-  right:20px;
-  background: linear-gradient(135deg, #d4af37, #f1c40f);
-  color:#0f172a;
-  font-weight:800;
-  padding:8px 14px;
-  border-radius:12px;
-}
-
-.cd-step h3{
-  font-size:18px;
-  margin-bottom:6px;
-}
-
-.cd-step p{
-  font-size:14px;
-  color:#475569;
-  line-height:1.6;
-}
-
-/* CTA */
-.cd-two-cta{
-  text-align:center;
-  background: linear-gradient(135deg, #0f172a, #020617);
-  color:#fff;
-  padding:20px 20px;
-  border-radius:24px;
-}
-
-.cd-two-cta h3{
-  font-size:28px;
-  margin-bottom:10px;
-}
-
-.cd-two-cta p{
-  color:#cbd5f5;
-  margin-bottom:20px;
-}
-
-.cd-cta-btn{
-  display:inline-block;
-  background: linear-gradient(135deg, #d4af37, #f1c40f);
-  color:#0f172a;
-  padding:14px 30px;
-  border-radius:12px;
-  font-weight:700;
-  text-decoration:none;
-  transition:0.3s;
-}
-
-.cd-cta-btn:hover{
-  transform:translateY(-2px);
-  box-shadow:0 10px 25px rgba(212,175,55,0.4);
-}
-
-/* ===== RESPONSIVE ===== */
-@media(max-width:900px){
-  .cd-one-grid{ grid-template-columns:repeat(2,1fr); }
-  .cd-two-grid{ grid-template-columns:1fr; }
-  .cd-one-title{ font-size:32px; }
-  .cd-two-title{ font-size:30px; }
-}
-
-@media(max-width:600px){
-  .cd-one-grid{ grid-template-columns:1fr; }
-  .cd-one-title{ font-size:26px; }
-  .cd-two-title{ font-size:24px; }
-  .cd-two-cta h3{ font-size:22px; }
-}
-/*  */
-/* ===== SECTION WRAP ===== */
-.cf-section{
-  padding: 20px 0;
-  background: linear-gradient(135deg, #f8fafc, #eef2ff);
-}
-
-.container{
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-}
-
-/* GRID */
-.cf-grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: stretch;
-}
-
-/* ===== IMAGE SIDE ===== */
-.cf-image-box{
-  position: relative;
-  border-radius: 24px;
-  overflow: hidden;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
-}
-
-.cf-image-box img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.cf-image-overlay{
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(15,23,42,0.2), rgba(15,23,42,0.8));
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 30px;
-}
-
-.cf-image-overlay h3{
-  font-size: 28px;
-  margin-bottom: 8px;
-}
-
-.cf-image-overlay p{
-  color: #e5e7eb;
-  line-height: 1.6;
-}
-
-/* ===== FORM SIDE ===== */
-.cf-form-box{
-  background: #fff;
-  border-radius: 24px;
-  padding: 32px;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.1);
-}
-
-.cf-badge{
-  display: inline-block;
-  background: #e0f2fe;
-  color: #0284c7;
-  padding: 6px 14px;
-  border-radius: 50px;
-  font-size: 13px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.cf-title{
-  font-size: 32px;
-  font-weight: 800;
-  margin-bottom: 10px;
-  color: #0f172a;
-}
-
-.cf-title span{
-  color: #d4af37;
-}
-
-.cf-desc{
-  color: #475569;
-  margin-bottom: 24px;
-}
-
-/* FORM GRID */
-.cf-form-grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 18px;
-}
-
-.cf-field label{
-  display: block;
-  font-size: 13px;
-  font-weight: 600;
-  margin-bottom: 6px;
-  color: #334155;
-}
-
-.cf-field input,
-.cf-field select,
-.cf-field textarea{
-  width: 100%;
-  padding: 12px 14px;
-  border-radius: 12px;
-  border: 1px solid #e2e8f0;
-  background: #f8fafc;
-  font-size: 14px;
-  outline: none;
-  transition: 0.3s;
-}
-
-.cf-field input:focus,
-.cf-field select:focus,
-.cf-field textarea:focus{
-  border-color: #d4af37;
-  box-shadow: 0 0 0 3px rgba(212,175,55,0.15);
-}
-
-.cf-full{
-  grid-column: span 2;
-}
-
-/* BUTTON */
-.cf-btn{
-  margin-top: 24px;
-  width: 100%;
-  border: none;
-  background: linear-gradient(135deg, #d4af37, #f1c40f);
-  color: #0f172a;
-  font-size: 16px;
-  font-weight: 700;
-  padding: 14px;
-  border-radius: 14px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.cf-btn:hover{
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(212,175,55,0.4);
-}
-
-/* ===== RESPONSIVE ===== */
-@media(max-width: 900px){
-  .cf-grid{
-    grid-template-columns: 1fr;
-  }
-}
-
-@media(max-width: 600px){
-  .cf-title{
-    font-size: 24px;
-  }
-
-  .cf-form-grid{
-    grid-template-columns: 1fr;
-  }
-
-  .cf-full{
-    grid-column: span 1;
-  }
-}
-/*  */
-    </style>
+
+    /* ===== Slider Wrap ===== */
+    .review-slider-wrap {
+      position: relative;
+      overflow: hidden;
+      /* ðŸ‘ˆ gap hide */
+    }
+
+    /* ===== Track ===== */
+    .review-track {
+      display: flex;
+      transition: transform 0.6s ease;
+    }
+
+    /* ===== Card ===== */
+    .review-item {
+      flex: 0 0 33.3333%;
+      /* ðŸ‘ˆ ek row me 3 cards */
+      padding: 12px;
+      padding-bottom: 50px;
+    }
+
+    .review-card {
+      height: 100%;
+      background: #fff;
+      padding: 14px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .review-quote {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #d4af37;
+      color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .review-text {
+      color: #334155;
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    .review-user {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .review-avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: #0f172a;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+    }
+
+    /* ===== Buttons ===== */
+    .review-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      font-size: 22px;
+      font-weight: 700;
+      background: #d4af37;
+      color: #000;
+      z-index: 10;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .review-prev {
+      left: -8px;
+      display: none;
+    }
+
+    .review-next {
+      right: -8px;
+      display: none;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 900px) {
+      .review-item {
+        flex: 0 0 50%;
+      }
+
+      /* tablet: 2 cards */
+    }
+
+    @media (max-width: 520px) {
+      .review-item {
+        flex: 0 0 100%;
+      }
+
+      /* mobile: 1 card */
+    }
+
+
+    /*  */
+    /* ===== COURSE HERO BANNER ===== */
+    .course-hero {
+      position: relative;
+      padding: 20px 0 100px;
+      background: #060C1E;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    /* Background glow pattern */
+    .course-hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(212, 175, 55, 0.18), transparent 40%),
+        radial-gradient(circle at 80% 30%, rgba(56, 189, 248, 0.18), transparent 40%),
+        radial-gradient(circle at 50% 80%, rgba(99, 102, 241, 0.18), transparent 40%);
+      z-index: 1;
+    }
+
+    .course-hero .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .course-hero-content {
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Badge */
+    .course-badge {
+      display: inline-block;
+      background: rgba(212, 175, 55, 0.18);
+      color: #facc15;
+      padding: 8px 18px;
+      border-radius: 50px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    /* Title */
+    .course-hero-title {
+      font-size: 48px;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+
+    .course-hero-title span {
+      color: #d4af37;
+    }
+
+    /* Description */
+    .course-hero-desc {
+      max-width: 650px;
+      margin: 0 auto 30px;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #cbd5f5;
+    }
+
+    /* Buttons */
+    .course-hero-actions {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .course-btn {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .course-btn.primary {
+      background: linear-gradient(135deg, #d4af37, #f1c40f);
+      color: #0f172a;
+    }
+
+    .course-btn.primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(212, 175, 55, 0.4);
+    }
+
+    .course-btn.outline {
+      border: 2px solid #d4af37;
+      color: #facc15;
+      background: transparent;
+    }
+
+    .course-btn.outline:hover {
+      background: rgba(212, 175, 55, 0.15);
+    }
+
+    /* ===== Responsive ===== */
+    @media(max-width: 900px) {
+      .course-hero {
+        padding: 70px 0 80px;
+      }
+
+      .course-hero-title {
+        font-size: 38px;
+      }
+    }
+
+    @media(max-width: 600px) {
+      .course-hero {
+        padding: 20px 0 90px;
+        /* extra bottom space so content never cuts */
+      }
+
+      .course-hero-title {
+        font-size: 28px;
+      }
+
+      .course-hero-desc {
+        font-size: 14px;
+      }
+
+      .course-badge {
+        font-size: 13px;
+        padding: 6px 14px;
+      }
+    }
+
+    /*  */
+    /* ===== COMMON ===== */
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .cd-badge {
+      display: inline-block;
+      background: rgba(212, 175, 55, 0.2);
+      color: #facc15;
+      padding: 8px 18px;
+      border-radius: 50px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .cd-badge.dark {
+      background: #e0f2fe;
+      color: #0284c7;
+    }
+
+    /* ===== SECTION 1 : OVERVIEW ===== */
+    .cd-sec-one {
+      padding: 20px 0;
+      background: linear-gradient(135deg, #0f172a, #020617);
+      color: #fff;
+    }
+
+    .cd-one-head {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 50px;
+    }
+
+    .cd-one-title {
+      font-size: 40px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .cd-one-title span {
+      color: #d4af37;
+    }
+
+    .cd-one-sub {
+      color: #cbd5f5;
+      line-height: 1.7;
+    }
+
+    .cd-one-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .cd-one-card {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      padding: 28px 22px;
+      text-align: center;
+      transition: 0.4s;
+    }
+
+    .cd-one-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      border-color: rgba(212, 175, 55, 0.6);
+    }
+
+    .cd-one-icon {
+      font-size: 36px;
+      margin-bottom: 12px;
+    }
+
+    .cd-one-card h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .cd-one-card p {
+      font-size: 14px;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    /* ===== SECTION 2 : CURRICULUM ===== */
+    .cd-sec-two {
+      padding: 20px 0;
+      background: #f8fafc;
+      color: #0f172a;
+    }
+
+    .cd-two-head {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 50px;
+    }
+
+    .cd-two-title {
+      font-size: 38px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .cd-two-title span {
+      color: #d4af37;
+    }
+
+    .cd-two-sub {
+      color: #475569;
+    }
+
+    .cd-two-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      margin-bottom: 60px;
+    }
+
+    .cd-step {
+      background: #fff;
+      border-radius: 20px;
+      padding: 28px 24px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      position: relative;
+      transition: 0.3s;
+    }
+
+    .cd-step:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    }
+
+    .cd-step-num {
+      position: absolute;
+      top: -16px;
+      right: 20px;
+      background: linear-gradient(135deg, #d4af37, #f1c40f);
+      color: #0f172a;
+      font-weight: 800;
+      padding: 8px 14px;
+      border-radius: 12px;
+    }
+
+    .cd-step h3 {
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
+
+    .cd-step p {
+      font-size: 14px;
+      color: #475569;
+      line-height: 1.6;
+    }
+
+    /* CTA */
+    .cd-two-cta {
+      text-align: center;
+      background: linear-gradient(135deg, #0f172a, #020617);
+      color: #fff;
+      padding: 20px 20px;
+      border-radius: 24px;
+    }
+
+    .cd-two-cta h3 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .cd-two-cta p {
+      color: #cbd5f5;
+      margin-bottom: 20px;
+    }
+
+    .cd-cta-btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #d4af37, #f1c40f);
+      color: #0f172a;
+      padding: 14px 30px;
+      border-radius: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .cd-cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(212, 175, 55, 0.4);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media(max-width:900px) {
+      .cd-one-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .cd-two-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cd-one-title {
+        font-size: 32px;
+      }
+
+      .cd-two-title {
+        font-size: 30px;
+      }
+    }
+
+    @media(max-width:600px) {
+      .cd-one-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cd-one-title {
+        font-size: 26px;
+      }
+
+      .cd-two-title {
+        font-size: 24px;
+      }
+
+      .cd-two-cta h3 {
+        font-size: 22px;
+      }
+    }
+
+    /*  */
+    /* ===== SECTION WRAP ===== */
+    .cf-section {
+      padding: 20px 0;
+      background: linear-gradient(135deg, #f8fafc, #eef2ff);
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* GRID */
+    .cf-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: stretch;
+    }
+
+    /* ===== IMAGE SIDE ===== */
+    .cf-image-box {
+      position: relative;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    }
+
+    .cf-image-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .cf-image-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(15, 23, 42, 0.2), rgba(15, 23, 42, 0.8));
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 30px;
+    }
+
+    .cf-image-overlay h3 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    .cf-image-overlay p {
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    /* ===== FORM SIDE ===== */
+    .cf-form-box {
+      background: #fff;
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+    }
+
+    .cf-badge {
+      display: inline-block;
+      background: #e0f2fe;
+      color: #0284c7;
+      padding: 6px 14px;
+      border-radius: 50px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .cf-title {
+      font-size: 32px;
+      font-weight: 800;
+      margin-bottom: 10px;
+      color: #0f172a;
+    }
+
+    .cf-title span {
+      color: #d4af37;
+    }
+
+    .cf-desc {
+      color: #475569;
+      margin-bottom: 24px;
+    }
+
+    /* FORM GRID */
+    .cf-form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .cf-field label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #334155;
+    }
+
+    .cf-field input,
+    .cf-field select,
+    .cf-field textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: 1px solid #e2e8f0;
+      background: #f8fafc;
+      font-size: 14px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    .cf-field input:focus,
+    .cf-field select:focus,
+    .cf-field textarea:focus {
+      border-color: #d4af37;
+      box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15);
+    }
+
+    .cf-full {
+      grid-column: span 2;
+    }
+
+    /* BUTTON */
+    .cf-btn {
+      margin-top: 24px;
+      width: 100%;
+      border: none;
+      background: linear-gradient(135deg, #d4af37, #f1c40f);
+      color: #0f172a;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 14px;
+      border-radius: 14px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .cf-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(212, 175, 55, 0.4);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media(max-width: 900px) {
+      .cf-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media(max-width: 600px) {
+      .cf-title {
+        font-size: 24px;
+      }
+
+      .cf-form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cf-full {
+        grid-column: span 1;
+      }
+    }
+
+    /*  */
+  </style>
 </head>
 
 <body>
-    <!-- Top Bar -->
-    <!-- Top Bar -->
-    <div class="top-bar">
-        <div class="container">
-            <div class="top-bar-content">
-                <div class="top-bar-left">
-                    <div class="top-bar-item">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <path
-                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                        </svg>
-                        <span>+91 98765 43210</span>
-                    </div>
-                    <div class="top-bar-item">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                            <polyline points="22,6 12,13 2,6" />
-                        </svg>
-                        <span>info@sapnaconsulting.com</span>
-                    </div>
-                </div>
-                <div class="top-bar-right">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                        <circle cx="12" cy="10" r="3" />
-                    </svg>
-                    <span>Bhopal, Madhya Pradesh </span>
-                </div>
+  <!-- Top Bar -->
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-content">
+        <div class="top-bar-left">
+          <div class="top-bar-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            <span>+91 9302613229</span>
+          </div>
+          <div class="top-bar-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            <span>info@sapnaconsulting.com</span>
+          </div>
+        </div>
+        <div class="top-bar-right">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+          <span>Bhopal, Madhya Pradesh </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-content" style="display: flex; align-items: center; justify-content: space-between;">
+        <a href="index.html" class="logo">
+          <img src="images/logo.png" alt="SAPNA Logo" class="logo-img">
+          <div class="logo-text">
+            <h1>Sapna Consulting Point</h1>
+            <p>Since 1985</p>
+          </div>
+        </a>
+        <button class="hamburger-toggle" id="hamburgerBtn" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="courses.html" class="nav-link">Services</a>
+          <a href="gallery.html" class="nav-link">Gallery</a>
+          <a href="faq.html" class="nav-link">FAQ's</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="#" class="btn-enquire btn-gold">Enquire Now</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--  -->
+  <section class="course-hero">
+    <div class="course-hero-bg"></div>
+
+    <div class="container">
+      <div class="course-hero-content">
+        <span class="course-badge">Our Courses</span>
+
+        <h1 class="course-hero-title">
+          Master Your <span>English Skills</span>
+        </h1>
+
+        <p class="course-hero-desc">
+          Explore our detailed courses designed to improve your communication, confidence, and career opportunities with
+          practical learning.
+        </p>
+
+
+      </div>
+    </div>
+  </section>
+  <!--  -->
+
+  <!--  -->
+  <section class="cd-sec-two">
+    <div class="container">
+      <div class="cd-two-head">
+        <span class="cd-badge dark">Learning Path</span>
+        <h2 class="cd-two-title">What You Will <span>Learn</span></h2>
+        <p class="cd-two-sub">
+          Step-by-step modules designed to take you from beginner to confident English speaker.
+        </p>
+      </div>
+
+      <div class="cd-two-grid">
+        <div class="cd-step">
+          <span class="cd-step-num">01</span>
+          <h3>Basics & Foundation</h3>
+          <p>Grammar basics, sentence formation, and pronunciation.</p>
+        </div>
+
+        <div class="cd-step">
+          <span class="cd-step-num">02</span>
+          <h3>Daily Conversation</h3>
+          <p>Real-life speaking practice and vocabulary building.</p>
+        </div>
+
+        <div class="cd-step">
+          <span class="cd-step-num">03</span>
+          <h3>Professional English</h3>
+          <p>Office communication, emails, and presentations.</p>
+        </div>
+
+        <div class="cd-step">
+          <span class="cd-step-num">04</span>
+          <h3>Interview & Personality</h3>
+          <p>Mock interviews, confidence building, soft skills.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!--  -->
+  <section class="cd-sec-one">
+    <div class="container">
+      <div class="cd-one-head">
+        <span class="cd-badge">Course Overview</span>
+        <h2 class="cd-one-title">Student Counseling <span>Mastery Program</span></h2>
+        <p class="cd-one-sub">
+          A practical and job-focused course to improve your fluency, confidence, and real-life communication skills.
+        </p>
+      </div>
+
+      <div class="cd-one-grid">
+        <div class="cd-one-card">
+          <div class="cd-one-icon">ðŸŽ¯</div>
+          <h3>Goal Oriented</h3>
+          <p>Focus on interviews, presentations, and daily communication.</p>
+        </div>
+
+        <div class="cd-one-card">
+          <div class="cd-one-icon">ðŸ—£ï¸</div>
+          <h3>Daily Speaking</h3>
+          <p>Regular practice sessions to remove hesitation and fear.</p>
+        </div>
+
+        <div class="cd-one-card">
+          <div class="cd-one-icon">ðŸ‘¨â€ðŸ«</div>
+          <h3>Expert Trainers</h3>
+          <p>Learn from experienced trainers with proven methods.</p>
+        </div>
+
+        <div class="cd-one-card">
+          <div class="cd-one-icon">ðŸ’¼</div>
+          <h3>Career Focused</h3>
+          <p>Interview prep, Depression Counseling & office English.</p>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  <!-- / -->
+  <section class="cf-section">
+    <div class="container cf-grid">
+
+      <!-- LEFT : IMAGE -->
+      <div class="cf-image-box">
+        <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=1200&auto=format&fit=crop"
+          alt="Course Image">
+        <div class="cf-image-overlay">
+          <h3>Join Our Student Counseling Course</h3>
+          <p>Boost your confidence, communication & career growth with expert guidance.</p>
+        </div>
+      </div>
+
+      <!-- RIGHT : FORM -->
+      <div class="cf-form-box">
+        <span class="cf-badge">Enquiry Form</span>
+        <h2 class="cf-title">Get <span>Free</span> / Demo Class</h2>
+        <p class="cf-desc">
+          Fill the form and our team will contact you shortly with course details.
+        </p>
+
+        <form>
+          <div class="cf-form-grid">
+            <div class="cf-field">
+              <label>Full Name</label>
+              <input type="text" placeholder="Enter your name">
             </div>
-        </div>
-    </div>
 
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="navbar-content" style="display: flex; align-items: center; justify-content: space-between;">
-                <a href="index.html" class="logo">
-                    <img src="images/logo.png" alt="SAPNA Logo" class="logo-img">
-                    <div class="logo-text">
-                        <h1>Sapna Consulting Point</h1>
-                        <p>Since 1985</p>
-                    </div>
-                </a>
-                <button class="hamburger-toggle" id="hamburgerBtn" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-                <div class="nav-links" id="navLinks">
-                    <a href="index.html" class="nav-link">Home</a>
-                    <a href="about.html" class="nav-link">About</a>
-                    <a href="courses.html" class="nav-link">Services</a>
-                    <a href="gallery.html" class="nav-link">Gallery</a>
-                    <a href="faq.html" class="nav-link">FAQ's</a>
-                    <a href="contact.html" class="nav-link">Contact</a>
-                    <a href="#" class="btn-enquire btn-gold">Enquire Now</a>
-                </div>
+            <div class="cf-field">
+              <label>Phone Number</label>
+              <input type="tel" placeholder="Enter your mobile number">
             </div>
-        </div>
-    </nav>
- <!--  -->
-    <section class="course-hero">
-  <div class="course-hero-bg"></div>
 
-  <div class="container">
-    <div class="course-hero-content">
-      <span class="course-badge">Our Courses</span>
+            <div class="cf-field">
+              <label>Email Address</label>
+              <input type="email" placeholder="Enter your email">
+            </div>
 
-      <h1 class="course-hero-title">
-        Master Your <span>English Skills</span>
-      </h1>
+            <div class="cf-field">
+              <label>Select Course</label>
+              <select>
+                <option>Student Counseling</option>
+                <option>Mental Health Assessment</option>
+                <option>Parent Counseling</option>
+                <option>Depression Counseling</option>
+              </select>
+            </div>
 
-      <p class="course-hero-desc">
-        Explore our detailed courses designed to improve your communication, confidence, and career opportunities with practical learning.
-      </p>
-
-    
-    </div>
-  </div>
-</section>
-    <!--  -->
-
-<!--  -->
-<section class="cd-sec-two">
-  <div class="container">
-    <div class="cd-two-head">
-      <span class="cd-badge dark">Learning Path</span>
-      <h2 class="cd-two-title">What You Will <span>Learn</span></h2>
-      <p class="cd-two-sub">
-        Step-by-step modules designed to take you from beginner to confident English speaker.
-      </p>
-    </div>
-
-    <div class="cd-two-grid">
-      <div class="cd-step">
-        <span class="cd-step-num">01</span>
-        <h3>Basics & Foundation</h3>
-        <p>Grammar basics, sentence formation, and pronunciation.</p>
-      </div>
-
-      <div class="cd-step">
-        <span class="cd-step-num">02</span>
-        <h3>Daily Conversation</h3>
-        <p>Real-life speaking practice and vocabulary building.</p>
-      </div>
-
-      <div class="cd-step">
-        <span class="cd-step-num">03</span>
-        <h3>Professional English</h3>
-        <p>Office communication, emails, and presentations.</p>
-      </div>
-
-      <div class="cd-step">
-        <span class="cd-step-num">04</span>
-        <h3>Interview & Personality</h3>
-        <p>Mock interviews, confidence building, soft skills.</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-<!--  -->
-<section class="cd-sec-one">
-  <div class="container">
-    <div class="cd-one-head">
-      <span class="cd-badge">Course Overview</span>
-      <h2 class="cd-one-title">Student Counseling <span>Mastery Program</span></h2>
-      <p class="cd-one-sub">
-        A practical and job-focused course to improve your fluency, confidence, and real-life communication skills.
-      </p>
-    </div>
-
-    <div class="cd-one-grid">
-      <div class="cd-one-card">
-        <div class="cd-one-icon">ðŸŽ¯</div>
-        <h3>Goal Oriented</h3>
-        <p>Focus on interviews, presentations, and daily communication.</p>
-      </div>
-
-      <div class="cd-one-card">
-        <div class="cd-one-icon">ðŸ—£ï¸</div>
-        <h3>Daily Speaking</h3>
-        <p>Regular practice sessions to remove hesitation and fear.</p>
-      </div>
-
-      <div class="cd-one-card">
-        <div class="cd-one-icon">ðŸ‘¨â€ðŸ«</div>
-        <h3>Expert Trainers</h3>
-        <p>Learn from experienced trainers with proven methods.</p>
-      </div>
-
-      <div class="cd-one-card">
-        <div class="cd-one-icon">ðŸ’¼</div>
-        <h3>Career Focused</h3>
-        <p>Interview prep, Depression Counseling & office English.</p>
-      </div>
-    </div>
-  </div>
-  
-
-</section>
-<!-- / -->
- <section class="cf-section">
-  <div class="container cf-grid">
-
-    <!-- LEFT : IMAGE -->
-    <div class="cf-image-box">
-      <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=1200&auto=format&fit=crop" alt="Course Image">
-      <div class="cf-image-overlay">
-        <h3>Join Our Student Counseling Course</h3>
-        <p>Boost your confidence, communication & career growth with expert guidance.</p>
-      </div>
-    </div>
-
-    <!-- RIGHT : FORM -->
-    <div class="cf-form-box">
-      <span class="cf-badge">Enquiry Form</span>
-      <h2 class="cf-title">Get <span>Free</span> / Demo Class</h2>
-      <p class="cf-desc">
-        Fill the form and our team will contact you shortly with course details.
-      </p>
-
-      <form>
-        <div class="cf-form-grid">
-          <div class="cf-field">
-            <label>Full Name</label>
-            <input type="text" placeholder="Enter your name">
+            <div class="cf-field cf-full">
+              <label>Your Message</label>
+              <textarea rows="4" placeholder="Write your message..."></textarea>
+            </div>
           </div>
 
-          <div class="cf-field">
-            <label>Phone Number</label>
-            <input type="tel" placeholder="Enter your mobile number">
-          </div>
+          <button type="submit" class="cf-btn">Submit Enquiry</button>
+        </form>
+      </div>
 
-          <div class="cf-field">
-            <label>Email Address</label>
-            <input type="email" placeholder="Enter your email">
-          </div>
-
-          <div class="cf-field">
-            <label>Select Course</label>
-            <select>
-              <option>Student Counseling</option>
-              <option>Mental Health Assessment</option>
-              <option>Parent Counseling</option>
-              <option>Depression Counseling</option>
-            </select>
-          </div>
-
-          <div class="cf-field cf-full">
-            <label>Your Message</label>
-            <textarea rows="4" placeholder="Write your message..."></textarea>
-          </div>
-        </div>
-
-        <button type="submit" class="cf-btn">Submit Enquiry</button>
-      </form>
     </div>
-
-  </div>
-</section>
- <!--  -->
-    <!-- Footer -->
-      <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-about">
-                    <div class="footer-logo">
-                        <img src="images\logo.png" alt="SAPNA Logo" class="logo-img">
-                    </div>
-                    <p>Since 1985, Sapna Consulting Point has been providing quality English education and career
-                        guidance to thousands of students across India.</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link" aria-label="Facebook">
-                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
-                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7
+  </section>
+  <!--  -->
+  <!-- Footer -->
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="footer-logo">
+            <img src="images\logo.png" alt="SAPNA Logo" class="logo-img">
+          </div>
+          <p>Since 1985, Sapna Consulting Point has been providing quality English education and career
+            guidance to thousands of students across India.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7
                  a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round" />
-                            </svg>
-                        </a>
+              </svg>
+            </a>
 
-                        <a href="#" class="social-link" aria-label="Instagram">
-                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
-                                <rect x="2" y="2" width="20" height="20" rx="6" ry="6" stroke="currentColor"
-                                    stroke-width="2" />
-                                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" />
-                                <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" />
-                            </svg>
-                        </a>
-                        <a href="#" class="social-link" aria-label="YouTube">
-                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
-                                <rect x="2" y="5" width="20" height="14" rx="4" stroke="currentColor"
-                                    stroke-width="2" />
-                                <polygon points="10 9 16 12 10 15" fill="currentColor" />
-                            </svg>
-                        </a>
-                        <a href="#" class="social-link" aria-label="Twitter">
-                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
-                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+                <rect x="2" y="2" width="20" height="20" rx="6" ry="6" stroke="currentColor" stroke-width="2" />
+                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" />
+                <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" />
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+                <rect x="2" y="5" width="20" height="14" rx="4" stroke="currentColor" stroke-width="2" />
+                <polygon points="10 9 16 12 10 15" fill="currentColor" />
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53
                  4.48 4.48 0 0 0-7.86 3v1
                  A10.66 10.66 0 0 1 3 4
                  s-4 9 5 13
@@ -1047,187 +1229,184 @@ display: none;}
                  c9 5 20 0 20-11.5
                  a4.5 4.5 0 0 0-.08-.83
                  A7.72 7.72 0 0 0 23 3z" stroke="currentColor" stroke-width="2" fill="none" />
-                            </svg>
-                        </a>
+              </svg>
+            </a>
 
 
-                    </div>
-                </div>
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="courses.html">Services</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h3>Our Courses</h3>
-                    <ul>
-                        <li><a href="courses.html">Student Counseling</a></li>
-                        <li><a href="courses.html">Parent Counseling</a></li>
-                        <li><a href="courses.html">Mental Health Assessment</a></li>
-                        <li><a href="courses.html">Depression Counseling</a></li>
-                        <li><a href="courses.html">Public Speaking</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h3>Contact Us</h3>
-
-                    <!-- Location -->
-                    <div class="contact-item">
-                        <a href="https://www.google.com/maps?q=795X+FHW,+Sarafa+chowk,+Lakherapura,+Peer+Gate+Area,+Bhopal,+Madhya+Pradesh+462001,+India"
-                            target="_blank">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                                <circle cx="12" cy="10" r="3" />
-                            </svg>
-                            <span>
-                                795X+FHW, Sarafa chowk, Lakherapura, Peer Gate Area,<br>
-                                Bhopal, Madhya Pradesh 462001, India
-                            </span>
-                        </a>
-                    </div>
-
-                    <!-- Phone -->
-                    <div class="contact-item">
-                        <a href="tel:+919876543210">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path
-                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                            </svg>
-                            <span>+91 9302613229</span>
-                        </a>
-                    </div>
-
-                    <!-- Email -->
-                    <div class="contact-item">
-                        <a href="mailto:info@sapnaconsulting.com">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                                <polyline points="22,6 12,13 2,6" />
-                            </svg>
-                            <span>praveenkumar 091963@gmail.com</span>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-            <div class="footer-bottom">
-                <p>
-                    Â© 2026 Sapna Consulting Point. All rights reserved.
-                    <span class="powered-by">
-                        |Managed by
-                        <a href="https://www.acttconnect.com/" target="_blank" rel="noopener">
-                            Act T Connect
-                        </a>
-                    </span>
-                </p>
-            </div>
-
+          </div>
         </div>
-    </footer>
-
-    <script src="js\script.js"></script>
-<script>
-const track = document.getElementById("reviewTrack");
-let items = Array.from(document.querySelectorAll(".review-item"));
-
-const prevBtn = document.querySelector(".review-prev");
-const nextBtn = document.querySelector(".review-next");
-
-// How many cards visible depends on screen, but step = 1 card
-function getItemWidth(){
-  return items[0].getBoundingClientRect().width;
-}
-
-// Clone first & last few for infinite loop (clone 3 for safety)
-const cloneCount = 3;
-const firstClones = items.slice(0, cloneCount).map(n => n.cloneNode(true));
-const lastClones  = items.slice(-cloneCount).map(n => n.cloneNode(true));
-
-firstClones.forEach(cl => track.appendChild(cl));
-lastClones.forEach(cl => track.insertBefore(cl, track.firstChild));
-
-// Re-collect
-items = Array.from(document.querySelectorAll(".review-item"));
-
-let index = cloneCount; // start after leading clones
-let itemWidth = getItemWidth();
-
-function updatePosition(animate=true){
-  if(animate) track.style.transition = "transform 0.6s ease";
-  else track.style.transition = "none";
-  track.style.transform = `translateX(-${index * itemWidth}px)`;
-}
-
-// Initial position
-updatePosition(false);
-
-window.addEventListener("resize", ()=>{
-  itemWidth = getItemWidth();
-  updatePosition(false);
-});
-
-nextBtn.addEventListener("click", ()=>{
-  index += 1;
-  updatePosition(true);
-});
-
-prevBtn.addEventListener("click", ()=>{
-  index -= 1;
-  updatePosition(true);
-});
-
-track.addEventListener("transitionend", ()=>{
-  // If moved into clones, jump back to real items (no animation)
-  if(index >= items.length - cloneCount){
-    index = cloneCount;
-    updatePosition(false);
-  }
-  if(index < cloneCount){
-    index = items.length - cloneCount*2;
-    updatePosition(false);
-  }
-});
-
-// Auto slide (slow)
-setInterval(()=>{
-  index += 1;
-  updatePosition(true);
-}, 3500);
-</script>
-    <!-- Enquire Modal Popup -->
-    <div id="enquireModal" class="enquire-modal-overlay">
-        <div class="enquire-modal-card">
-            <button class="enquire-modal-close" id="closeEnquireModal">&times;</button>
-            <h2>Start Your Journey</h2>
-            <p class="enquire-modal-subtitle">Fill the form and we'll contact you shortly</p>
-            <form id="enquireModalForm">
-                <div class="modal-form-group">
-                    <input type="text" placeholder="Your Full Name" required>
-                </div>
-                <div class="modal-form-group">
-                    <input type="tel" placeholder="Your Phone Number" required>
-                </div>
-                <div class="modal-form-group">
-                    <input type="email" placeholder="Your Email Address" required>
-                </div>
-                <div class="modal-form-group">
-                    <textarea rows="3" placeholder="Your Message" required></textarea>
-                </div>
-                <button type="submit" class="btn-modal-submit">Send Enquiry</button>
-            </form>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="courses.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
+        <div class="footer-links">
+          <h3>Our Courses</h3>
+          <ul>
+            <li><a href="courses.html">Student Counseling</a></li>
+            <li><a href="courses.html">Parent Counseling</a></li>
+            <li><a href="courses.html">Mental Health Assessment</a></li>
+            <li><a href="courses.html">Depression Counseling</a></li>
+            <li><a href="courses.html">Public Speaking</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+
+          <!-- Location -->
+          <div class="contact-item">
+            <a href="https://www.google.com/maps?q=795X+FHW,+Sarafa+chowk,+Lakherapura,+Peer+Gate+Area,+Bhopal,+Madhya+Pradesh+462001,+India"
+              target="_blank">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <span>
+                795X+FHW, Sarafa chowk, Lakherapura, Peer Gate Area,<br>
+                Bhopal, Madhya Pradesh 462001, India
+              </span>
+            </a>
+          </div>
+
+          <!-- Phone -->
+          <div class="contact-item">
+            <a href="tel:+919876543210">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              <span>+91 9302613229</span>
+            </a>
+          </div>
+
+          <!-- Email -->
+          <div class="contact-item">
+            <a href="mailto:info@sapnaconsulting.com">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              <span>praveenkumar 091963@gmail.com</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+      <div class="footer-bottom">
+        <p>
+          Â© 2026 Sapna Consulting Point. All rights reserved.
+          <span class="powered-by">
+            |Managed by
+            <a href="https://www.acttconnect.com/" target="_blank" rel="noopener">
+              Act T Connect
+            </a>
+          </span>
+        </p>
+      </div>
+
     </div>
+  </footer>
 
-<script>
-  function initEnquireModal() {
+  <script src="js\script.js"></script>
+  <script>
+    const track = document.getElementById("reviewTrack");
+    let items = Array.from(document.querySelectorAll(".review-item"));
+
+    const prevBtn = document.querySelector(".review-prev");
+    const nextBtn = document.querySelector(".review-next");
+
+    // How many cards visible depends on screen, but step = 1 card
+    function getItemWidth() {
+      return items[0].getBoundingClientRect().width;
+    }
+
+    // Clone first & last few for infinite loop (clone 3 for safety)
+    const cloneCount = 3;
+    const firstClones = items.slice(0, cloneCount).map(n => n.cloneNode(true));
+    const lastClones = items.slice(-cloneCount).map(n => n.cloneNode(true));
+
+    firstClones.forEach(cl => track.appendChild(cl));
+    lastClones.forEach(cl => track.insertBefore(cl, track.firstChild));
+
+    // Re-collect
+    items = Array.from(document.querySelectorAll(".review-item"));
+
+    let index = cloneCount; // start after leading clones
+    let itemWidth = getItemWidth();
+
+    function updatePosition(animate = true) {
+      if (animate) track.style.transition = "transform 0.6s ease";
+      else track.style.transition = "none";
+      track.style.transform = `translateX(-${index * itemWidth}px)`;
+    }
+
+    // Initial position
+    updatePosition(false);
+
+    window.addEventListener("resize", () => {
+      itemWidth = getItemWidth();
+      updatePosition(false);
+    });
+
+    nextBtn.addEventListener("click", () => {
+      index += 1;
+      updatePosition(true);
+    });
+
+    prevBtn.addEventListener("click", () => {
+      index -= 1;
+      updatePosition(true);
+    });
+
+    track.addEventListener("transitionend", () => {
+      // If moved into clones, jump back to real items (no animation)
+      if (index >= items.length - cloneCount) {
+        index = cloneCount;
+        updatePosition(false);
+      }
+      if (index < cloneCount) {
+        index = items.length - cloneCount * 2;
+        updatePosition(false);
+      }
+    });
+
+    // Auto slide (slow)
+    setInterval(() => {
+      index += 1;
+      updatePosition(true);
+    }, 3500);
+  </script>
+  <!-- Enquire Modal Popup -->
+  <div id="enquireModal" class="enquire-modal-overlay">
+    <div class="enquire-modal-card">
+      <button class="enquire-modal-close" id="closeEnquireModal">&times;</button>
+      <h2>Start Your Journey</h2>
+      <p class="enquire-modal-subtitle">Fill the form and we'll contact you shortly</p>
+      <form id="enquireModalForm">
+        <div class="modal-form-group">
+          <input type="text" placeholder="Your Full Name" required>
+        </div>
+        <div class="modal-form-group">
+          <input type="tel" placeholder="Your Phone Number" required>
+        </div>
+        <div class="modal-form-group">
+          <input type="email" placeholder="Your Email Address" required>
+        </div>
+        <div class="modal-form-group">
+          <textarea rows="3" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn-modal-submit">Send Enquiry</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function initEnquireModal() {
       const modal = document.getElementById('enquireModal');
       const closeBtn = document.getElementById('closeEnquireModal');
       const enquireBtns = document.querySelectorAll('.btn-enquire');
@@ -1236,75 +1415,75 @@ setInterval(()=>{
       if (!modal) return;
 
       enquireBtns.forEach(btn => {
-          btn.addEventListener('click', (e) => {
-              e.preventDefault();
-              modal.classList.add('active');
-          });
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          modal.classList.add('active');
+        });
       });
 
       if (closeBtn) {
-          closeBtn.addEventListener('click', () => {
-              modal.classList.remove('active');
-          });
+        closeBtn.addEventListener('click', () => {
+          modal.classList.remove('active');
+        });
       }
 
       modal.addEventListener('click', (e) => {
-          if (e.target === modal) {
-              modal.classList.remove('active');
-          }
+        if (e.target === modal) {
+          modal.classList.remove('active');
+        }
       });
 
       if (enquireForm) {
-          enquireForm.addEventListener('submit', (e) => {
-              e.preventDefault();
-              alert('Thank you for reaching out! We will contact you shortly.');
-              enquireForm.reset();
-              modal.classList.remove('active');
-          });
+        enquireForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          alert('Thank you for reaching out! We will contact you shortly.');
+          enquireForm.reset();
+          modal.classList.remove('active');
+        });
       }
-  }
+    }
 
-  if (document.readyState === 'loading') {
+    if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', initEnquireModal);
-  } else {
+    } else {
       initEnquireModal();
-  }
+    }
 
-  // Mobile Hamburger Menu Handler
-  const hamburgerBtn = document.getElementById('hamburgerBtn');
-  const navLinks = document.getElementById('navLinks');
+    // Mobile Hamburger Menu Handler
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const navLinks = document.getElementById('navLinks');
 
-  if (hamburgerBtn && navLinks) {
+    if (hamburgerBtn && navLinks) {
       hamburgerBtn.addEventListener('click', (e) => {
-          e.stopPropagation();
-          navLinks.classList.toggle('active');
-          const icon = hamburgerBtn.querySelector('i');
-          if (icon) {
-              if (navLinks.classList.contains('active')) {
-                  icon.className = 'fa-solid fa-xmark';
-              } else {
-                  icon.className = 'fa-solid fa-bars';
-              }
+        e.stopPropagation();
+        navLinks.classList.toggle('active');
+        const icon = hamburgerBtn.querySelector('i');
+        if (icon) {
+          if (navLinks.classList.contains('active')) {
+            icon.className = 'fa-solid fa-xmark';
+          } else {
+            icon.className = 'fa-solid fa-bars';
           }
+        }
       });
 
       document.addEventListener('click', (e) => {
-          if (!hamburgerBtn.contains(e.target) && !navLinks.contains(e.target)) {
-              navLinks.classList.remove('active');
-              const icon = hamburgerBtn.querySelector('i');
-              if (icon) icon.className = 'fa-solid fa-bars';
-          }
+        if (!hamburgerBtn.contains(e.target) && !navLinks.contains(e.target)) {
+          navLinks.classList.remove('active');
+          const icon = hamburgerBtn.querySelector('i');
+          if (icon) icon.className = 'fa-solid fa-bars';
+        }
       });
 
       navLinks.querySelectorAll('a').forEach(link => {
-          link.addEventListener('click', () => {
-              navLinks.classList.remove('active');
-              const icon = hamburgerBtn.querySelector('i');
-              if (icon) icon.className = 'fa-solid fa-bars';
-          });
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('active');
+          const icon = hamburgerBtn.querySelector('i');
+          if (icon) icon.className = 'fa-solid fa-bars';
+        });
       });
-  }
-</script>
+    }
+  </script>
 </body>
 
 </html>

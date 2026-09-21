@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,10 @@
     <link rel="icon" href="images/logo.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <style>
         :root {
             --primary-blue: #111c34;
@@ -47,12 +50,12 @@
             color: var(--text-gray);
             border-bottom: 1px solid var(--border-color);
         }
-        
+
         .top-bar-left {
             display: flex;
             gap: 20px;
         }
-        
+
         .top-bar i {
             margin-right: 5px;
             color: var(--text-gray);
@@ -88,6 +91,7 @@
             margin: 0;
             letter-spacing: 0.5px;
         }
+
         .logo-text p {
             font-size: 12px;
             color: #d1d5db;
@@ -101,7 +105,8 @@
         }
 
         .nav-links a {
-            color: #facc15; /* Yellow for inactive */
+            color: #facc15;
+            /* Yellow for inactive */
             text-decoration: none;
             font-size: 16px;
             font-weight: 500;
@@ -149,6 +154,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -204,7 +210,7 @@
             max-width: 100%;
             height: auto;
             border-radius: 10px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
         }
 
         /* Two Column Section */
@@ -237,7 +243,7 @@
             border: 1px solid rgba(202, 138, 4, 0.2) !important;
             letter-spacing: 0.5px !important;
         }
-        
+
         .badge-yellow-text {
             background: linear-gradient(90deg, #fcd31c 0%, #b2740a 100%);
             -webkit-background-clip: text;
@@ -283,7 +289,7 @@
             display: flex;
             align-items: flex-start;
             gap: 15px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
             border: 1px solid var(--border-color);
         }
 
@@ -317,7 +323,7 @@
             background: white;
             padding: 40px 20px;
             border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
             border: 1px solid var(--border-color);
             transition: transform 0.3s ease;
         }
@@ -370,11 +376,29 @@
 
         /* Responsive */
         @media (max-width: 1024px) {
-            .cards-grid { grid-template-columns: repeat(2, 1fr); }
-            .two-column-layout { flex-direction: column; }
-            .hero { flex-direction: column; text-align: center; gap: 40px; padding: 60px 5%; }
-            .hero-content { max-width: 100%; }
-            .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 30px; }
+            .cards-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .two-column-layout {
+                flex-direction: column;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                gap: 40px;
+                padding: 60px 5%;
+            }
+
+            .hero-content {
+                max-width: 100%;
+            }
+
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
         }
 
         .footer-grid {
@@ -511,13 +535,41 @@
         }
 
         @media (max-width: 768px) {
-            .top-bar { display: none !important; }
-            .navbar { padding: 12px 15px !important; position: relative; }
-            .logo-img { width: 38px !important; height: 38px !important; }
-            .logo-section { gap: 10px !important; }
-            .logo-text h1 { font-size: 16px !important; line-height: 1.2; }
-            .logo-text p { font-size: 11px !important; }
-            .hamburger-toggle { display: flex; align-items: center; justify-content: center; padding: 6px 12px; font-size: 18px; }
+            .top-bar {
+                display: none !important;
+            }
+
+            .navbar {
+                padding: 12px 15px !important;
+                position: relative;
+            }
+
+            .logo-img {
+                width: 38px !important;
+                height: 38px !important;
+            }
+
+            .logo-section {
+                gap: 10px !important;
+            }
+
+            .logo-text h1 {
+                font-size: 16px !important;
+                line-height: 1.2;
+            }
+
+            .logo-text p {
+                font-size: 11px !important;
+            }
+
+            .hamburger-toggle {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 6px 12px;
+                font-size: 18px;
+            }
+
             .nav-links {
                 display: none;
                 flex-direction: column;
@@ -532,31 +584,99 @@
                 gap: 12px;
                 border-top: 1px solid rgba(255, 255, 255, 0.1);
             }
-            .nav-links.active { display: flex !important; }
-            .nav-links a { padding: 10px 0; font-size: 15px; width: 100%; }
-            .nav-links .btn-enquire { margin-left: 0; text-align: center; display: block; width: 100%; margin-top: 8px; }
-            .features-grid { grid-template-columns: 1fr !important; }
-            .cards-grid { grid-template-columns: 1fr !important; }
-            .footer-grid { grid-template-columns: 1fr !important; gap: 30px !important; text-align: left !important; }
-            .footer-grid > div { padding-left: 0 !important; text-align: left !important; }
-            .section-title { font-size: 24px !important; }
-            .hero h1 { font-size: 26px !important; }
-            .enquire-modal-overlay { padding: 15px !important; }
-            .enquire-modal-card { width: 92% !important; max-width: 360px !important; padding: 25px 20px !important; box-sizing: border-box !important; margin: 0 auto !important; }
-            .enquire-modal-card h2 { font-size: 22px !important; }
-            .enquire-modal-subtitle { font-size: 13px !important; margin-bottom: 18px !important; }
-            .modal-form-group { margin-bottom: 12px !important; }
-            .modal-form-group input, .modal-form-group textarea { padding: 12px 14px !important; font-size: 14px !important; box-sizing: border-box !important; }
-            .btn-modal-submit { padding: 13px !important; font-size: 15px !important; box-sizing: border-box !important; }
+
+            .nav-links.active {
+                display: flex !important;
+            }
+
+            .nav-links a {
+                padding: 10px 0;
+                font-size: 15px;
+                width: 100%;
+            }
+
+            .nav-links .btn-enquire {
+                margin-left: 0;
+                text-align: center;
+                display: block;
+                width: 100%;
+                margin-top: 8px;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr !important;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr !important;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr !important;
+                gap: 30px !important;
+                text-align: left !important;
+            }
+
+            .footer-grid>div {
+                padding-left: 0 !important;
+                text-align: left !important;
+            }
+
+            .section-title {
+                font-size: 24px !important;
+            }
+
+            .hero h1 {
+                font-size: 26px !important;
+            }
+
+            .enquire-modal-overlay {
+                padding: 15px !important;
+            }
+
+            .enquire-modal-card {
+                width: 92% !important;
+                max-width: 360px !important;
+                padding: 25px 20px !important;
+                box-sizing: border-box !important;
+                margin: 0 auto !important;
+            }
+
+            .enquire-modal-card h2 {
+                font-size: 22px !important;
+            }
+
+            .enquire-modal-subtitle {
+                font-size: 13px !important;
+                margin-bottom: 18px !important;
+            }
+
+            .modal-form-group {
+                margin-bottom: 12px !important;
+            }
+
+            .modal-form-group input,
+            .modal-form-group textarea {
+                padding: 12px 14px !important;
+                font-size: 14px !important;
+                box-sizing: border-box !important;
+            }
+
+            .btn-modal-submit {
+                padding: 13px !important;
+                font-size: 15px !important;
+                box-sizing: border-box !important;
+            }
         }
     </style>
 </head>
+
 <body>
 
     <!-- Top Contact Bar -->
     <div class="top-bar">
         <div class="top-bar-left">
-            <span><i class="fa-solid fa-phone"></i> +91 98765 43210</span>
+            <span><i class="fa-solid fa-phone"></i> +91 9302613229</span>
             <span><i class="fa-solid fa-envelope"></i> info@sapnaconsulting.com</span>
         </div>
         <div class="top-bar-right">
@@ -567,7 +687,8 @@
     <!-- Main Navbar -->
     <nav class="navbar">
         <div class="logo-section">
-            <img src="images/logo.png" alt="SAPNA Logo" class="logo-img" onerror="this.src='https://via.placeholder.com/50'">
+            <img src="images/logo.png" alt="SAPNA Logo" class="logo-img"
+                onerror="this.src='https://via.placeholder.com/50'">
             <div class="logo-text">
                 <h1>Sapna Consulting Point</h1>
                 <p>Since 1985</p>
@@ -591,10 +712,12 @@
         <div class="hero-content">
             <div class="badge" id="hero-badge">Language Preparation</div>
             <h1 id="hero-title">Find Peace, Clarity, and Guidance with Expert Counseling</h1>
-            <p id="hero-desc">Sapna Consulting Point offers specialized counseling to help students, parents, and individuals navigate and overcome challenges.</p>
+            <p id="hero-desc">Sapna Consulting Point offers specialized counseling to help students, parents, and
+                individuals navigate and overcome challenges.</p>
         </div>
         <div class="hero-image">
-            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Students studying">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                alt="Students studying">
         </div>
     </section>
 
@@ -605,9 +728,18 @@
             <div class="col-left text-content">
                 <div class="badge-yellow"><span class="badge-yellow-text">Our Story</span></div>
                 <h2 class="section-title">A Legacy of <span>Excellence</span></h2>
-                <p>SAPNA was founded in 1985 with a simple yet powerful vision: to provide reliable guidance, practical solutions, and professional support to individuals, families, students, and businesses. What began as a small initiative has grown into one of the most trusted consultancy organizations in the region.</p>
-                <p>The name "SAPNA," meaning "Dream" in Hindi, reflects our core belief that every individual deserves the right guidance and support to achieve their goals and aspirations. Through expert consultation, personalized assistance, and a client-focused approach, we have helped thousands of people make informed decisions and move forward with confidence.</p>
-                <p>Today, we continue to uphold the same values of dedication, integrity, personalized attention, and professional excellence that our founders established nearly four decades ago. Our commitment remains focused on empowering people, solving challenges, and helping clients turn their dreams into reality.</p>
+                <p>SAPNA was founded in 1985 with a simple yet powerful vision: to provide reliable guidance, practical
+                    solutions, and professional support to individuals, families, students, and businesses. What began
+                    as a small initiative has grown into one of the most trusted consultancy organizations in the
+                    region.</p>
+                <p>The name "SAPNA," meaning "Dream" in Hindi, reflects our core belief that every individual deserves
+                    the right guidance and support to achieve their goals and aspirations. Through expert consultation,
+                    personalized assistance, and a client-focused approach, we have helped thousands of people make
+                    informed decisions and move forward with confidence.</p>
+                <p>Today, we continue to uphold the same values of dedication, integrity, personalized attention, and
+                    professional excellence that our founders established nearly four decades ago. Our commitment
+                    remains focused on empowering people, solving challenges, and helping clients turn their dreams into
+                    reality.</p>
             </div>
 
             <!-- Right Column -->
@@ -655,37 +787,43 @@
     <section class="section-padding why-join-section">
         <div class="badge-yellow">EDUCATION FOR EVERYONE</div>
         <h2 class="section-title">Why to Join coaching with Sapna Consulting Point ?</h2>
-        
+
         <div class="cards-grid">
             <div class="join-card">
                 <i class="fa-solid fa-user-tie"></i>
                 <h3>One-on-One Consultation</h3>
-                <p>Receive personalized guidance and practical solutions tailored to your unique goals and challenges.</p>
+                <p>Receive personalized guidance and practical solutions tailored to your unique goals and challenges.
+                </p>
             </div>
             <div class="join-card">
                 <i class="fa-solid fa-users"></i>
                 <h3>Individual & Group Sessions</h3>
-                <p>Choose between private consultations or interactive group sessions designed for growth and learning.</p>
+                <p>Choose between private consultations or interactive group sessions designed for growth and learning.
+                </p>
             </div>
             <div class="join-card">
                 <i class="fa-solid fa-handshake-angle"></i>
                 <h3>Personalized Guidance</h3>
-                <p>Get expert support and customized action plans to achieve success in personal, professional, and business life.</p>
+                <p>Get expert support and customized action plans to achieve success in personal, professional, and
+                    business life.</p>
             </div>
             <div class="join-card">
                 <i class="fa-solid fa-users-viewfinder"></i>
                 <h3>Focused Client Attention</h3>
-                <p>We maintain a client-centered approach to ensure every individual receives dedicated support and guidance.</p>
+                <p>We maintain a client-centered approach to ensure every individual receives dedicated support and
+                    guidance.</p>
             </div>
             <div class="join-card">
                 <i class="fa-solid fa-award"></i>
                 <h3>39+ Years of Experience</h3>
-                <p>Decades of trusted experience helping individuals, families, students, and entrepreneurs achieve their goals.</p>
+                <p>Decades of trusted experience helping individuals, families, students, and entrepreneurs achieve
+                    their goals.</p>
             </div>
             <div class="join-card">
                 <i class="fa-regular fa-lightbulb"></i>
                 <h3>Expert Consultancy Solutions</h3>
-                <p>Benefit from proven strategies, practical insights, and professional guidance for life's challenges.</p>
+                <p>Benefit from proven strategies, practical insights, and professional guidance for life's challenges.
+                </p>
             </div>
             <div class="join-card">
                 <i class="fa-regular fa-clock"></i>
@@ -695,7 +833,8 @@
             <div class="join-card">
                 <i class="fa-solid fa-arrow-trend-up"></i>
                 <h3>Personal & Professional Growth</h3>
-                <p>Develop confidence, leadership, communication skills, and a growth mindset through structured guidance.</p>
+                <p>Develop confidence, leadership, communication skills, and a growth mindset through structured
+                    guidance.</p>
             </div>
         </div>
     </section>
@@ -703,96 +842,127 @@
     <!-- What Our Clients Say Section -->
     <section class="section-padding">
         <h2 class="section-title">What Our <span>Clients</span> Say</h2>
-        
-        <div class="clients-slider" style="display: flex; overflow-x: auto; gap: 30px; margin-top: 50px; padding-bottom: 20px; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none;">
+
+        <div class="clients-slider"
+            style="display: flex; overflow-x: auto; gap: 30px; margin-top: 50px; padding-bottom: 20px; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none;">
             <style>
-                .clients-slider::-webkit-scrollbar { display: none; }
+                .clients-slider::-webkit-scrollbar {
+                    display: none;
+                }
+
                 .client-card {
                     flex: 0 0 calc((100% - 60px) / 3);
                     scroll-snap-align: start;
                 }
+
                 @media (max-width: 768px) {
-                    .client-card { flex: 0 0 85vw; }
+                    .client-card {
+                        flex: 0 0 85vw;
+                    }
                 }
             </style>
-            
+
             <div class="join-card client-card" style="text-align: left; position: relative;">
-                <div style="background-color: #ca8a04; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                <div
+                    style="background-color: #ca8a04; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
                     <i class="fa-solid fa-quote-left" style="font-size: 16px; margin: 0; color: white;"></i>
                 </div>
-                <p style="margin-bottom: 30px; font-size: 15px;">The consultancy sessions improved my communication, leadership skills, and overall personal growth.</p>
+                <p style="margin-bottom: 30px; font-size: 15px;">The consultancy sessions improved my communication,
+                    leadership skills, and overall personal growth.</p>
                 <div style="display: flex; align-items: center; gap: 15px;">
-                    <div style="background-color: #111c34; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 20px;">A</div>
+                    <div
+                        style="background-color: #111c34; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 20px;">
+                        A</div>
                     <div>
                         <h4 style="color: #111c34; font-size: 16px; margin-bottom: 2px;">Aman Gupta</h4>
                         <span style="color: #6b7280; font-size: 13px;">Software Engineer</span>
                     </div>
                 </div>
             </div>
-            
+
             <div class="join-card client-card" style="text-align: left; position: relative;">
-                <div style="background-color: #ca8a04; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                <div
+                    style="background-color: #ca8a04; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
                     <i class="fa-solid fa-quote-left" style="font-size: 16px; margin: 0; color: white;"></i>
                 </div>
-                <p style="margin-bottom: 30px; font-size: 15px;">The guidance sessions helped me build confidence, improve decision-making, and perform better in my career.</p>
+                <p style="margin-bottom: 30px; font-size: 15px;">The guidance sessions helped me build confidence,
+                    improve decision-making, and perform better in my career.</p>
                 <div style="display: flex; align-items: center; gap: 15px;">
-                    <div style="background-color: #111c34; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 20px;">N</div>
+                    <div
+                        style="background-color: #111c34; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 20px;">
+                        N</div>
                     <div>
                         <h4 style="color: #111c34; font-size: 16px; margin-bottom: 2px;">Neha</h4>
                         <span style="color: #6b7280; font-size: 13px;">HR Executive</span>
                     </div>
                 </div>
             </div>
-            
+
             <div class="join-card client-card" style="text-align: left; position: relative;">
-                <div style="background-color: #ca8a04; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                <div
+                    style="background-color: #ca8a04; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
                     <i class="fa-solid fa-quote-left" style="font-size: 16px; margin: 0; color: white;"></i>
                 </div>
-                <p style="margin-bottom: 30px; font-size: 15px;">SAPNA Consultancy provided practical solutions that helped me overcome challenges and grow my business.</p>
+                <p style="margin-bottom: 30px; font-size: 15px;">SAPNA Consultancy provided practical solutions that
+                    helped me overcome challenges and grow my business.</p>
                 <div style="display: flex; align-items: center; gap: 15px;">
-                    <div style="background-color: #111c34; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 20px;">P</div>
+                    <div
+                        style="background-color: #111c34; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 20px;">
+                        P</div>
                     <div>
                         <h4 style="color: #111c34; font-size: 16px; margin-bottom: 2px;">Priya Sharma</h4>
                     </div>
                 </div>
             </div>
-            
+
             <!-- Duplicated for sliding effect -->
             <div class="join-card client-card" style="text-align: left; position: relative;">
-                <div style="background-color: #ca8a04; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                <div
+                    style="background-color: #ca8a04; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
                     <i class="fa-solid fa-quote-left" style="font-size: 16px; margin: 0; color: white;"></i>
                 </div>
-                <p style="margin-bottom: 30px; font-size: 15px;">The consultancy sessions improved my communication, leadership skills, and overall personal growth.</p>
+                <p style="margin-bottom: 30px; font-size: 15px;">The consultancy sessions improved my communication,
+                    leadership skills, and overall personal growth.</p>
                 <div style="display: flex; align-items: center; gap: 15px;">
-                    <div style="background-color: #111c34; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 20px;">A</div>
+                    <div
+                        style="background-color: #111c34; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 20px;">
+                        A</div>
                     <div>
                         <h4 style="color: #111c34; font-size: 16px; margin-bottom: 2px;">Aman Gupta</h4>
                         <span style="color: #6b7280; font-size: 13px;">Software Engineer</span>
                     </div>
                 </div>
             </div>
-            
+
             <div class="join-card client-card" style="text-align: left; position: relative;">
-                <div style="background-color: #ca8a04; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                <div
+                    style="background-color: #ca8a04; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
                     <i class="fa-solid fa-quote-left" style="font-size: 16px; margin: 0; color: white;"></i>
                 </div>
-                <p style="margin-bottom: 30px; font-size: 15px;">The guidance sessions helped me build confidence, improve decision-making, and perform better in my career.</p>
+                <p style="margin-bottom: 30px; font-size: 15px;">The guidance sessions helped me build confidence,
+                    improve decision-making, and perform better in my career.</p>
                 <div style="display: flex; align-items: center; gap: 15px;">
-                    <div style="background-color: #111c34; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 20px;">N</div>
+                    <div
+                        style="background-color: #111c34; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 20px;">
+                        N</div>
                     <div>
                         <h4 style="color: #111c34; font-size: 16px; margin-bottom: 2px;">Neha</h4>
                         <span style="color: #6b7280; font-size: 13px;">HR Executive</span>
                     </div>
                 </div>
             </div>
-            
+
             <div class="join-card client-card" style="text-align: left; position: relative;">
-                <div style="background-color: #ca8a04; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                <div
+                    style="background-color: #ca8a04; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
                     <i class="fa-solid fa-quote-left" style="font-size: 16px; margin: 0; color: white;"></i>
                 </div>
-                <p style="margin-bottom: 30px; font-size: 15px;">SAPNA Consultancy provided practical solutions that helped me overcome challenges and grow my business.</p>
+                <p style="margin-bottom: 30px; font-size: 15px;">SAPNA Consultancy provided practical solutions that
+                    helped me overcome challenges and grow my business.</p>
                 <div style="display: flex; align-items: center; gap: 15px;">
-                    <div style="background-color: #111c34; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 20px;">P</div>
+                    <div
+                        style="background-color: #111c34; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 20px;">
+                        P</div>
                     <div>
                         <h4 style="color: #111c34; font-size: 16px; margin-bottom: 2px;">Priya Sharma</h4>
                         <span style="color: #6b7280; font-size: 13px;">Business Owner</span>
@@ -807,40 +977,66 @@
         <div class="footer-grid">
             <!-- Footer Logo & About -->
             <div>
-                <img src="images/logo.png" alt="SAPNA Logo" style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 20px;">
+                <img src="images/logo.png" alt="SAPNA Logo"
+                    style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 20px;">
                 <p style="color: #d1d5db; font-size: 15px; line-height: 1.8; margin-bottom: 25px; font-weight: 500;">
-                    Since 1985, SAPNA Consultancy has been empowering individuals, families, students, and professionals through expert guidance, personal development programs, and practical solutions for achieving success in life and career.
+                    Since 1985, SAPNA Consultancy has been empowering individuals, families, students, and professionals
+                    through expert guidance, personal development programs, and practical solutions for achieving
+                    success in life and career.
                 </p>
                 <div style="display: flex; gap: 15px;">
-                    <a href="#" style="width: 35px; height: 35px; border-radius: 50%; border: 1px solid rgba(202, 138, 4, 0.4); background-color: rgba(202, 138, 4, 0.1); display: flex; align-items: center; justify-content: center; color: #facc15; text-decoration: none; transition: all 0.3s;"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" style="width: 35px; height: 35px; border-radius: 50%; border: 1px solid rgba(202, 138, 4, 0.4); background-color: rgba(202, 138, 4, 0.1); display: flex; align-items: center; justify-content: center; color: #facc15; text-decoration: none; transition: all 0.3s;"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" style="width: 35px; height: 35px; border-radius: 50%; border: 1px solid rgba(202, 138, 4, 0.4); background-color: rgba(202, 138, 4, 0.1); display: flex; align-items: center; justify-content: center; color: #facc15; text-decoration: none; transition: all 0.3s;"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="#" style="width: 35px; height: 35px; border-radius: 50%; border: 1px solid rgba(202, 138, 4, 0.4); background-color: rgba(202, 138, 4, 0.1); display: flex; align-items: center; justify-content: center; color: #facc15; text-decoration: none; transition: all 0.3s;"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"
+                        style="width: 35px; height: 35px; border-radius: 50%; border: 1px solid rgba(202, 138, 4, 0.4); background-color: rgba(202, 138, 4, 0.1); display: flex; align-items: center; justify-content: center; color: #facc15; text-decoration: none; transition: all 0.3s;"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"
+                        style="width: 35px; height: 35px; border-radius: 50%; border: 1px solid rgba(202, 138, 4, 0.4); background-color: rgba(202, 138, 4, 0.1); display: flex; align-items: center; justify-content: center; color: #facc15; text-decoration: none; transition: all 0.3s;"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="#"
+                        style="width: 35px; height: 35px; border-radius: 50%; border: 1px solid rgba(202, 138, 4, 0.4); background-color: rgba(202, 138, 4, 0.1); display: flex; align-items: center; justify-content: center; color: #facc15; text-decoration: none; transition: all 0.3s;"><i
+                            class="fa-brands fa-youtube"></i></a>
+                    <a href="#"
+                        style="width: 35px; height: 35px; border-radius: 50%; border: 1px solid rgba(202, 138, 4, 0.4); background-color: rgba(202, 138, 4, 0.1); display: flex; align-items: center; justify-content: center; color: #facc15; text-decoration: none; transition: all 0.3s;"><i
+                            class="fa-brands fa-twitter"></i></a>
                 </div>
             </div>
-            
+
             <!-- Quick Links -->
             <div style="text-align: center;">
-                <h3 style="color: #facc15; font-size: 24px; font-weight: 700; font-family: 'Inter', sans-serif; margin-bottom: 25px;">Quick Links</h3>
+                <h3
+                    style="color: #facc15; font-size: 24px; font-weight: 700; font-family: 'Inter', sans-serif; margin-bottom: 25px;">
+                    Quick Links</h3>
                 <ul style="list-style: none; padding: 0;">
-                    <li style="margin-bottom: 15px;"><a href="index.html" style="color: #d1d5db; text-decoration: none; font-size: 15px; font-weight: 500; transition: color 0.3s;">Home</a></li>
-                    <li style="margin-bottom: 15px;"><a href="about.html" style="color: #d1d5db; text-decoration: none; font-size: 15px; font-weight: 500; transition: color 0.3s;">About Us</a></li>
-                    <li style="margin-bottom: 15px;"><a href="gallery.html" style="color: #d1d5db; text-decoration: none; font-size: 15px; font-weight: 500; transition: color 0.3s;">Gallery</a></li>
-                    <li style="margin-bottom: 15px;"><a href="contact.html" style="color: #d1d5db; text-decoration: none; font-size: 15px; font-weight: 500; transition: color 0.3s;">Contact</a></li>
+                    <li style="margin-bottom: 15px;"><a href="index.html"
+                            style="color: #d1d5db; text-decoration: none; font-size: 15px; font-weight: 500; transition: color 0.3s;">Home</a>
+                    </li>
+                    <li style="margin-bottom: 15px;"><a href="about.html"
+                            style="color: #d1d5db; text-decoration: none; font-size: 15px; font-weight: 500; transition: color 0.3s;">About
+                            Us</a></li>
+                    <li style="margin-bottom: 15px;"><a href="gallery.html"
+                            style="color: #d1d5db; text-decoration: none; font-size: 15px; font-weight: 500; transition: color 0.3s;">Gallery</a>
+                    </li>
+                    <li style="margin-bottom: 15px;"><a href="contact.html"
+                            style="color: #d1d5db; text-decoration: none; font-size: 15px; font-weight: 500; transition: color 0.3s;">Contact</a>
+                    </li>
                 </ul>
             </div>
-            
+
             <!-- Contact Us -->
             <div>
-                <h3 style="color: #facc15; font-size: 24px; font-weight: 700; font-family: 'Inter', sans-serif; margin-bottom: 25px;">Contact Us</h3>
-                <p style="color: #d1d5db; font-size: 15px; margin-bottom: 20px; line-height: 1.6; font-weight: 500;">Hig-9b, Leela Tower, Sonagiri,<br>Piplani Petrol Pump, Bhel, Sonagiri,<br>Bhopal, Madhya Pradesh 462021</p>
+                <h3
+                    style="color: #facc15; font-size: 24px; font-weight: 700; font-family: 'Inter', sans-serif; margin-bottom: 25px;">
+                    Contact Us</h3>
+                <p style="color: #d1d5db; font-size: 15px; margin-bottom: 20px; line-height: 1.6; font-weight: 500;">
+                    Hig-9b, Leela Tower, Sonagiri,<br>Piplani Petrol Pump, Bhel, Sonagiri,<br>Bhopal, Madhya Pradesh
+                    462021</p>
                 <p style="color: #d1d5db; font-size: 15px; margin-bottom: 20px; font-weight: 500;">+91 9302613229</p>
                 <p style="color: #d1d5db; font-size: 15px; font-weight: 500;">praveenkumar091963@gmail.com</p>
             </div>
         </div>
-        
+
         <div style="text-align: center; color: #9ca3af; font-size: 14px;">
-            <p style="margin: 0;">&copy; 2026 Sapna Consulting Point. All rights reserved. | Managed by <span style="color: #ca8a04; font-weight: 600;">Act T Connect</span></p>
+            <p style="margin: 0;">&copy; 2026 Sapna Consulting Point. All rights reserved. | Managed by <span
+                    style="color: #ca8a04; font-weight: 600;">Act T Connect</span></p>
         </div>
     </footer>
 
@@ -889,13 +1085,13 @@
                 heroBadge.textContent = heroSlides[currentSlide].badge;
                 heroTitle.textContent = heroSlides[currentSlide].title;
                 heroDesc.textContent = heroSlides[currentSlide].desc;
-                
+
                 heroBadge.style.animation = 'none';
                 heroTitle.style.animation = 'none';
                 heroDesc.style.animation = 'none';
-                
+
                 void heroBadge.offsetWidth;
-                
+
                 heroBadge.style.animation = 'slideUpFade 0.8s ease forwards';
                 heroTitle.style.animation = 'slideUpFade 0.8s ease forwards 0.2s';
                 heroDesc.style.animation = 'slideUpFade 0.8s ease forwards 0.4s';
@@ -995,4 +1191,5 @@
         }
     </script>
 </body>
+
 </html>

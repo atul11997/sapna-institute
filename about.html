@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,10 @@
     <link rel="icon" href="images/logo.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <style>
         :root {
             --primary-blue: #111c34;
@@ -20,7 +23,13 @@
             --border-color: #e5e7eb;
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
         body {
             background-color: var(--bg-light);
             color: var(--text-dark);
@@ -29,18 +38,72 @@
 
         html {
             overflow-x: hidden !important;
-        } /* Top Contact Bar */
-        .top-bar { background-color: white; padding: 10px 5%; display: flex; justify-content: space-between; font-size: 14px; color: var(--text-gray); border-bottom: 1px solid var(--border-color); }
-        .top-bar-left { display: flex; gap: 20px; }
-        .top-bar i { margin-right: 5px; color: var(--text-gray); }
+        }
+
+        /* Top Contact Bar */
+        .top-bar {
+            background-color: white;
+            padding: 10px 5%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            color: var(--text-gray);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .top-bar-left {
+            display: flex;
+            gap: 20px;
+        }
+
+        .top-bar i {
+            margin-right: 5px;
+            color: var(--text-gray);
+        }
 
         /* Navbar */
-        .navbar { background-color: var(--primary-blue); padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
-        .logo-section { display: flex; align-items: center; gap: 15px; color: white; }
-        .logo-img { width: 50px; height: 50px; }
-        .logo-text h1 { font-size: 20px; font-weight: 700; margin: 0; letter-spacing: 0.5px; }
-        .logo-text p { font-size: 12px; color: #d1d5db; margin: 0; }
-        .nav-links { display: flex; gap: 30px; align-items: center; }
+        .navbar {
+            background-color: var(--primary-blue);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: white;
+        }
+
+        .logo-img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .logo-text h1 {
+            font-size: 20px;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: 0.5px;
+        }
+
+        .logo-text p {
+            font-size: 12px;
+            color: #d1d5db;
+            margin: 0;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
         .nav-links a {
             color: #facc15;
             text-decoration: none;
@@ -48,12 +111,16 @@
             font-weight: 500;
             transition: color 0.3s ease;
         }
+
         .nav-links a.active {
             color: #ffffff;
             font-weight: 700;
         }
-        .nav-links a:hover { color: #ffffff; }
-        
+
+        .nav-links a:hover {
+            color: #ffffff;
+        }
+
         .nav-links .btn-enquire {
             background: linear-gradient(90deg, #fcd31c 0%, #b2740a 100%);
             color: #000000 !important;
@@ -115,10 +182,23 @@
         }
 
         /* Two Column Section */
-        .section-padding { padding: 10px 5%; }
-        .two-column-layout { display: flex; gap: 60px; }
-        .col-left { flex: 1; }
-        .col-right { flex: 1.2; }
+        .section-padding {
+            padding: 10px 5%;
+        }
+
+        .two-column-layout {
+            display: flex;
+            gap: 60px;
+        }
+
+        .col-left {
+            flex: 1;
+        }
+
+        .col-right {
+            flex: 1.2;
+        }
+
         .badge-yellow {
             background-color: #fdfbf7 !important;
             color: #ca8a04 !important;
@@ -131,15 +211,57 @@
             border: 1px solid rgba(202, 138, 4, 0.2) !important;
             letter-spacing: 0.5px !important;
         }
-        .section-title { font-size: 36px; font-weight: 800; color: var(--primary-blue); margin-bottom: 30px; line-height: 1.3; }
-        .section-title span { color: #ca8a04; }
-        .text-content p { font-size: 16px; color: var(--text-gray); line-height: 1.8; margin-bottom: 20px; font-family: 'Inter', sans-serif; }
+
+        .section-title {
+            font-size: 36px;
+            font-weight: 800;
+            color: var(--primary-blue);
+            margin-bottom: 30px;
+            line-height: 1.3;
+        }
+
+        .section-title span {
+            color: #ca8a04;
+        }
+
+        .text-content p {
+            font-size: 16px;
+            color: var(--text-gray);
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-family: 'Inter', sans-serif;
+        }
 
         /* Features Grid */
-        .features-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
-        .feature-card { background: white; padding: 20px; border-radius: 12px; display: flex; align-items: flex-start; gap: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid var(--border-color); }
-        .feature-icon { color: #ca8a04; font-size: 20px; margin-top: 3px; }
-        .feature-text { font-size: 14px; font-weight: 500; color: var(--text-dark); line-height: 1.5; }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        .feature-icon {
+            color: #ca8a04;
+            font-size: 20px;
+            margin-top: 3px;
+        }
+
+        .feature-text {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-dark);
+            line-height: 1.5;
+        }
 
         /* Vision Mission Grid */
         .vm-grid {
@@ -153,7 +275,7 @@
             background: white;
             padding: 50px 30px;
             border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
             border: 1px solid var(--border-color);
             text-align: center;
         }
@@ -240,13 +362,13 @@
             border-radius: 16px;
             padding: 40px 24px;
             text-align: center;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .value-card:hover {
             transform: translateY(-6px);
-            box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
         }
 
         .value-icon {
@@ -305,7 +427,7 @@
         .milestones-section h2 {
             font-size: 40px;
             font-weight: 800;
-            color: rgba(255,255,255,0.15);
+            color: rgba(255, 255, 255, 0.15);
             margin-bottom: 20px;
             position: relative;
         }
@@ -400,16 +522,70 @@
         }
 
         /* Footer */
-        footer { background-color: #111c34; color: white; padding: 60px 5% 20px; font-family: 'Inter', sans-serif; }
-        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 40px; }
-        .social-links { display: flex; gap: 15px; }
-        .social-links a { width: 35px; height: 35px; border-radius: 50%; border: 1px solid #ca8a04; display: flex; align-items: center; justify-content: center; color: #ca8a04; text-decoration: none; }
-        .footer-heading { color: #ca8a04; font-size: 22px; font-weight: 700; font-family: 'Poppins', sans-serif; margin-bottom: 25px; }
-        .footer-links { list-style: none; padding: 0; }
-        .footer-links li { margin-bottom: 15px; }
-        .footer-links a { color: #d1d5db; text-decoration: none; font-size: 15px; transition: color 0.3s; }
-        .footer-text { color: #d1d5db; font-size: 14px; margin-bottom: 20px; line-height: 1.6; }
-        
+        footer {
+            background-color: #111c34;
+            color: white;
+            padding: 60px 5% 20px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 40px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-links a {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            border: 1px solid #ca8a04;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ca8a04;
+            text-decoration: none;
+        }
+
+        .footer-heading {
+            color: #ca8a04;
+            font-size: 22px;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 25px;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 15px;
+        }
+
+        .footer-links a {
+            color: #d1d5db;
+            text-decoration: none;
+            font-size: 15px;
+            transition: color 0.3s;
+        }
+
+        .footer-text {
+            color: #d1d5db;
+            font-size: 14px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
         .hamburger-toggle {
             display: none;
             background: none;
@@ -428,10 +604,20 @@
 
         /* Responsive */
         @media (max-width: 1024px) {
-            .two-column-layout { flex-direction: column; }
-            .vm-grid { grid-template-columns: 1fr; }
-            .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 30px; }
+            .two-column-layout {
+                flex-direction: column;
+            }
+
+            .vm-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
         }
+
         .footer-grid {
             display: grid;
             grid-template-columns: 1.5fr 1fr 1fr;
@@ -566,13 +752,41 @@
         }
 
         @media (max-width: 768px) {
-            .top-bar { display: none !important; }
-            .navbar { padding: 12px 15px !important; position: relative; }
-            .logo-img { width: 38px !important; height: 38px !important; }
-            .logo-section { gap: 10px !important; }
-            .logo-text h1 { font-size: 16px !important; line-height: 1.2; }
-            .logo-text p { font-size: 11px !important; }
-            .hamburger-toggle { display: flex; align-items: center; justify-content: center; padding: 6px 12px; font-size: 18px; }
+            .top-bar {
+                display: none !important;
+            }
+
+            .navbar {
+                padding: 12px 15px !important;
+                position: relative;
+            }
+
+            .logo-img {
+                width: 38px !important;
+                height: 38px !important;
+            }
+
+            .logo-section {
+                gap: 10px !important;
+            }
+
+            .logo-text h1 {
+                font-size: 16px !important;
+                line-height: 1.2;
+            }
+
+            .logo-text p {
+                font-size: 11px !important;
+            }
+
+            .hamburger-toggle {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 6px 12px;
+                font-size: 18px;
+            }
+
             .nav-links {
                 display: none;
                 flex-direction: column;
@@ -587,36 +801,137 @@
                 gap: 12px;
                 border-top: 1px solid rgba(255, 255, 255, 0.1);
             }
-            .nav-links.active { display: flex !important; }
-            .nav-links a { padding: 10px 0; font-size: 15px; width: 100%; }
-            .nav-links .btn-enquire { margin-left: 0; text-align: center; display: block; width: 100%; margin-top: 8px; }
-            .footer-grid { grid-template-columns: 1fr !important; gap: 30px !important; text-align: left !important; }
-            .footer-grid > div { padding-left: 0 !important; text-align: left !important; }
-            .about-hero { height: auto !important; min-height: 240px; padding: 40px 15px !important; }
-            .about-hero h1 { font-size: 26px !important; }
-            .values-grid { grid-template-columns: 1fr !important; gap: 20px !important; }
-            .timeline::before { left: 20px !important; transform: none !important; }
-            .timeline-item { flex-direction: column !important; align-items: flex-start !important; padding-left: 55px !important; margin-bottom: 30px !important; position: relative !important; width: 100% !important; }
-            .timeline-item.left, .timeline-item.right { flex-direction: column !important; justify-content: flex-start !important; }
-            .timeline-card { width: 100% !important; padding: 20px 18px !important; box-sizing: border-box !important; }
-            .timeline-card h3 { font-size: 20px !important; }
-            .timeline-dot { left: 20px !important; top: 0px !important; transform: translateX(-50%) !important; width: 40px !important; height: 40px !important; font-size: 14px !important; }
-            .enquire-modal-overlay { padding: 15px !important; }
-            .enquire-modal-card { width: 92% !important; max-width: 360px !important; padding: 25px 20px !important; box-sizing: border-box !important; margin: 0 auto !important; }
-            .enquire-modal-card h2 { font-size: 22px !important; }
-            .enquire-modal-subtitle { font-size: 13px !important; margin-bottom: 18px !important; }
-            .modal-form-group { margin-bottom: 12px !important; }
-            .modal-form-group input, .modal-form-group textarea { padding: 12px 14px !important; font-size: 14px !important; box-sizing: border-box !important; }
-            .btn-modal-submit { padding: 13px !important; font-size: 15px !important; box-sizing: border-box !important; }
+
+            .nav-links.active {
+                display: flex !important;
+            }
+
+            .nav-links a {
+                padding: 10px 0;
+                font-size: 15px;
+                width: 100%;
+            }
+
+            .nav-links .btn-enquire {
+                margin-left: 0;
+                text-align: center;
+                display: block;
+                width: 100%;
+                margin-top: 8px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr !important;
+                gap: 30px !important;
+                text-align: left !important;
+            }
+
+            .footer-grid>div {
+                padding-left: 0 !important;
+                text-align: left !important;
+            }
+
+            .about-hero {
+                height: auto !important;
+                min-height: 240px;
+                padding: 40px 15px !important;
+            }
+
+            .about-hero h1 {
+                font-size: 26px !important;
+            }
+
+            .values-grid {
+                grid-template-columns: 1fr !important;
+                gap: 20px !important;
+            }
+
+            .timeline::before {
+                left: 20px !important;
+                transform: none !important;
+            }
+
+            .timeline-item {
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                padding-left: 55px !important;
+                margin-bottom: 30px !important;
+                position: relative !important;
+                width: 100% !important;
+            }
+
+            .timeline-item.left,
+            .timeline-item.right {
+                flex-direction: column !important;
+                justify-content: flex-start !important;
+            }
+
+            .timeline-card {
+                width: 100% !important;
+                padding: 20px 18px !important;
+                box-sizing: border-box !important;
+            }
+
+            .timeline-card h3 {
+                font-size: 20px !important;
+            }
+
+            .timeline-dot {
+                left: 20px !important;
+                top: 0px !important;
+                transform: translateX(-50%) !important;
+                width: 40px !important;
+                height: 40px !important;
+                font-size: 14px !important;
+            }
+
+            .enquire-modal-overlay {
+                padding: 15px !important;
+            }
+
+            .enquire-modal-card {
+                width: 92% !important;
+                max-width: 360px !important;
+                padding: 25px 20px !important;
+                box-sizing: border-box !important;
+                margin: 0 auto !important;
+            }
+
+            .enquire-modal-card h2 {
+                font-size: 22px !important;
+            }
+
+            .enquire-modal-subtitle {
+                font-size: 13px !important;
+                margin-bottom: 18px !important;
+            }
+
+            .modal-form-group {
+                margin-bottom: 12px !important;
+            }
+
+            .modal-form-group input,
+            .modal-form-group textarea {
+                padding: 12px 14px !important;
+                font-size: 14px !important;
+                box-sizing: border-box !important;
+            }
+
+            .btn-modal-submit {
+                padding: 13px !important;
+                font-size: 15px !important;
+                box-sizing: border-box !important;
+            }
         }
     </style>
 </head>
+
 <body>
 
     <!-- Top Contact Bar -->
     <div class="top-bar">
         <div class="top-bar-left">
-            <span><i class="fa-solid fa-phone"></i> +91 98765 43210</span>
+            <span><i class="fa-solid fa-phone"></i> +91 9302613229</span>
             <span><i class="fa-solid fa-envelope"></i> info@sapnaconsulting.com</span>
         </div>
         <div class="top-bar-right">
@@ -627,7 +942,8 @@
     <!-- Main Navbar -->
     <nav class="navbar">
         <div class="logo-section">
-            <img src="images/logo.png" alt="SAPNA Logo" class="logo-img" onerror="this.src='https://via.placeholder.com/50'">
+            <img src="images/logo.png" alt="SAPNA Logo" class="logo-img"
+                onerror="this.src='https://via.placeholder.com/50'">
             <div class="logo-text">
                 <h1>Sapna Consulting Point</h1>
                 <p>Since 1985</p>
@@ -660,9 +976,18 @@
             <div class="col-left text-content">
                 <div class="badge-yellow">Our Story</div>
                 <h2 class="section-title">A Legacy of <span>Excellence</span></h2>
-                <p>SAPNA was founded in 1985 with a simple yet powerful vision: to provide reliable guidance, practical solutions, and professional support to individuals, families, students, and businesses. What began as a small initiative has grown into one of the most trusted consultancy organizations in the region.</p>
-                <p>The name "SAPNA," meaning "Dream" in Hindi, reflects our core belief that every individual deserves the right guidance and support to achieve their goals and aspirations. Through expert consultation, personalized assistance, and a client-focused approach, we have helped thousands of people make informed decisions and move forward with confidence.</p>
-                <p>Today, we continue to uphold the same values of dedication, integrity, personalized attention, and professional excellence that our founders established nearly four decades ago. Our commitment remains focused on empowering people, solving challenges, and helping clients turn their dreams into reality.</p>
+                <p>SAPNA was founded in 1985 with a simple yet powerful vision: to provide reliable guidance, practical
+                    solutions, and professional support to individuals, families, students, and businesses. What began
+                    as a small initiative has grown into one of the most trusted consultancy organizations in the
+                    region.</p>
+                <p>The name "SAPNA," meaning "Dream" in Hindi, reflects our core belief that every individual deserves
+                    the right guidance and support to achieve their goals and aspirations. Through expert consultation,
+                    personalized assistance, and a client-focused approach, we have helped thousands of people make
+                    informed decisions and move forward with confidence.</p>
+                <p>Today, we continue to uphold the same values of dedication, integrity, personalized attention, and
+                    professional excellence that our founders established nearly four decades ago. Our commitment
+                    remains focused on empowering people, solving challenges, and helping clients turn their dreams into
+                    reality.</p>
             </div>
 
             <!-- Right Column -->
@@ -712,15 +1037,19 @@
                     <i class="fa-solid fa-eye"></i>
                 </div>
                 <h3>Our Vision</h3>
-                <p>To be the most trusted and respected consultancy organization, empowering individuals, families, students, and businesses through expert guidance, practical solutions, and personal development, helping them achieve success, confidence, and fulfillment in every aspect of life.</p>
+                <p>To be the most trusted and respected consultancy organization, empowering individuals, families,
+                    students, and businesses through expert guidance, practical solutions, and personal development,
+                    helping them achieve success, confidence, and fulfillment in every aspect of life.</p>
             </div>
-            
+
             <div class="vm-card">
                 <div class="vm-icon-mission">
                     <i class="fa-solid fa-bullseye"></i>
                 </div>
                 <h3>Our Mission</h3>
-                <p>To provide accessible, affordable, and effective consultancy services that empower individuals, families, students, and businesses with the guidance, knowledge, and confidence needed to overcome challenges, make informed decisions, and achieve their goals.</p>
+                <p>To provide accessible, affordable, and effective consultancy services that empower individuals,
+                    families, students, and businesses with the guidance, knowledge, and confidence needed to overcome
+                    challenges, make informed decisions, and achieve their goals.</p>
             </div>
         </div>
     </section>
@@ -736,7 +1065,8 @@
                     <i class="fa-solid fa-award"></i>
                 </div>
                 <h3>Excellence</h3>
-                <p>We strive for excellence in every consultation, providing practical guidance, personalized solutions, and dedicated support to help our clients achieve their goals.</p>
+                <p>We strive for excellence in every consultation, providing practical guidance, personalized solutions,
+                    and dedicated support to help our clients achieve their goals.</p>
             </div>
             <!-- Compassion -->
             <div class="value-card">
@@ -744,7 +1074,8 @@
                     <i class="fa-solid fa-heart"></i>
                 </div>
                 <h3>Compassion</h3>
-                <p>We provide compassionate guidance and personalized support, ensuring that every client feels respected, understood, and confident throughout their journey.</p>
+                <p>We provide compassionate guidance and personalized support, ensuring that every client feels
+                    respected, understood, and confident throughout their journey.</p>
             </div>
             <!-- Inclusivity -->
             <div class="value-card">
@@ -752,7 +1083,8 @@
                     <i class="fa-solid fa-users"></i>
                 </div>
                 <h3>Inclusivity</h3>
-                <p>We welcome individuals from all backgrounds and tailor our guidance and solutions to meet their unique needs, goals, and circumstances.</p>
+                <p>We welcome individuals from all backgrounds and tailor our guidance and solutions to meet their
+                    unique needs, goals, and circumstances.</p>
             </div>
             <!-- Integrity -->
             <div class="value-card">
@@ -760,7 +1092,8 @@
                     <i class="fa-solid fa-bookmark"></i>
                 </div>
                 <h3>Integrity</h3>
-                <p>We uphold the highest standards of honesty, integrity, and transparency, ensuring that every client receives trustworthy guidance and ethical support.</p>
+                <p>We uphold the highest standards of honesty, integrity, and transparency, ensuring that every client
+                    receives trustworthy guidance and ethical support.</p>
             </div>
         </div>
     </section>
@@ -776,7 +1109,8 @@
                 <div class="timeline-card">
                     <div class="timeline-year-label">1985</div>
                     <h3>Foundation</h3>
-                    <p>Sapna Consulting Point was established in Bhopal, beginning its journey of empowering individuals through expert guidance and practical solutions.</p>
+                    <p>Sapna Consulting Point was established in Bhopal, beginning its journey of empowering individuals
+                        through expert guidance and practical solutions.</p>
                 </div>
                 <div class="timeline-dot">85</div>
             </div>
@@ -786,7 +1120,8 @@
                 <div class="timeline-card">
                     <div class="timeline-year-label">1995</div>
                     <h3>Expansion</h3>
-                    <p>Expanded operations with a second branch and introduced specialized personal and professional guidance programs.</p>
+                    <p>Expanded operations with a second branch and introduced specialized personal and professional
+                        guidance programs.</p>
                 </div>
                 <div class="timeline-dot">95</div>
             </div>
@@ -796,7 +1131,8 @@
                 <div class="timeline-card">
                     <div class="timeline-year-label">2005</div>
                     <h3>10,000 Consultation Milestone</h3>
-                    <p>Proudly celebrated serving our 10,000th client, reflecting our commitment to delivering trusted consulting services.</p>
+                    <p>Proudly celebrated serving our 10,000th client, reflecting our commitment to delivering trusted
+                        consulting services.</p>
                 </div>
                 <div class="timeline-dot">05</div>
             </div>
@@ -806,7 +1142,8 @@
                 <div class="timeline-card">
                     <div class="timeline-year-label">2015</div>
                     <h3>Digital Consultancy Launch</h3>
-                    <p>Introduced digital consultancy services, enabling clients to access professional expertise and support remotely.</p>
+                    <p>Introduced digital consultancy services, enabling clients to access professional expertise and
+                        support remotely.</p>
                 </div>
                 <div class="timeline-dot">15</div>
             </div>
@@ -816,7 +1153,8 @@
                 <div class="timeline-card">
                     <div class="timeline-year-label">2024</div>
                     <h3>39 Years Strong</h3>
-                    <p>Continuing to transform lives through trusted guidance, personal growth, and practical solutions.</p>
+                    <p>Continuing to transform lives through trusted guidance, personal growth, and practical solutions.
+                    </p>
                 </div>
                 <div class="timeline-dot">24</div>
             </div>
@@ -828,10 +1166,14 @@
         <h2 style="font-size: 36px; font-weight: 800; color: #111c34; margin-bottom: 18px;">
             Ready to Be Part of Our <span style="color: #ca8a04;">Story?</span>
         </h2>
-        <p style="font-size: 17px; color: #6b7280; margin-bottom: 35px; max-width: 520px; margin-left: auto; margin-right: auto; line-height: 1.7; font-family: 'Inter', sans-serif;">
-            Join the SAPNA family and begin your journey towards personal growth, success, and a more fulfilling life today.
+        <p
+            style="font-size: 17px; color: #6b7280; margin-bottom: 35px; max-width: 520px; margin-left: auto; margin-right: auto; line-height: 1.7; font-family: 'Inter', sans-serif;">
+            Join the SAPNA family and begin your journey towards personal growth, success, and a more fulfilling life
+            today.
         </p>
-        <a href="#" class="btn-enquire" style="display: inline-block; background: linear-gradient(90deg, #fcd31c 0%, #b2740a 100%); color: #000; font-size: 16px; font-weight: 700; padding: 16px 48px; border-radius: 50px; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 20px rgba(202,138,4,0.3);">Enquire Now</a>
+        <a href="#" class="btn-enquire"
+            style="display: inline-block; background: linear-gradient(90deg, #fcd31c 0%, #b2740a 100%); color: #000; font-size: 16px; font-weight: 700; padding: 16px 48px; border-radius: 50px; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 20px rgba(202,138,4,0.3);">Enquire
+            Now</a>
     </section>
 
     <!-- Footer Section -->
@@ -839,40 +1181,66 @@
         <div class="footer-grid">
             <!-- Footer Logo & About -->
             <div>
-                <img src="images/logo.png" alt="SAPNA Logo" style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 20px;">
+                <img src="images/logo.png" alt="SAPNA Logo"
+                    style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 20px;">
                 <p style="color: #d1d5db; font-size: 15px; line-height: 1.8; margin-bottom: 25px; font-weight: 500;">
-                    Since 1985, SAPNA Consultancy has been empowering individuals, families, students, and professionals through expert guidance, personal development programs, and practical solutions for achieving success in life and career.
+                    Since 1985, SAPNA Consultancy has been empowering individuals, families, students, and professionals
+                    through expert guidance, personal development programs, and practical solutions for achieving
+                    success in life and career.
                 </p>
                 <div style="display: flex; gap: 15px;">
-                    <a href="#" style="width: 35px; height: 35px; border-radius: 50%; border: 1px solid rgba(202, 138, 4, 0.4); background-color: rgba(202, 138, 4, 0.1); display: flex; align-items: center; justify-content: center; color: #facc15; text-decoration: none; transition: all 0.3s;"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" style="width: 35px; height: 35px; border-radius: 50%; border: 1px solid rgba(202, 138, 4, 0.4); background-color: rgba(202, 138, 4, 0.1); display: flex; align-items: center; justify-content: center; color: #facc15; text-decoration: none; transition: all 0.3s;"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" style="width: 35px; height: 35px; border-radius: 50%; border: 1px solid rgba(202, 138, 4, 0.4); background-color: rgba(202, 138, 4, 0.1); display: flex; align-items: center; justify-content: center; color: #facc15; text-decoration: none; transition: all 0.3s;"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="#" style="width: 35px; height: 35px; border-radius: 50%; border: 1px solid rgba(202, 138, 4, 0.4); background-color: rgba(202, 138, 4, 0.1); display: flex; align-items: center; justify-content: center; color: #facc15; text-decoration: none; transition: all 0.3s;"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"
+                        style="width: 35px; height: 35px; border-radius: 50%; border: 1px solid rgba(202, 138, 4, 0.4); background-color: rgba(202, 138, 4, 0.1); display: flex; align-items: center; justify-content: center; color: #facc15; text-decoration: none; transition: all 0.3s;"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"
+                        style="width: 35px; height: 35px; border-radius: 50%; border: 1px solid rgba(202, 138, 4, 0.4); background-color: rgba(202, 138, 4, 0.1); display: flex; align-items: center; justify-content: center; color: #facc15; text-decoration: none; transition: all 0.3s;"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="#"
+                        style="width: 35px; height: 35px; border-radius: 50%; border: 1px solid rgba(202, 138, 4, 0.4); background-color: rgba(202, 138, 4, 0.1); display: flex; align-items: center; justify-content: center; color: #facc15; text-decoration: none; transition: all 0.3s;"><i
+                            class="fa-brands fa-youtube"></i></a>
+                    <a href="#"
+                        style="width: 35px; height: 35px; border-radius: 50%; border: 1px solid rgba(202, 138, 4, 0.4); background-color: rgba(202, 138, 4, 0.1); display: flex; align-items: center; justify-content: center; color: #facc15; text-decoration: none; transition: all 0.3s;"><i
+                            class="fa-brands fa-twitter"></i></a>
                 </div>
             </div>
-            
+
             <!-- Quick Links -->
             <div style="text-align: center;">
-                <h3 style="color: #facc15; font-size: 24px; font-weight: 700; font-family: 'Inter', sans-serif; margin-bottom: 25px;">Quick Links</h3>
+                <h3
+                    style="color: #facc15; font-size: 24px; font-weight: 700; font-family: 'Inter', sans-serif; margin-bottom: 25px;">
+                    Quick Links</h3>
                 <ul style="list-style: none; padding: 0;">
-                    <li style="margin-bottom: 15px;"><a href="index.html" style="color: #d1d5db; text-decoration: none; font-size: 15px; font-weight: 500; transition: color 0.3s;">Home</a></li>
-                    <li style="margin-bottom: 15px;"><a href="about.html" style="color: #d1d5db; text-decoration: none; font-size: 15px; font-weight: 500; transition: color 0.3s;">About Us</a></li>
-                    <li style="margin-bottom: 15px;"><a href="gallery.html" style="color: #d1d5db; text-decoration: none; font-size: 15px; font-weight: 500; transition: color 0.3s;">Gallery</a></li>
-                    <li style="margin-bottom: 15px;"><a href="contact.html" style="color: #d1d5db; text-decoration: none; font-size: 15px; font-weight: 500; transition: color 0.3s;">Contact</a></li>
+                    <li style="margin-bottom: 15px;"><a href="index.html"
+                            style="color: #d1d5db; text-decoration: none; font-size: 15px; font-weight: 500; transition: color 0.3s;">Home</a>
+                    </li>
+                    <li style="margin-bottom: 15px;"><a href="about.html"
+                            style="color: #d1d5db; text-decoration: none; font-size: 15px; font-weight: 500; transition: color 0.3s;">About
+                            Us</a></li>
+                    <li style="margin-bottom: 15px;"><a href="gallery.html"
+                            style="color: #d1d5db; text-decoration: none; font-size: 15px; font-weight: 500; transition: color 0.3s;">Gallery</a>
+                    </li>
+                    <li style="margin-bottom: 15px;"><a href="contact.html"
+                            style="color: #d1d5db; text-decoration: none; font-size: 15px; font-weight: 500; transition: color 0.3s;">Contact</a>
+                    </li>
                 </ul>
             </div>
-            
+
             <!-- Contact Us -->
             <div>
-                <h3 style="color: #facc15; font-size: 24px; font-weight: 700; font-family: 'Inter', sans-serif; margin-bottom: 25px;">Contact Us</h3>
-                <p style="color: #d1d5db; font-size: 15px; margin-bottom: 20px; line-height: 1.6; font-weight: 500;">Hig-9b, Leela Tower, Sonagiri,<br>Piplani Petrol Pump, Bhel, Sonagiri,<br>Bhopal, Madhya Pradesh 462021</p>
+                <h3
+                    style="color: #facc15; font-size: 24px; font-weight: 700; font-family: 'Inter', sans-serif; margin-bottom: 25px;">
+                    Contact Us</h3>
+                <p style="color: #d1d5db; font-size: 15px; margin-bottom: 20px; line-height: 1.6; font-weight: 500;">
+                    Hig-9b, Leela Tower, Sonagiri,<br>Piplani Petrol Pump, Bhel, Sonagiri,<br>Bhopal, Madhya Pradesh
+                    462021</p>
                 <p style="color: #d1d5db; font-size: 15px; margin-bottom: 20px; font-weight: 500;">+91 9302613229</p>
                 <p style="color: #d1d5db; font-size: 15px; font-weight: 500;">praveenkumar091963@gmail.com</p>
             </div>
         </div>
-        
+
         <div style="text-align: center; color: #9ca3af; font-size: 14px;">
-            <p style="margin: 0;">&copy; 2026 Sapna Consulting Point. All rights reserved. | Managed by <span style="color: #ca8a04; font-weight: 600;">Act T Connect</span></p>
+            <p style="margin: 0;">&copy; 2026 Sapna Consulting Point. All rights reserved. | Managed by <span
+                    style="color: #ca8a04; font-weight: 600;">Act T Connect</span></p>
         </div>
     </footer>
 
@@ -982,4 +1350,5 @@
         }
     </script>
 </body>
+
 </html>
