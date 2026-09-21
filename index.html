@@ -1,0 +1,998 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sapna Consulting Point</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <style>
+        :root {
+            --primary-blue: #111c34;
+            --accent-yellow: #facc15;
+            --text-light: #ffffff;
+            --text-dark: #1f2937;
+            --text-gray: #4b5563;
+            --bg-gray: #f9fafb;
+            --border-color: #e5e7eb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            overflow-x: hidden !important;
+        }
+
+        html {
+            overflow-x: hidden !important;
+        }
+
+        /* Top Contact Bar */
+        .top-bar {
+            background-color: white;
+            padding: 10px 5%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            color: var(--text-gray);
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .top-bar-left {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .top-bar i {
+            margin-right: 5px;
+            color: var(--text-gray);
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: var(--primary-blue);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: white;
+        }
+
+        .logo-img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .logo-text h1 {
+            font-size: 20px;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: 0.5px;
+        }
+        .logo-text p {
+            font-size: 12px;
+            color: #d1d5db;
+            margin: 0;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: #facc15; /* Yellow for inactive */
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a.active {
+            color: #ffffff;
+            font-weight: 700;
+        }
+
+        .nav-links a:hover {
+            color: #ffffff;
+        }
+
+        .nav-links .btn-enquire {
+            background: linear-gradient(90deg, #fcd31c 0%, #b2740a 100%);
+            color: #000000 !important;
+            padding: 12px 28px;
+            border-radius: 12px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            margin-left: 10px;
+        }
+
+        .nav-links .btn-enquire:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(250, 204, 21, 0.4);
+            color: #000000 !important;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #060C1E;
+            padding: 10px 5% 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+        }
+
+        @keyframes slideUpFade {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-content {
+            flex: 1;
+            max-width: 600px;
+            margin-top: -40px;
+        }
+
+        .badge {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #e5e7eb;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            display: inline-block;
+            margin-bottom: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            animation: slideUpFade 0.8s ease forwards;
+            opacity: 0;
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 25px;
+            animation: slideUpFade 0.8s ease forwards;
+            animation-delay: 0.2s;
+            opacity: 0;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            color: #d1d5db;
+            line-height: 1.6;
+            animation: slideUpFade 0.8s ease forwards;
+            animation-delay: 0.4s;
+            opacity: 0;
+        }
+
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        /* Two Column Section */
+        .section-padding {
+            padding: 10px 5%;
+        }
+
+        .two-column-layout {
+            display: flex;
+            gap: 60px;
+        }
+
+        .col-left {
+            flex: 1;
+        }
+
+        .col-right {
+            flex: 1.2;
+        }
+
+        .badge-yellow {
+            background-color: #fdfbf7 !important;
+            color: #ca8a04 !important;
+            padding: 10px 26px !important;
+            border-radius: 30px !important;
+            font-size: 15px !important;
+            font-weight: 700 !important;
+            display: inline-block !important;
+            margin-bottom: 20px !important;
+            border: 1px solid rgba(202, 138, 4, 0.2) !important;
+            letter-spacing: 0.5px !important;
+        }
+        
+        .badge-yellow-text {
+            background: linear-gradient(90deg, #fcd31c 0%, #b2740a 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+        }
+
+        .section-title {
+            font-size: 42px;
+            font-weight: 800;
+            color: var(--primary-blue);
+            margin-bottom: 30px;
+            line-height: 1.2;
+            letter-spacing: -0.5px;
+        }
+
+        .section-title span {
+            background: linear-gradient(90deg, #fcd31c 0%, #b2740a 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+        }
+
+        .text-content p {
+            font-size: 16px;
+            color: var(--text-gray);
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        .feature-icon {
+            color: #ca8a04;
+            font-size: 20px;
+            margin-top: 3px;
+        }
+
+        .feature-text {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-dark);
+            line-height: 1.5;
+        }
+
+        /* Why Join Section */
+        .why-join-section {
+            background: white;
+            text-align: center;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .join-card {
+            background: white;
+            padding: 40px 20px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease;
+        }
+
+        .join-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .join-card i {
+            font-size: 40px;
+            margin-bottom: 25px;
+            color: var(--text-dark);
+            transition: color 0.3s ease;
+        }
+
+        .join-card:hover i {
+            color: #ca8a04;
+        }
+
+        .join-card h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .join-card p {
+            font-size: 14px;
+            color: var(--text-gray);
+            line-height: 1.6;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hamburger-toggle {
+            display: none;
+            background: none;
+            border: 2px solid rgba(250, 204, 21, 0.5);
+            color: #facc15;
+            font-size: 22px;
+            padding: 8px 14px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .hamburger-toggle:hover {
+            background: rgba(250, 204, 21, 0.1);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .cards-grid { grid-template-columns: repeat(2, 1fr); }
+            .two-column-layout { flex-direction: column; }
+            .hero { flex-direction: column; text-align: center; gap: 40px; padding: 60px 5%; }
+            .hero-content { max-width: 100%; }
+            .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 30px; }
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        /* Enquire Modal Popup */
+        .enquire-modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(4px);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            padding: 20px;
+        }
+
+        .enquire-modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .enquire-modal-card {
+            background: #ffffff;
+            width: 100%;
+            max-width: 460px;
+            border-radius: 20px;
+            padding: 35px 35px 30px;
+            position: relative;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+        }
+
+        .enquire-modal-overlay.active .enquire-modal-card {
+            transform: scale(1);
+        }
+
+        .enquire-modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            font-weight: 700;
+            color: #94a3b8;
+            cursor: pointer;
+            line-height: 1;
+            transition: color 0.2s;
+        }
+
+        .enquire-modal-close:hover {
+            color: #0f172a;
+        }
+
+        .enquire-modal-card h2 {
+            font-size: 28px;
+            font-weight: 800;
+            color: #111c34;
+            margin-bottom: 6px;
+        }
+
+        .enquire-modal-subtitle {
+            font-size: 15px;
+            color: #828b9a;
+            margin-bottom: 25px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .modal-form-group {
+            margin-bottom: 16px;
+        }
+
+        .modal-form-group input,
+        .modal-form-group textarea {
+            width: 100%;
+            padding: 14px 18px;
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            font-size: 14px;
+            font-family: 'Inter', sans-serif;
+            color: #1e293b;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .modal-form-group input::placeholder,
+        .modal-form-group textarea::placeholder {
+            color: #94a3b8;
+        }
+
+        .modal-form-group input:focus,
+        .modal-form-group textarea:focus {
+            background-color: #ffffff;
+            border-color: #ca8a04;
+            box-shadow: 0 0 0 3px rgba(202, 138, 4, 0.1);
+        }
+
+        .modal-form-group textarea {
+            resize: none;
+        }
+
+        .btn-modal-submit {
+            width: 100%;
+            background: linear-gradient(90deg, #fcd31c 0%, #b2740a 100%);
+            color: #000000;
+            padding: 15px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            box-shadow: 0 4px 15px rgba(202, 138, 4, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .btn-modal-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(202, 138, 4, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .top-bar { display: none !important; }
+            .navbar { padding: 12px 15px !important; position: relative; }
+            .logo-img { width: 38px !important; height: 38px !important; }
+            .logo-section { gap: 10px !important; }
+            .logo-text h1 { font-size: 16px !important; line-height: 1.2; }
+            .logo-text p { font-size: 11px !important; }
+            .hamburger-toggle { display: flex; align-items: center; justify-content: center; padding: 6px 12px; font-size: 18px; }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: #060C1E;
+                padding: 20px 5%;
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+                z-index: 999;
+                gap: 12px;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            .nav-links.active { display: flex !important; }
+            .nav-links a { padding: 10px 0; font-size: 15px; width: 100%; }
+            .nav-links .btn-enquire { margin-left: 0; text-align: center; display: block; width: 100%; margin-top: 8px; }
+            .features-grid { grid-template-columns: 1fr !important; }
+            .cards-grid { grid-template-columns: 1fr !important; }
+            .footer-grid { grid-template-columns: 1fr !important; gap: 30px !important; text-align: left !important; }
+            .footer-grid > div { padding-left: 0 !important; text-align: left !important; }
+            .section-title { font-size: 24px !important; }
+            .hero h1 { font-size: 26px !important; }
+            .enquire-modal-overlay { padding: 15px !important; }
+            .enquire-modal-card { width: 92% !important; max-width: 360px !important; padding: 25px 20px !important; box-sizing: border-box !important; margin: 0 auto !important; }
+            .enquire-modal-card h2 { font-size: 22px !important; }
+            .enquire-modal-subtitle { font-size: 13px !important; margin-bottom: 18px !important; }
+            .modal-form-group { margin-bottom: 12px !important; }
+            .modal-form-group input, .modal-form-group textarea { padding: 12px 14px !important; font-size: 14px !important; box-sizing: border-box !important; }
+            .btn-modal-submit { padding: 13px !important; font-size: 15px !important; box-sizing: border-box !important; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Contact Bar -->
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <span><i class="fa-solid fa-phone"></i> +91 98765 43210</span>
+            <span><i class="fa-solid fa-envelope"></i> info@sapnaconsulting.com</span>
+        </div>
+        <div class="top-bar-right">
+            <span><i class="fa-solid fa-location-dot"></i> Bhopal, Madhya Pradesh</span>
+        </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav class="navbar">
+        <div class="logo-section">
+            <img src="images/logo.png" alt="SAPNA Logo" class="logo-img" onerror="this.src='https://via.placeholder.com/50'">
+            <div class="logo-text">
+                <h1>Sapna Consulting Point</h1>
+                <p>Since 1985</p>
+            </div>
+        </div>
+        <button class="hamburger-toggle" id="hamburgerBtn" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="faq.html">FAQ's</a>
+            <a href="contact.html">Contact</a>
+            <a href="#" class="btn-enquire">Enquire Now</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="badge" id="hero-badge">Language Preparation</div>
+            <h1 id="hero-title">Find Peace, Clarity, and Guidance with Expert Counseling</h1>
+            <p id="hero-desc">Sapna Consulting Point offers specialized counseling to help students, parents, and individuals navigate and overcome challenges.</p>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Students studying">
+        </div>
+    </section>
+
+    <!-- Our Story & Why Choose Us -->
+    <section class="section-padding">
+        <div class="two-column-layout">
+            <!-- Left Column -->
+            <div class="col-left text-content">
+                <div class="badge-yellow"><span class="badge-yellow-text">Our Story</span></div>
+                <h2 class="section-title">A Legacy of <span>Excellence</span></h2>
+                <p>SAPNA was founded in 1985 with a simple yet powerful vision: to provide reliable guidance, practical solutions, and professional support to individuals, families, students, and businesses. What began as a small initiative has grown into one of the most trusted consultancy organizations in the region.</p>
+                <p>The name "SAPNA," meaning "Dream" in Hindi, reflects our core belief that every individual deserves the right guidance and support to achieve their goals and aspirations. Through expert consultation, personalized assistance, and a client-focused approach, we have helped thousands of people make informed decisions and move forward with confidence.</p>
+                <p>Today, we continue to uphold the same values of dedication, integrity, personalized attention, and professional excellence that our founders established nearly four decades ago. Our commitment remains focused on empowering people, solving challenges, and helping clients turn their dreams into reality.</p>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-right">
+                <h2 class="section-title" style="text-align: center; margin-bottom: 40px;">Why Choose Us?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fa-regular fa-circle-check feature-icon"></i>
+                        <span class="feature-text">39+ years of trusted consultancy experience</span>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fa-regular fa-circle-check feature-icon"></i>
+                        <span class="feature-text">Expert consultants with practical industry knowledge</span>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fa-regular fa-circle-check feature-icon"></i>
+                        <span class="feature-text">Personalized guidance tailored to individual needs</span>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fa-regular fa-circle-check feature-icon"></i>
+                        <span class="feature-text">Proven strategies for personal and professional growth</span>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fa-regular fa-circle-check feature-icon"></i>
+                        <span class="feature-text">Affordable and value-driven consultancy services</span>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fa-regular fa-circle-check feature-icon"></i>
+                        <span class="feature-text">Flexible consultation schedules</span>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fa-regular fa-circle-check feature-icon"></i>
+                        <span class="feature-text">Career, business, and life guidance support</span>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fa-regular fa-circle-check feature-icon"></i>
+                        <span class="feature-text">Trusted solutions with a client-focused approach</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Join Section -->
+    <section class="section-padding why-join-section">
+        <div class="badge-yellow">EDUCATION FOR EVERYONE</div>
+        <h2 class="section-title">Why to Join coaching with Sapna Consulting Point ?</h2>
+        
+        <div class="cards-grid">
+            <div class="join-card">
+                <i class="fa-solid fa-user-tie"></i>
+                <h3>One-on-One Consultation</h3>
+                <p>Receive personalized guidance and practical solutions tailored to your unique goals and challenges.</p>
+            </div>
+            <div class="join-card">
+                <i class="fa-solid fa-users"></i>
+                <h3>Individual & Group Sessions</h3>
+                <p>Choose between private consultations or interactive group sessions designed for growth and learning.</p>
+            </div>
+            <div class="join-card">
+                <i class="fa-solid fa-handshake-angle"></i>
+                <h3>Personalized Guidance</h3>
+                <p>Get expert support and customized action plans to achieve success in personal, professional, and business life.</p>
+            </div>
+            <div class="join-card">
+                <i class="fa-solid fa-users-viewfinder"></i>
+                <h3>Focused Client Attention</h3>
+                <p>We maintain a client-centered approach to ensure every individual receives dedicated support and guidance.</p>
+            </div>
+            <div class="join-card">
+                <i class="fa-solid fa-award"></i>
+                <h3>39+ Years of Experience</h3>
+                <p>Decades of trusted experience helping individuals, families, students, and entrepreneurs achieve their goals.</p>
+            </div>
+            <div class="join-card">
+                <i class="fa-regular fa-lightbulb"></i>
+                <h3>Expert Consultancy Solutions</h3>
+                <p>Benefit from proven strategies, practical insights, and professional guidance for life's challenges.</p>
+            </div>
+            <div class="join-card">
+                <i class="fa-regular fa-clock"></i>
+                <h3>Flexible Consultation Timings</h3>
+                <p>Book sessions at convenient times that fit your personal and professional schedule.</p>
+            </div>
+            <div class="join-card">
+                <i class="fa-solid fa-arrow-trend-up"></i>
+                <h3>Personal & Professional Growth</h3>
+                <p>Develop confidence, leadership, communication skills, and a growth mindset through structured guidance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Our Clients Say Section -->
+    <section class="section-padding">
+        <h2 class="section-title">What Our <span>Clients</span> Say</h2>
+        
+        <div class="clients-slider" style="display: flex; overflow-x: auto; gap: 30px; margin-top: 50px; padding-bottom: 20px; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none;">
+            <style>
+                .clients-slider::-webkit-scrollbar { display: none; }
+                .client-card {
+                    flex: 0 0 calc((100% - 60px) / 3);
+                    scroll-snap-align: start;
+                }
+                @media (max-width: 768px) {
+                    .client-card { flex: 0 0 85vw; }
+                }
+            </style>
+            
+            <div class="join-card client-card" style="text-align: left; position: relative;">
+                <div style="background-color: #ca8a04; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                    <i class="fa-solid fa-quote-left" style="font-size: 16px; margin: 0; color: white;"></i>
+                </div>
+                <p style="margin-bottom: 30px; font-size: 15px;">The consultancy sessions improved my communication, leadership skills, and overall personal growth.</p>
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <div style="background-color: #111c34; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 20px;">A</div>
+                    <div>
+                        <h4 style="color: #111c34; font-size: 16px; margin-bottom: 2px;">Aman Gupta</h4>
+                        <span style="color: #6b7280; font-size: 13px;">Software Engineer</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="join-card client-card" style="text-align: left; position: relative;">
+                <div style="background-color: #ca8a04; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                    <i class="fa-solid fa-quote-left" style="font-size: 16px; margin: 0; color: white;"></i>
+                </div>
+                <p style="margin-bottom: 30px; font-size: 15px;">The guidance sessions helped me build confidence, improve decision-making, and perform better in my career.</p>
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <div style="background-color: #111c34; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 20px;">N</div>
+                    <div>
+                        <h4 style="color: #111c34; font-size: 16px; margin-bottom: 2px;">Neha</h4>
+                        <span style="color: #6b7280; font-size: 13px;">HR Executive</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="join-card client-card" style="text-align: left; position: relative;">
+                <div style="background-color: #ca8a04; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                    <i class="fa-solid fa-quote-left" style="font-size: 16px; margin: 0; color: white;"></i>
+                </div>
+                <p style="margin-bottom: 30px; font-size: 15px;">SAPNA Consultancy provided practical solutions that helped me overcome challenges and grow my business.</p>
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <div style="background-color: #111c34; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 20px;">P</div>
+                    <div>
+                        <h4 style="color: #111c34; font-size: 16px; margin-bottom: 2px;">Priya Sharma</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Duplicated for sliding effect -->
+            <div class="join-card client-card" style="text-align: left; position: relative;">
+                <div style="background-color: #ca8a04; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                    <i class="fa-solid fa-quote-left" style="font-size: 16px; margin: 0; color: white;"></i>
+                </div>
+                <p style="margin-bottom: 30px; font-size: 15px;">The consultancy sessions improved my communication, leadership skills, and overall personal growth.</p>
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <div style="background-color: #111c34; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 20px;">A</div>
+                    <div>
+                        <h4 style="color: #111c34; font-size: 16px; margin-bottom: 2px;">Aman Gupta</h4>
+                        <span style="color: #6b7280; font-size: 13px;">Software Engineer</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="join-card client-card" style="text-align: left; position: relative;">
+                <div style="background-color: #ca8a04; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                    <i class="fa-solid fa-quote-left" style="font-size: 16px; margin: 0; color: white;"></i>
+                </div>
+                <p style="margin-bottom: 30px; font-size: 15px;">The guidance sessions helped me build confidence, improve decision-making, and perform better in my career.</p>
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <div style="background-color: #111c34; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 20px;">N</div>
+                    <div>
+                        <h4 style="color: #111c34; font-size: 16px; margin-bottom: 2px;">Neha</h4>
+                        <span style="color: #6b7280; font-size: 13px;">HR Executive</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="join-card client-card" style="text-align: left; position: relative;">
+                <div style="background-color: #ca8a04; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                    <i class="fa-solid fa-quote-left" style="font-size: 16px; margin: 0; color: white;"></i>
+                </div>
+                <p style="margin-bottom: 30px; font-size: 15px;">SAPNA Consultancy provided practical solutions that helped me overcome challenges and grow my business.</p>
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <div style="background-color: #111c34; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 20px;">P</div>
+                    <div>
+                        <h4 style="color: #111c34; font-size: 16px; margin-bottom: 2px;">Priya Sharma</h4>
+                        <span style="color: #6b7280; font-size: 13px;">Business Owner</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer style="background-color: #0f172a; color: white; padding: 40px 5% 20px; font-family: 'Inter', sans-serif;">
+        <div class="footer-grid">
+            <!-- Footer Logo & About -->
+            <div>
+                <img src="images/logo.png" alt="SAPNA Logo" style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 20px;">
+                <p style="color: #d1d5db; font-size: 15px; line-height: 1.8; margin-bottom: 25px; font-weight: 500;">
+                    Since 1985, SAPNA Consultancy has been empowering individuals, families, students, and professionals through expert guidance, personal development programs, and practical solutions for achieving success in life and career.
+                </p>
+                <div style="display: flex; gap: 15px;">
+                    <a href="#" style="width: 35px; height: 35px; border-radius: 50%; border: 1px solid rgba(202, 138, 4, 0.4); background-color: rgba(202, 138, 4, 0.1); display: flex; align-items: center; justify-content: center; color: #facc15; text-decoration: none; transition: all 0.3s;"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" style="width: 35px; height: 35px; border-radius: 50%; border: 1px solid rgba(202, 138, 4, 0.4); background-color: rgba(202, 138, 4, 0.1); display: flex; align-items: center; justify-content: center; color: #facc15; text-decoration: none; transition: all 0.3s;"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" style="width: 35px; height: 35px; border-radius: 50%; border: 1px solid rgba(202, 138, 4, 0.4); background-color: rgba(202, 138, 4, 0.1); display: flex; align-items: center; justify-content: center; color: #facc15; text-decoration: none; transition: all 0.3s;"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" style="width: 35px; height: 35px; border-radius: 50%; border: 1px solid rgba(202, 138, 4, 0.4); background-color: rgba(202, 138, 4, 0.1); display: flex; align-items: center; justify-content: center; color: #facc15; text-decoration: none; transition: all 0.3s;"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <!-- Quick Links -->
+            <div style="text-align: center;">
+                <h3 style="color: #facc15; font-size: 24px; font-weight: 700; font-family: 'Inter', sans-serif; margin-bottom: 25px;">Quick Links</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 15px;"><a href="index.html" style="color: #d1d5db; text-decoration: none; font-size: 15px; font-weight: 500; transition: color 0.3s;">Home</a></li>
+                    <li style="margin-bottom: 15px;"><a href="about.html" style="color: #d1d5db; text-decoration: none; font-size: 15px; font-weight: 500; transition: color 0.3s;">About Us</a></li>
+                    <li style="margin-bottom: 15px;"><a href="gallery.html" style="color: #d1d5db; text-decoration: none; font-size: 15px; font-weight: 500; transition: color 0.3s;">Gallery</a></li>
+                    <li style="margin-bottom: 15px;"><a href="contact.html" style="color: #d1d5db; text-decoration: none; font-size: 15px; font-weight: 500; transition: color 0.3s;">Contact</a></li>
+                </ul>
+            </div>
+            
+            <!-- Contact Us -->
+            <div>
+                <h3 style="color: #facc15; font-size: 24px; font-weight: 700; font-family: 'Inter', sans-serif; margin-bottom: 25px;">Contact Us</h3>
+                <p style="color: #d1d5db; font-size: 15px; margin-bottom: 20px; line-height: 1.6; font-weight: 500;">Hig-9b, Leela Tower, Sonagiri,<br>Piplani Petrol Pump, Bhel, Sonagiri,<br>Bhopal, Madhya Pradesh 462021</p>
+                <p style="color: #d1d5db; font-size: 15px; margin-bottom: 20px; font-weight: 500;">+91 9302613229</p>
+                <p style="color: #d1d5db; font-size: 15px; font-weight: 500;">praveenkumar091963@gmail.com</p>
+            </div>
+        </div>
+        
+        <div style="text-align: center; color: #9ca3af; font-size: 14px;">
+            <p style="margin: 0;">&copy; 2026 Sapna Consulting Point. All rights reserved. | Managed by <span style="color: #ca8a04; font-weight: 600;">Act T Connect</span></p>
+        </div>
+    </footer>
+
+    <!-- Enquire Modal Popup -->
+    <div id="enquireModal" class="enquire-modal-overlay">
+        <div class="enquire-modal-card">
+            <button class="enquire-modal-close" id="closeEnquireModal">&times;</button>
+            <h2>Start Your Journey</h2>
+            <p class="enquire-modal-subtitle">Fill the form and we'll contact you shortly</p>
+            <form id="enquireModalForm">
+                <div class="modal-form-group">
+                    <input type="text" placeholder="Your Full Name" required>
+                </div>
+                <div class="modal-form-group">
+                    <input type="tel" placeholder="Your Phone Number" required>
+                </div>
+                <div class="modal-form-group">
+                    <input type="email" placeholder="Your Email Address" required>
+                </div>
+                <div class="modal-form-group">
+                    <textarea rows="3" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn-modal-submit">Send Enquiry</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Hero Animation & Modal Script -->
+    <script>
+        const heroSlides = [
+            { badge: "Language Preparation", title: "Find Peace, Clarity, and Guidance with Expert Counseling", desc: "Sapna Consulting Point offers specialized counseling to help students, parents, and individuals navigate and overcome challenges." },
+            { badge: "Admission Support", title: "Secure Admission in Top Institutions", desc: "Get assistance with university applications, SOP writing, document preparation, and admission procedures." },
+            { badge: "Success Planning", title: "Build a Bright Future", desc: "From education planning to career development, receive complete guidance to achieve your academic and professional goals." },
+            { badge: "Study Abroad Guidance", title: "Achieve Your Global Education Dream", desc: "Get expert guidance for choosing the right country, university, and course to build a successful international career." },
+            { badge: "Career Counseling", title: "Choose the Right Career Path", desc: "Identify your strengths, interests, and opportunities with personalized career counseling and professional guidance." }
+        ];
+        let currentSlide = 0;
+
+        const heroBadge = document.querySelector('.hero-badge');
+        const heroTitle = document.querySelector('.hero-content h1');
+        const heroDesc = document.querySelector('.hero-content p');
+
+        if (heroBadge && heroTitle && heroDesc) {
+            setInterval(() => {
+                currentSlide = (currentSlide + 1) % heroSlides.length;
+                heroBadge.textContent = heroSlides[currentSlide].badge;
+                heroTitle.textContent = heroSlides[currentSlide].title;
+                heroDesc.textContent = heroSlides[currentSlide].desc;
+                
+                heroBadge.style.animation = 'none';
+                heroTitle.style.animation = 'none';
+                heroDesc.style.animation = 'none';
+                
+                void heroBadge.offsetWidth;
+                
+                heroBadge.style.animation = 'slideUpFade 0.8s ease forwards';
+                heroTitle.style.animation = 'slideUpFade 0.8s ease forwards 0.2s';
+                heroDesc.style.animation = 'slideUpFade 0.8s ease forwards 0.4s';
+            }, 5000);
+        }
+
+        // Clients Auto Slider
+        const clientsSlider = document.querySelector('.clients-slider');
+        if (clientsSlider) {
+            setInterval(() => {
+                const maxScrollLeft = clientsSlider.scrollWidth - clientsSlider.clientWidth;
+                if (clientsSlider.scrollLeft >= maxScrollLeft - 10) {
+                    clientsSlider.scrollTo({ left: 0, behavior: 'smooth' });
+                } else {
+                    const scrollAmount = clientsSlider.querySelector('.client-card').offsetWidth + 30;
+                    clientsSlider.scrollTo({ left: clientsSlider.scrollLeft + scrollAmount, behavior: 'smooth' });
+                }
+            }, 3000);
+        }
+
+        // Enquire Modal Trigger Logic
+        function initEnquireModal() {
+            const modal = document.getElementById('enquireModal');
+            const closeBtn = document.getElementById('closeEnquireModal');
+            const enquireBtns = document.querySelectorAll('.btn-enquire');
+            const enquireForm = document.getElementById('enquireModalForm');
+
+            if (!modal) return;
+
+            enquireBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    modal.classList.add('active');
+                });
+            });
+
+            if (closeBtn) {
+                closeBtn.addEventListener('click', () => {
+                    modal.classList.remove('active');
+                });
+            }
+
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.classList.remove('active');
+                }
+            });
+
+            if (enquireForm) {
+                enquireForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    alert('Thank you for reaching out! We will contact you shortly.');
+                    enquireForm.reset();
+                    modal.classList.remove('active');
+                });
+            }
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initEnquireModal);
+        } else {
+            initEnquireModal();
+        }
+        // Mobile Hamburger Menu Handler
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (hamburgerBtn && navLinks) {
+            hamburgerBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                navLinks.classList.toggle('active');
+                const icon = hamburgerBtn.querySelector('i');
+                if (icon) {
+                    if (navLinks.classList.contains('active')) {
+                        icon.className = 'fa-solid fa-xmark';
+                    } else {
+                        icon.className = 'fa-solid fa-bars';
+                    }
+                }
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!hamburgerBtn.contains(e.target) && !navLinks.contains(e.target)) {
+                    navLinks.classList.remove('active');
+                    const icon = hamburgerBtn.querySelector('i');
+                    if (icon) icon.className = 'fa-solid fa-bars';
+                }
+            });
+
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                    const icon = hamburgerBtn.querySelector('i');
+                    if (icon) icon.className = 'fa-solid fa-bars';
+                });
+            });
+        }
+    </script>
+</body>
+</html>

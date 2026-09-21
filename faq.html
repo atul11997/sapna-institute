@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sapna Consulting Point - FAQ's</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-blue: #111c34;
+            --accent-yellow: #facc15;
+            --text-dark: #1f2937;
+            --text-gray: #4b5563;
+            --bg-light: #f3f4f6;
+            --border-color: #e5e7eb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            overflow-x: hidden !important;
+        }
+
+        html {
+            overflow-x: hidden !important;
+        }
+
+        /* Top Bar */
+        /* Top Contact Bar */
+        .top-bar {
+            background-color: white;
+            padding: 10px 5%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            color: var(--text-gray);
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .top-bar-left {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .top-bar i {
+            margin-right: 5px;
+            color: var(--text-gray);
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: var(--primary-blue);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: white;
+        }
+
+        .logo-img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .logo-text h1 {
+            font-size: 20px;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: 0.5px;
+        }
+        .logo-text p {
+            font-size: 12px;
+            color: #d1d5db;
+            margin: 0;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: #facc15; /* Yellow for inactive */
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a.active {
+            color: #ffffff;
+            font-weight: 700;
+        }
+
+        .nav-links a:hover {
+            color: #ffffff;
+        }
+
+        .nav-links .btn-enquire {
+            background: linear-gradient(90deg, #fcd31c 0%, #b2740a 100%);
+            color: #000000 !important;
+            padding: 12px 28px;
+            border-radius: 12px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            margin-left: 10px;
+        }
+
+        .nav-links .btn-enquire:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(250, 204, 21, 0.4);
+            color: #000000 !important;
+        }
+
+        /* Hero Section */
+        .faq-hero {
+            background-color: #060C1E;
+            padding: 60px 5% 70px;
+            text-align: center;
+        }
+
+        .faq-hero .hero-badge {
+            background-color: #292826 !important;
+            color: #F9CB17 !important;
+            padding: 10px 28px !important;
+            border-radius: 30px !important;
+            font-size: 16px !important;
+            font-weight: 700 !important;
+            display: inline-block !important;
+            margin-bottom: 20px !important;
+            border: 1px solid rgba(249, 203, 23, 0.3) !important;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+            letter-spacing: 0.5px !important;
+        }
+
+        .faq-hero h1 {
+            font-size: 40px;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .faq-hero h1 span {
+            color: #facc15;
+        }
+
+        .faq-hero p {
+            font-size: 17px;
+            color: #9ca3af;
+            line-height: 1.6;
+            max-width: 650px;
+            height: 105px;
+            margin: 0 auto;
+        }
+
+        /* FAQ Section */
+        .section-padding {
+            padding: 10px 5%;
+        }
+
+        .lang-toggle {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .lang-btn {
+            background-color: white;
+            color: #111c34;
+            border: 2px solid #e5e7eb;
+            padding: 12px 28px;
+            border-radius: 40px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .lang-btn.active, .lang-btn:hover {
+            background: linear-gradient(90deg, #fcd31c 0%, #b2740a 100%);
+            color: #000000;
+            border: 2px solid #b2740a;
+            box-shadow: 0 4px 15px rgba(202, 138, 4, 0.3);
+        }
+
+        .faq-container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 26px 30px;
+            min-height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            background-color: white;
+            transition: background-color 0.3s ease;
+            gap: 20px;
+        }
+
+        .faq-question:hover {
+            background-color: #f8fafc;
+        }
+
+        .faq-question h3 {
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .faq-icon-wrap {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background-color: #f1f5f9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #b2740a;
+            font-size: 16px;
+            flex-shrink: 0;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item.active .faq-icon-wrap {
+            background-color: #ca8a04;
+            color: #ffffff;
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            padding: 0 25px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+            background-color: #f9fafb;
+            border-top: 1px solid transparent;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 20px 25px;
+            max-height: 500px; /* arbitrary large value */
+            border-top-color: var(--border-color);
+        }
+
+        .faq-answer p {
+            color: var(--text-gray);
+            font-size: 15px;
+            line-height: 1.6;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111c34;
+            color: white;
+            padding: 60px 5% 20px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 40px;
+        }
+
+        .footer-logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .footer-text {
+            color: #9ca3af;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 15px;
+        }
+
+        .footer-social a {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            border: 1px solid #ca8a04;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ca8a04;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .footer-social a:hover {
+            background-color: #ca8a04;
+            color: #111c34;
+        }
+
+        .footer-heading {
+            color: #ca8a04;
+            font-size: 22px;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 25px;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 15px;
+        }
+
+        .footer-links a {
+            color: #d1d5db;
+            text-decoration: none;
+            font-size: 15px;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #ca8a04;
+        }
+
+        .footer-contact p {
+            color: #d1d5db;
+            font-size: 14px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            color: #9ca3af;
+            font-size: 14px;
+        }
+
+        .hamburger-toggle {
+            display: none;
+            background: none;
+            border: 2px solid rgba(250, 204, 21, 0.5);
+            color: #facc15;
+            font-size: 22px;
+            padding: 8px 14px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .hamburger-toggle:hover {
+            background: rgba(250, 204, 21, 0.1);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 30px; }
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .top-bar { display: none !important; }
+            .navbar { padding: 12px 15px !important; position: relative; }
+            .logo-img { width: 38px !important; height: 38px !important; }
+            .logo-section { gap: 10px !important; }
+            .logo-text h1 { font-size: 16px !important; line-height: 1.2; }
+            .logo-text p { font-size: 11px !important; }
+            .hamburger-toggle { display: flex; align-items: center; justify-content: center; padding: 6px 12px; font-size: 18px; }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: #060C1E;
+                padding: 20px 5%;
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+                z-index: 999;
+                gap: 12px;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            .nav-links.active { display: flex !important; }
+            .nav-links a { padding: 10px 0; font-size: 15px; width: 100%; }
+            .nav-links .btn-enquire { margin-left: 0; text-align: center; display: block; width: 100%; margin-top: 8px; }
+            .footer-grid { grid-template-columns: 1fr !important; gap: 30px !important; text-align: left !important; }
+            .footer-grid > div { padding-left: 0 !important; text-align: left !important; }
+            .faq-hero { height: auto !important; min-height: 240px; padding: 40px 15px !important; }
+            .faq-hero h1 { font-size: 26px !important; }
+            .faq-hero p { height: auto !important; }
+            .faq-banner-title { font-size: 20px !important; }
+            .lang-btn { padding: 8px 18px !important; font-size: 14px !important; }
+            .enquire-modal-card { width: 92% !important; max-width: 100% !important; padding: 25px 20px !important; }
+            .enquire-modal-card h2 { font-size: 22px !important; }
+            .enquire-modal-subtitle { font-size: 13px !important; margin-bottom: 18px !important; }
+            .modal-form-group { margin-bottom: 12px !important; }
+            .modal-form-group input, .modal-form-group textarea { padding: 12px 14px !important; font-size: 14px !important; }
+            .btn-modal-submit { padding: 13px !important; font-size: 15px !important; }
+        }
+
+        /* Enquire Modal Popup */
+        .enquire-modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(4px);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            padding: 20px;
+        }
+
+        .enquire-modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .enquire-modal-card {
+            background: #ffffff;
+            width: 100%;
+            max-width: 460px;
+            border-radius: 20px;
+            padding: 35px 35px 30px;
+            position: relative;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+        }
+
+        .enquire-modal-overlay.active .enquire-modal-card {
+            transform: scale(1);
+        }
+
+        .enquire-modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            font-weight: 700;
+            color: #94a3b8;
+            cursor: pointer;
+            line-height: 1;
+            transition: color 0.2s;
+        }
+
+        .enquire-modal-close:hover {
+            color: #0f172a;
+        }
+
+        .enquire-modal-card h2 {
+            font-size: 28px;
+            font-weight: 800;
+            color: #111c34;
+            margin-bottom: 6px;
+        }
+
+        .enquire-modal-subtitle {
+            font-size: 15px;
+            color: #828b9a;
+            margin-bottom: 25px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .modal-form-group {
+            margin-bottom: 16px;
+        }
+
+        .modal-form-group input,
+        .modal-form-group textarea {
+            width: 100%;
+            padding: 14px 18px;
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            font-size: 14px;
+            font-family: 'Inter', sans-serif;
+            color: #1e293b;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .modal-form-group input::placeholder,
+        .modal-form-group textarea::placeholder {
+            color: #94a3b8;
+        }
+
+        .modal-form-group input:focus,
+        .modal-form-group textarea:focus {
+            background-color: #ffffff;
+            border-color: #ca8a04;
+            box-shadow: 0 0 0 3px rgba(202, 138, 4, 0.1);
+        }
+
+        .modal-form-group textarea {
+            resize: none;
+        }
+
+        .btn-modal-submit {
+            width: 100%;
+            background: linear-gradient(90deg, #fcd31c 0%, #b2740a 100%);
+            color: #000000;
+            padding: 15px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            box-shadow: 0 4px 15px rgba(202, 138, 4, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .btn-modal-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(202, 138, 4, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .top-bar { display: none !important; }
+            .navbar { padding: 12px 15px !important; position: relative; }
+            .logo-img { width: 38px !important; height: 38px !important; }
+            .logo-section { gap: 10px !important; }
+            .logo-text h1 { font-size: 16px !important; line-height: 1.2; }
+            .logo-text p { font-size: 11px !important; }
+            .hamburger-toggle { display: flex; align-items: center; justify-content: center; padding: 6px 12px; font-size: 18px; }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: #060C1E;
+                padding: 20px 5%;
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+                z-index: 999;
+                gap: 12px;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            .nav-links.active { display: flex !important; }
+            .nav-links a { padding: 10px 0; font-size: 15px; width: 100%; }
+            .nav-links .btn-enquire { margin-left: 0; text-align: center; display: block; width: 100%; margin-top: 8px; }
+            .footer-grid { grid-template-columns: 1fr !important; gap: 30px !important; text-align: left !important; }
+            .footer-grid > div { padding-left: 0 !important; text-align: left !important; }
+            .faq-hero { height: auto !important; min-height: 240px; padding: 40px 15px !important; }
+            .faq-hero h1 { font-size: 26px !important; }
+            .faq-hero p { height: auto !important; }
+            .faq-banner-title { font-size: 20px !important; }
+            .lang-btn { padding: 8px 18px !important; font-size: 14px !important; }
+            .faq-question { padding: 20px 18px !important; min-height: 70px !important; }
+            .faq-question h3 { font-size: 15px !important; }
+            .enquire-modal-overlay { padding: 15px !important; }
+            .enquire-modal-card { width: 92% !important; max-width: 360px !important; padding: 25px 20px !important; box-sizing: border-box !important; margin: 0 auto !important; }
+            .enquire-modal-card h2 { font-size: 22px !important; }
+            .enquire-modal-subtitle { font-size: 13px !important; margin-bottom: 18px !important; }
+            .modal-form-group { margin-bottom: 12px !important; }
+            .modal-form-group input, .modal-form-group textarea { padding: 12px 14px !important; font-size: 14px !important; box-sizing: border-box !important; }
+            .btn-modal-submit { padding: 13px !important; font-size: 15px !important; box-sizing: border-box !important; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Contact Bar -->
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <span><i class="fa-solid fa-phone"></i> +91 98765 43210</span>
+            <span><i class="fa-solid fa-envelope"></i> info@sapnaconsulting.com</span>
+        </div>
+        <div class="top-bar-right">
+            <span><i class="fa-solid fa-location-dot"></i> Bhopal, Madhya Pradesh</span>
+        </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav class="navbar">
+        <div class="logo-section">
+            <img src="images/logo.png" alt="SAPNA Logo" class="logo-img" onerror="this.src='https://via.placeholder.com/50'">
+            <div class="logo-text">
+                <h1>Sapna Consulting Point</h1>
+                <p>Since 1985</p>
+            </div>
+        </div>
+        <button class="hamburger-toggle" id="hamburgerBtn" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="faq.html" class="active">FAQ's</a>
+            <a href="contact.html">Contact</a>
+            <a href="#" class="btn-enquire">Enquire Now</a>
+        </div>
+    </nav>
+
+    <!-- FAQ Hero Section -->
+    <section class="faq-hero">
+        <div class="hero-badge">FAQs</div>
+        <h1>Have <span>Questions?</span></h1>
+        <p>Find clear answers about our counseling services, sessions, and guidance.</p>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-padding">
+        <div style="text-align: center; margin-bottom: 40px;">
+            <div class="badge-yellow" style="background-color: #fdfbf7; color: #ca8a04; padding: 10px 26px; border-radius: 30px; font-size: 15px; font-weight: 700; display: inline-block; margin-bottom: 20px; border: 1px solid rgba(202, 138, 4, 0.2); letter-spacing: 0.5px;">FAQs</div>
+            <h2 style="font-size: 36px; font-weight: 800; color: #111c34; margin-bottom: 15px;">Frequently Asked <span style="color: #ca8a04;">Questions</span></h2>
+            <p style="font-size: 17px; color: #6b7280; max-width: 650px; margin: 0 auto; line-height: 1.6;">Here you will find answers to the most common questions related to counseling and personal growth.</p>
+        </div>
+        <div class="lang-toggle">
+            <button class="lang-btn active" id="btnEnglish" onclick="renderFaqs('english')">English</button>
+            <button class="lang-btn" id="btnHindi" onclick="renderFaqs('hindi')">हिंदी</button>
+        </div>
+        <div class="faq-container" id="faqContainer">
+            <!-- Dynamic FAQs loaded via JS -->
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer style="background-color: #0f172a; color: white; padding: 40px 5% 20px; font-family: 'Inter', sans-serif;">
+        <div class="footer-grid">
+            <!-- Footer Logo & About -->
+            <div>
+                <img src="images/logo.png" alt="SAPNA Logo" style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 20px;">
+                <p style="color: #d1d5db; font-size: 15px; line-height: 1.8; margin-bottom: 25px; font-weight: 500;">
+                    Since 1985, SAPNA Consultancy has been empowering individuals, families, students, and professionals through expert guidance, personal development programs, and practical solutions for achieving success in life and career.
+                </p>
+                <div style="display: flex; gap: 15px;">
+                    <a href="#" style="width: 35px; height: 35px; border-radius: 50%; border: 1px solid rgba(202, 138, 4, 0.4); background-color: rgba(202, 138, 4, 0.1); display: flex; align-items: center; justify-content: center; color: #facc15; text-decoration: none; transition: all 0.3s;"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" style="width: 35px; height: 35px; border-radius: 50%; border: 1px solid rgba(202, 138, 4, 0.4); background-color: rgba(202, 138, 4, 0.1); display: flex; align-items: center; justify-content: center; color: #facc15; text-decoration: none; transition: all 0.3s;"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" style="width: 35px; height: 35px; border-radius: 50%; border: 1px solid rgba(202, 138, 4, 0.4); background-color: rgba(202, 138, 4, 0.1); display: flex; align-items: center; justify-content: center; color: #facc15; text-decoration: none; transition: all 0.3s;"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" style="width: 35px; height: 35px; border-radius: 50%; border: 1px solid rgba(202, 138, 4, 0.4); background-color: rgba(202, 138, 4, 0.1); display: flex; align-items: center; justify-content: center; color: #facc15; text-decoration: none; transition: all 0.3s;"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <!-- Quick Links -->
+            <div style="text-align: center;">
+                <h3 style="color: #facc15; font-size: 24px; font-weight: 700; font-family: 'Inter', sans-serif; margin-bottom: 25px;">Quick Links</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 15px;"><a href="index.html" style="color: #d1d5db; text-decoration: none; font-size: 15px; font-weight: 500; transition: color 0.3s;">Home</a></li>
+                    <li style="margin-bottom: 15px;"><a href="about.html" style="color: #d1d5db; text-decoration: none; font-size: 15px; font-weight: 500; transition: color 0.3s;">About Us</a></li>
+                    <li style="margin-bottom: 15px;"><a href="gallery.html" style="color: #d1d5db; text-decoration: none; font-size: 15px; font-weight: 500; transition: color 0.3s;">Gallery</a></li>
+                    <li style="margin-bottom: 15px;"><a href="contact.html" style="color: #d1d5db; text-decoration: none; font-size: 15px; font-weight: 500; transition: color 0.3s;">Contact</a></li>
+                </ul>
+            </div>
+            
+            <!-- Contact Us -->
+            <div>
+                <h3 style="color: #facc15; font-size: 24px; font-weight: 700; font-family: 'Inter', sans-serif; margin-bottom: 25px;">Contact Us</h3>
+                <p style="color: #d1d5db; font-size: 15px; margin-bottom: 20px; line-height: 1.6; font-weight: 500;">Hig-9b, Leela Tower, Sonagiri,<br>Piplani Petrol Pump, Bhel, Sonagiri,<br>Bhopal, Madhya Pradesh 462021</p>
+                <p style="color: #d1d5db; font-size: 15px; margin-bottom: 20px; font-weight: 500;">+91 9302613229</p>
+                <p style="color: #d1d5db; font-size: 15px; font-weight: 500;">praveenkumar091963@gmail.com</p>
+            </div>
+        </div>
+        
+        <div style="text-align: center; color: #9ca3af; font-size: 14px;">
+            <p style="margin: 0;">&copy; 2026 Sapna Consulting Point. All rights reserved. | Managed by <span style="color: #ca8a04; font-weight: 600;">Act T Connect</span></p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        const englishFaqs = [
+  { question: "1. What is depression counseling?", answer: "Depression counseling is a form of therapy that helps individuals explore their feelings, understand the root causes of their depression, and develop coping strategies to improve their mood and quality of life." },
+  { question: "2. How can student counseling help?", answer: "Student counseling provides a safe space for students to discuss academic stress, career confusion, peer pressure, and personal challenges, helping them build resilience and focus." },
+  { question: "3. What is parent counseling?", answer: "Parent counseling offers guidance to parents on handling child behavior, improving communication, and fostering a healthy, supportive family environment." },
+  { question: "4. Who is Sapna and what does she do?", answer: "Sapna is a professional counselor dedicated to helping students, parents, and individuals navigate life's challenges through empathetic and expert counseling." },
+  { question: "5. How do I know if I need counseling?", answer: "If you feel overwhelmed, constantly stressed, unable to cope with daily tasks, or are facing persistent sadness, counseling can provide valuable support and tools." },
+  { question: "6. Are the counseling sessions confidential?", answer: "Yes, all counseling sessions are strictly confidential to ensure a safe and trusting environment for our clients." },
+  { question: "7. How long does a typical counseling session last?", answer: "A typical counseling session lasts for about 45 to 60 minutes, depending on the individual's needs." },
+  { question: "8. Do you offer online counseling?", answer: "Yes, we offer both in-person and online counseling sessions to accommodate your schedule and preferences." },
+  { question: "9. How can counseling help with anxiety?", answer: "Counseling helps identify triggers for anxiety and teaches practical techniques to manage and reduce symptoms effectively." },
+  { question: "10. Can parents and children attend counseling together?", answer: "Yes, we offer family counseling sessions where parents and children can work together to resolve conflicts and improve their relationship." }
+];
+
+        const hindiFaqs = [
+  { question: "1. डिप्रेशन काउंसलिंग क्या है?", answer: "डिप्रेशन काउंसलिंग एक थेरेपी है जो व्यक्तियों को उनकी भावनाओं को समझने, अवसाद के कारणों को जानने और जीवन की गुणवत्ता में सुधार करने में मदद करती है।" },
+  { question: "2. स्टूडेंट काउंसलिंग कैसे मदद कर सकती है?", answer: "स्टूडेंट काउंसलिंग छात्रों को पढ़ाई के तनाव, करियर की उलझन और व्यक्तिगत चुनौतियों पर चर्चा करने के लिए एक सुरक्षित स्थान प्रदान करती है।" },
+  { question: "3. पैरेंट काउंसलिंग क्या है?", answer: "पैरेंट काउंसलिंग माता-पिता को बच्चों के व्यवहार को संभालने, संचार में सुधार करने और एक स्वस्थ पारिवारिक माहौल बनाने में मार्गदर्शन देती है।" },
+  { question: "4. सपना कौन हैं और वह क्या करती हैं?", answer: "सपना एक पेशेवर काउंसलर हैं जो छात्रों, माता-पिता और व्यक्तियों को सहानुभूति और विशेषज्ञ काउंसलिंग के माध्यम से जीवन की चुनौतियों का सामना करने में मदद करती हैं।" },
+  { question: "5. मुझे कैसे पता चलेगा कि मुझे काउंसलिंग की आवश्यकता है?", answer: "यदि आप लगातार तनाव महसूस करते हैं, उदास रहते हैं या दैनिक कार्यों को करने में असमर्थ हैं, तो काउंसलिंग मूल्यवान समर्थन दे सकती है।" },
+  { question: "6. क्या काउंसलिंग सत्र गोपनीय होते हैं?", answer: "हाँ, ग्राहकों के लिए एक सुरक्षित और भरोसेमंद माहौल सुनिश्चित करने के लिए सभी काउंसलिंग सत्र पूरी तरह से गोपनीय रखे जाते हैं।" },
+  { question: "7. एक सामान्य काउंसलिंग सत्र कितनी देर चलता है?", answer: "व्यक्ति की जरूरतों के आधार पर, एक सामान्य काउंसलिंग सत्र लगभग 45 से 60 मिनट तक चलता है।" },
+  { question: "8. क्या आप ऑनलाइन काउंसलिंग प्रदान करते हैं?", answer: "हाँ, हम आपकी सुविधा के अनुसार व्यक्तिगत और ऑनलाइन दोनों तरह के काउंसलिंग सत्र प्रदान करते हैं।" },
+  { question: "9. काउंसलिंग चिंता (Anxiety) में कैसे मदद कर सकती है?", answer: "काउंसलिंग चिंता के कारणों की पहचान करने में मदद करती है और लक्षणों को कम करने के लिए व्यावहारिक तकनीकें सिखाती है।" },
+  { question: "10. क्या माता-पिता और बच्चे एक साथ काउंसलिंग में आ सकते हैं?", answer: "हाँ, हम पारिवारिक काउंसलिंग सत्र भी प्रदान करते हैं जहाँ माता-पिता और बच्चे मिलकर संघर्षों को सुलझा सकते हैं।" }
+];
+
+        function renderFaqs(lang) {
+            const container = document.getElementById('faqContainer');
+            const faqs = lang === 'english' ? englishFaqs : hindiFaqs;
+            
+            document.getElementById('btnEnglish').classList.toggle('active', lang === 'english');
+            document.getElementById('btnHindi').classList.toggle('active', lang === 'hindi');
+
+            container.innerHTML = faqs.map(item => `
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>${item.question}</h3>
+                        <div class="faq-icon-wrap">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>${item.answer}</p>
+                    </div>
+                </div>
+            `).join('');
+
+            const faqQuestions = container.querySelectorAll('.faq-question');
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const item = question.parentElement;
+                    item.classList.toggle('active');
+                });
+            });
+        }
+
+        renderFaqs('english');
+    </script>
+
+    <!-- Enquire Modal Popup -->
+    <div id="enquireModal" class="enquire-modal-overlay">
+        <div class="enquire-modal-card">
+            <button class="enquire-modal-close" id="closeEnquireModal">&times;</button>
+            <h2>Start Your Journey</h2>
+            <p class="enquire-modal-subtitle">Fill the form and we'll contact you shortly</p>
+            <form id="enquireModalForm">
+                <div class="modal-form-group">
+                    <input type="text" placeholder="Your Full Name" required>
+                </div>
+                <div class="modal-form-group">
+                    <input type="tel" placeholder="Your Phone Number" required>
+                </div>
+                <div class="modal-form-group">
+                    <input type="email" placeholder="Your Email Address" required>
+                </div>
+                <div class="modal-form-group">
+                    <textarea rows="3" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn-modal-submit">Send Enquiry</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Enquire Modal Trigger Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const modal = document.getElementById('enquireModal');
+            const closeBtn = document.getElementById('closeEnquireModal');
+            const enquireBtns = document.querySelectorAll('.btn-enquire');
+            const enquireForm = document.getElementById('enquireModalForm');
+
+            enquireBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    modal.classList.add('active');
+                });
+            });
+
+            if (closeBtn) {
+                closeBtn.addEventListener('click', () => {
+                    modal.classList.remove('active');
+                });
+            }
+
+            if (modal) {
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal) {
+                        modal.classList.remove('active');
+                    }
+                });
+            }
+
+            if (enquireForm) {
+                enquireForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    alert('Thank you for reaching out! We will contact you shortly.');
+                    enquireForm.reset();
+                    modal.classList.remove('active');
+                });
+            }
+        });
+
+        // Mobile Hamburger Menu Handler
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (hamburgerBtn && navLinks) {
+            hamburgerBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                navLinks.classList.toggle('active');
+                const icon = hamburgerBtn.querySelector('i');
+                if (icon) {
+                    if (navLinks.classList.contains('active')) {
+                        icon.className = 'fa-solid fa-xmark';
+                    } else {
+                        icon.className = 'fa-solid fa-bars';
+                    }
+                }
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!hamburgerBtn.contains(e.target) && !navLinks.contains(e.target)) {
+                    navLinks.classList.remove('active');
+                    const icon = hamburgerBtn.querySelector('i');
+                    if (icon) icon.className = 'fa-solid fa-bars';
+                }
+            });
+
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                    const icon = hamburgerBtn.querySelector('i');
+                    if (icon) icon.className = 'fa-solid fa-bars';
+                });
+            });
+        }
+    </script>
+</body>
+</html>
+
